@@ -377,18 +377,18 @@ ja:
     adjustments: "調整（値引き・追加料金）"
     admin:
       tab:
-        configuration:
-        option_types:
+        configuration: "設定"
+        option_types: "オプションタイプ"
         orders: "注文"
-        overview:
+        overview: "概要"
         products: "商品"
-        promotions:
-        promotion_categories:
-        properties:
-        prototypes:
+        promotions: "プロモーション"
+        promotion_categories: "プロモーションカテゴリー"
+        properties: "属性"
+        prototypes: "プロトタイプ"
         reports: "リポート"
-        taxonomies:
-        taxons:
+        taxonomies: "分類ツリー"
+        taxons: "分類"
         users: "ユーザー"
       user:
         account:
@@ -1211,18 +1211,18 @@ ja:
     states: "都道府県（州）"
     states_required: "必須"
     status: "状況"
-    stock:
+    stock: "在庫"
     stock_location:
     stock_location_info:
     stock_locations:
     stock_locations_need_a_default_country:
-    stock_management:
+    stock_management: "在庫管理"
     stock_management_requires_a_stock_location:
     stock_movements:
     stock_movements_for_stock_location:
     stock_successfully_transferred:
     stock_transfer:
-    stock_transfers:
+    stock_transfers: "在庫調整"
     stop: "終わり"
     store: "ストア"
     street_address: "住所"
