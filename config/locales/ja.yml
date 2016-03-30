@@ -439,12 +439,15 @@ ja:
         overview: "概要"
         products: "商品"
         promotions: "プロモーション"
-        properties: "プロパティー"
+        promotion_categories: "プロモーションカテゴリ"
+        properties: "属性"
         prototypes: "原型"
         reports: "レポート"
-        taxonomies: "ジャンル"
+        taxonomies: "ジャンルツリー"
         taxons: "ジャンル単位"
         users: "ユーザー"
+        management: "管理"
+        transfers: "移動"
       user:
         account: "アカウント"
         addresses: "住所"
@@ -636,9 +639,32 @@ ja:
     display: "表示"
     doesnt_track_inventory: "在庫をトラッキングしません。"
     edit: "編集"
+    editing_country:
+    editing_adjustment_reason:
+    editing_option_type:
+    editing_payment_method:
+    editing_product: "商品の編集"
+    editing_promotion:
+    editing_promotion_category:
+    editing_property:
+    editing_prototype:
+    edit_refund_reason:
+    editing_refund_reason:
+    editing_reimbursement:
+    editing_reimbursement_type:
     editing_resource: "%{resource}を編集"
     editing_rma_reason: "RMA理由を編集"
+    editing_shipping_category:
+    editing_shipping_method:
+    editing_state:
+    editing_stock_location:
+    editing_stock_movement:
+    editing_stock_transfer:
+    editing_tax_category:
+    editing_tax_rate:
+    editing_tracker:
     editing_user: "ユーザーの編集"
+    editing_zone: "ゾーンの編集"
     eligibility_errors:
       messages:
         has_excluded_product: "カート内に適用済みのクーポンコードを妨げる商品が含まれています。"
@@ -723,6 +749,7 @@ ja:
       available_locales: "可能なローケル"
       fields: "フィールド"
       language: "言語"
+      locales_displayed_on_frontend_select_box: "フロントのセレクトボックスに設定した言語が表示されます"
       localization_settings: "言語設定"
       only_complete: "不完全のみ"
       only_incomplete: "完全のみ"
@@ -784,6 +811,12 @@ ja:
     lifetime_stats:
     line_item_adjustments: "商品調整"
     list: "リスト"
+    listing_countries: "国一覧"
+    listing_orders: "注文一覧"
+    listing_products: "商品一覧"
+    listing_reports: "レポート一覧"
+    listing_tax_categories: "税金カテゴリー一覧"
+    listing_users: "ユーザー一覧"
     loading: "読み込み中"
     locale_changed: "ロケールを変更しました"
     location: "位置"
@@ -802,8 +835,9 @@ ja:
     make_refund: "返金する"
     make_sure_the_above_reimbursement_amount_is_correct: "上記の返品量が正しいことを確認してください。"
     manage_promotion_categories: "プロモーションカテゴリの管理"
-    manual_intervention_required: "主導介入が必要"
+    manage_stock: "在庫管理"
     manage_variants: "型の管理"
+    manual_intervention_required: "主導介入が必要"
     master_price: "定価"
     match_choices:
       all: "すべて"
@@ -1382,6 +1416,7 @@ ja:
       must_be_non_negative: "0以上の数字が必要です"
     value: "値"
     variant: "種類"
+    variant_search_placeholder: "品名もしくは品番[SKU]"
     variant_placeholder: "種類プレイスホルダ"
     variants: "種類"
     version: "バージョン"
@@ -1398,9 +1433,3 @@ ja:
     zipcode: "郵便番号コード"
     zone: "ゾーン"
     zones: "ゾーン"
-    pages: "特集"
-    static_content:
-      link: "特集ページ"
-      new_page: "新規ページ"
-    mail_method_settings: "メール設定"
-
