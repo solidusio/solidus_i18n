@@ -1,3 +1,4 @@
+---
 nl:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ nl:
         phone: Telefoon
         state: Provincie
         zipcode: Postcode
+        company: Bedrijf
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ nl:
         iso_name: ISO Naam
         name: Naam
         numcode: ISO Code
+        states_required: Vereiste statussen
       spree/credit_card:
         base:
         cc_type: Type
@@ -31,11 +34,16 @@ nl:
         number: Nummer
         verification_value: Veiligheidscode
         year: Jaar
+        card_code: Kaartcode
+        expiration: Verval
       spree/inventory_unit:
         state: Status
       spree/line_item:
         price: Prijs
         quantity: Aantal
+        description: Productomschrijving
+        name: Naam
+        total:
       spree/option_type:
         name: Naam
         presentation: Presentatie
@@ -54,6 +62,13 @@ nl:
         special_instructions: Speciale instructies
         state: Status
         total: Totaal
+        additional_tax_total: Belasting
+        approved_at: Goedgekeurd op
+        approver_id: Door
+        canceled_at:
+        canceler_id:
+        included_tax_total: Inclusief belasting
+        shipment_total: Verzend totaal
       spree/order/bill_address:
         address1: Factuuradres
         city: Woonplaats
@@ -72,8 +87,16 @@ nl:
         zipcode: Postcode
       spree/payment:
         amount: Bedrag
+        number:
+        response_code:
+        state: Betaalstatus
       spree/payment_method:
         name: Naam
+        active: Actief
+        auto_capture:
+        description: Omschrijving
+        display_on: Weergeven
+        type: Provider
       spree/product:
         available_on: Beschikbaar op
         cost_currency: Kosten valuta
@@ -84,6 +107,16 @@ nl:
         on_hand: Op voorraad
         shipping_category: Verzendcategorie
         tax_category: Belastingscategorie
+        depth: Diepte
+        height: Hoogte
+        meta_description: Meta beschrijving
+        meta_keywords: Meta sleutelwoorden
+        meta_title:
+        price: Prijs
+        promotionable:
+        slug: Verkorte URL
+        weight: Gewicht
+        width: Breedte
       spree/promotion:
         advertise: Adverteren
         code: Code
@@ -103,6 +136,7 @@ nl:
         name: Naam
       spree/return_authorization:
         amount: Aantal
+        pre_tax_total:
       spree/role:
         name: Naam
       spree/state:
@@ -126,14 +160,22 @@ nl:
       spree/tax_category:
         description: Omschrijving
         name: Naam
+        is_default: Standaard
+        tax_code:
       spree/tax_rate:
         amount: Bedrag
         included_in_price: Inbegrepen in prijs
         show_rate_in_label: Toon percentage naast naam
+        name: Naam
       spree/taxon:
         name: Naam
         permalink: Permalink
         position: Positie
+        description: Omschrijving
+        icon: Icoon
+        meta_description: Meta beschrijving
+        meta_keywords: Meta sleutelwoorden
+        meta_title:
       spree/taxonomy:
         name: Naam
       spree/user:
@@ -152,6 +194,119 @@ nl:
       spree/zone:
         description: Omschrijving
         name: Naam
+        default_tax: Standaardbelastingszone
+      spree/adjustment:
+        adjustable:
+        amount: Bedrag
+        label: Omschrijving
+        name: Naam
+        state: Status
+        adjustment_reason_id: Reden
+      spree/adjustment_reason:
+        active: Actief
+        code: Code
+        name: Naam
+        state: Status
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Totaal
+        reimbursement_status:
+        name: Naam
+      spree/image:
+        alt: Alternatieve tekst
+        attachment: Bestandsnaam
+      spree/legacy_user:
+        email: E-mail
+        password: Wachtwoord
+        password_confirmation: Wachtwoord bevestigen
+      spree/option_value:
+        name: Naam
+        presentation: Presentatie
+      spree/product_property:
+        value: Waarde
+      spree/refund:
+        amount: Bedrag
+        description: Omschrijving
+        refund_reason_id: Reden
+      spree/refund_reason:
+        active: Actief
+        name: Naam
+        code: Code
+      spree/reimbursement:
+        number: Nummer
+        reimbursement_status: Status
+        total: Totaal
+      spree/reimbursement/credit:
+        amount: Bedrag
+      spree/reimbursement_type:
+        name: Naam
+        type: Type
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Status
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Reden
+        total: Totaal
+      spree/return_reason:
+        name: Naam
+        active: Actief
+        memo:
+        number: RMA nummer
+        state: Status
+      spree/shipping_category:
+        name: Naam
+      spree/shipment:
+        tracking: Tracking nummer
+      spree/shipping_method:
+        admin_name: Interne naam
+        code: Code
+        display_on: Weergeven
+        name: Naam
+        tracking_url: Tracking URL
+      spree/shipping_rate:
+        tax_rate: Belastingstarief
+        amount: Bedrag
+      spree/store_credit:
+        amount: Bedrag
+        memo:
+      spree/store_credit_event:
+        action: Actie
+      spree/stock_item:
+        count_on_hand: Aantal in voorraad
+      spree/stock_location:
+        admin_name: Interne naam
+        active: Actief
+        address1: Adres
+        address2: Adres 2
+        backorderable_default:
+        city: Stad
+        code: Code
+        country_id: Land
+        default: Standaard
+        internal_name: Interne naam
+        name: Naam
+        phone: Telefoon
+        propagate_all_variants:
+        state_id: Status
+        zipcode: Postcode
+      spree/stock_movement:
+        action: Actie
+        quantity: Hoeveelheid
+      spree/stock_transfer:
+        created_at: Aangemaakt op
+        description: Omschrijving
+        tracking_number: Tracking nummer
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Actief
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ nl:
         one: Kredietkaart
         other: Kredietkaarten
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Voorraadeenheid
         other: Voorraadeenheden
@@ -216,7 +373,11 @@ nl:
         one: Regel
         other: Regels
       spree/option_type:
+        one: Option type
+        other: Optietypes
       spree/option_value:
+        one: Optiewaarde
+        other: Optieswaardes
       spree/order:
         one: Bestelling
         other: Bestellingen
@@ -224,6 +385,8 @@ nl:
         one: Betaling
         other: Betalingen
       spree/payment_method:
+        one: Betaalmethode
+        other: Betaalmethoden
       spree/product:
         one: Product
         other: Producten
@@ -231,6 +394,7 @@ nl:
         one: Promotie
         other: Promoties
       spree/promotion_category:
+        other:
       spree/property:
         one: Eigenschap
         other: Eigenschappen
@@ -238,8 +402,12 @@ nl:
         one: Prototype
         other: Prototypes
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Retour
         other: Retouren
@@ -254,13 +422,20 @@ nl:
         one: Verzendcategorie
         other: Verzendcategorieën
       spree/shipping_method:
+        one: Verzendwijze
+        other: Verzendwijzen
       spree/state:
         one: Provincie
         other: Provincies
       spree/state_change:
       spree/stock_location:
+        one: Voorraadlocatie
+        other: Voorraadlocaties
       spree/stock_movement:
+        other: Voorraadverplaatsing
       spree/stock_transfer:
+        one: Voorraadoverdracht
+        other: Voorraadoverdrachten
       spree/tax_category:
         one: Belastingscategorie
         other: Belastingscategorieën
@@ -274,6 +449,7 @@ nl:
         one: Taxonomie
         other: Taxonomieën
       spree/tracker:
+        other: Analytics trackers
       spree/user:
         one: Gebruiker
         other: Gebruikers
@@ -283,6 +459,24 @@ nl:
       spree/zone:
         one: Zone
         other: Zones
+      spree/adjustment:
+        one: Aanpassing
+        other: Toevoegingen
+      spree/calculator:
+        one: Calculator
+      spree/legacy_user:
+        one: Gebruiker
+        other: Gebruikers
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Producteigenschappen
+      spree/refund:
+        one: Terugbetaling
+        other:
+      spree/store_credit_category:
+        one: Categorie
+        other: Categorieën
   devise:
     confirmations:
       confirmed: Je account is succesvol bevestigd. Je bent nu aangemeld.
@@ -350,6 +544,11 @@ nl:
       refund:
       save: Opslaan
       update: Bijwerken
+      add: Toevoegen
+      delete: Verwijder
+      remove: Verwijderen
+      ship: Verzenden
+      split: Splits
     activate: Activeer
     active: Actief
     add: Toevoegen
@@ -393,6 +592,12 @@ nl:
         taxonomies:
         taxons:
         users: Gebruikers
+        checkout: Afrekenen
+        general: Algemeen
+        payments: Betalingen
+        settings: Instellingen
+        shipping: Verzenden
+        stock:
       user:
         account:
         addresses:
@@ -432,7 +637,7 @@ nl:
     are_you_sure: Weet je het zeker
     are_you_sure_delete: Wilt je dit record echt verwijderen?
     associated_adjustment_closed: De bijbehorende aanpassing is gesloten, en wordt niet herberekend. Wil je de aanpassing openen?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Autorisatie mislukt
     authorized:
     auto_capture:
@@ -871,6 +1076,8 @@ nl:
         subtotal:
         thanks: Bedankt voor je bestelling.
         total:
+      inventory_cancellation:
+        dear_customer: Beste klant
     order_not_found: We konden je bestelling niet vinden. Probeer het nogmaals.
     order_number: Bestelling %{number}
     order_processed_successfully: Je bestelling is succesvol verwerkt
@@ -1336,3 +1543,27 @@ nl:
     zipcode: Postcode
     zone: Gebied
     zones: Gebieden
+    canceled: geannuleerd
+    cannot_create_payment_link: Definieer eerst een betaalmethode.
+    inventory_states:
+      canceled: geannuleerd
+      returned: geretourneerd
+      shipped: verzonden
+    no_resource_found_link: Voeg één toe
+    number: Nummer
+    store_credit:
+      display_action:
+        adjustment: Aanpassing
+        credit: Krediet
+        void: Krediet
+        admin:
+          authorize:
+    store_credit_category:
+      default: Standaard
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Hoeveelheid
+        state: Status
+        shipment: Verzending
+        cancel: Annuleer
