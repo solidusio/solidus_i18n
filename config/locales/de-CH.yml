@@ -1,3 +1,4 @@
+---
 de-CH:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ de-CH:
         phone:
         state:
         zipcode:
+        company:
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ de-CH:
         iso_name:
         name:
         numcode:
+        states_required:
       spree/credit_card:
         base:
         cc_type:
@@ -31,11 +34,16 @@ de-CH:
         number:
         verification_value:
         year:
+        card_code: Kartenprüfnummer
+        expiration: Gültigkeitsdauer
       spree/inventory_unit:
         state:
       spree/line_item:
         price:
         quantity:
+        description: Artikelbeschreibung
+        name: Name
+        total:
       spree/option_type:
         name:
         presentation:
@@ -54,6 +62,13 @@ de-CH:
         special_instructions:
         state:
         total:
+        additional_tax_total: MwSt.
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ de-CH:
         zipcode:
       spree/payment:
         amount:
+        number:
+        response_code:
+        state: Bezahlstatus
       spree/payment_method:
         name:
+        active: Aktiv
+        auto_capture:
+        description: Beschreibung
+        display_on: Anzeigen
+        type:
       spree/product:
         available_on:
         cost_currency:
@@ -84,6 +107,16 @@ de-CH:
         on_hand:
         shipping_category:
         tax_category:
+        depth: Tiefe
+        height: Höhe
+        meta_description: Meta-Beschreibung
+        meta_keywords: Meta-Schlüsselwörter
+        meta_title:
+        price: Grundpreis
+        promotionable:
+        slug:
+        weight: Gewicht
+        width: Breite
       spree/promotion:
         advertise:
         code:
@@ -103,6 +136,7 @@ de-CH:
         name:
       spree/return_authorization:
         amount:
+        pre_tax_total:
       spree/role:
         name:
       spree/state:
@@ -126,14 +160,22 @@ de-CH:
       spree/tax_category:
         description:
         name:
+        is_default:
+        tax_code:
       spree/tax_rate:
         amount:
         included_in_price:
         show_rate_in_label:
+        name: Name
       spree/taxon:
         name:
         permalink:
         position:
+        description: Beschreibung
+        icon:
+        meta_description: Meta-Beschreibung
+        meta_keywords: Meta-Schlüsselwörter
+        meta_title:
       spree/taxonomy:
         name:
       spree/user:
@@ -152,6 +194,118 @@ de-CH:
       spree/zone:
         description:
         name:
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Summe
+        label: Beschreibung
+        name: Name
+        state: Kanton
+        adjustment_reason_id:
+      spree/adjustment_reason:
+        active: Aktiv
+        code:
+        name: Name
+        state: Kanton
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Gesamt
+        reimbursement_status:
+        name: Name
+      spree/image:
+        alt: Alternative Text
+        attachment: Dateiname
+      spree/legacy_user:
+        email:
+        password: Passwort
+        password_confirmation: Passwort bestätigen
+      spree/option_value:
+        name: Name
+        presentation: Anzeige
+      spree/product_property:
+        value: Wert
+      spree/refund:
+        amount: Summe
+        description: Beschreibung
+        refund_reason_id:
+      spree/refund_reason:
+        active: Aktiv
+        name: Name
+        code:
+      spree/reimbursement:
+        number:
+        reimbursement_status:
+        total: Gesamt
+      spree/reimbursement/credit:
+        amount: Summe
+      spree/reimbursement_type:
+        name: Name
+        type: Typ
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Kanton
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason:
+        total: Gesamt
+      spree/return_reason:
+        name: Name
+        active: Aktiv
+        memo:
+        number:
+        state: Kanton
+      spree/shipping_category:
+        name: Name
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code:
+        display_on: Anzeigen
+        name: Name
+        tracking_url:
+      spree/shipping_rate:
+        amount: Summe
+      spree/store_credit:
+        amount: Summe
+        memo:
+      spree/store_credit_event:
+        action: Aktion
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Aktiv
+        address1: Strasse
+        address2: Strasse (Feld 2)
+        backorderable_default:
+        city: Stadt
+        code:
+        country_id: Land
+        default:
+        internal_name:
+        name: Name
+        phone:
+        propagate_all_variants:
+        state_id: Kanton
+        zipcode: PLZ
+      spree/stock_movement:
+        action: Aktion
+        quantity:
+      spree/stock_transfer:
+        created_at:
+        description: Beschreibung
+        tracking_number:
+      spree/tracker:
+        analytics_id:
+        active: Aktiv
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -200,43 +354,123 @@ de-CH:
               cannot_destroy_default_store:
     models:
       spree/address:
+        one:
+        other:
       spree/country:
+        one: Land
+        other:
       spree/credit_card:
+        one: Kreditkarte
+        other: Credit Cards
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
       spree/line_item:
       spree/option_type:
+        one:
+        other: Optionen
       spree/option_value:
+        one:
+        other: Optionswalues
       spree/order:
+        one: Bestellung
+        other: Bestellungen
       spree/payment:
+        one: Zahlung
+        other: Zahlungen
       spree/payment_method:
+        one: Zahlungsmethode
+        other: Zahlungsmethoden
       spree/product:
+        one: Produkt
+        other: Produkte
       spree/promotion:
+        one:
+        other: Promotionen
       spree/promotion_category:
+        other:
       spree/property:
+        one: Eigenschaft
+        other: Eigenschaften
       spree/prototype:
+        one: Prototype
+        other: Prototypen
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
+        one:
+        other:
       spree/return_authorization_reason:
       spree/role:
+        one: Rollen
+        other: Rollen
       spree/shipment:
+        one: Lieferung
+        other: Versand
       spree/shipping_category:
+        one: Versandkategorie
+        other: Versandkategorien
       spree/shipping_method:
+        one: Versandart
+        other: Versandarten
       spree/state:
+        one: Kanton
+        other: Kantone
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
+        one: Steuerkategorie
+        other: Steuerkategorien
       spree/tax_rate:
+        other: Steuersätze
       spree/taxon:
+        one: Taxonomie
+        other: Klassifizierungen
       spree/taxonomy:
+        one:
+        other: Taxonomien
       spree/tracker:
+        other:
       spree/user:
+        one: Benutzer
+        other: Benutzer
       spree/variant:
+        one: Variant
+        other: Varianten
       spree/zone:
+        one: Zone
+        other: Zonen
+      spree/adjustment:
+        one: Anpassung
+        other: Preis-Anpassungen
+      spree/calculator:
+        one: Rechner
+      spree/legacy_user:
+        one: Benutzer
+        other: Benutzer
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Produkt-Eigenschaften
+      spree/refund:
+        one:
+        other:
+      spree/store_credit_category:
+        one: Kategorie
+        other: Kategorien
   devise:
     confirmations:
       confirmed:
@@ -302,6 +536,11 @@ de-CH:
       refund:
       save:
       update: Aktualisieren
+      add: Hinzufügen
+      delete: Löschen
+      remove: Entfernen
+      ship: verschicken
+      split:
     activate: Activate
     active: Aktiv
     add: Hinzufügen
@@ -345,6 +584,12 @@ de-CH:
         taxonomies:
         taxons:
         users:
+        checkout: Zur Kasse
+        general:
+        payments: Zahlungen
+        settings: Einstellungen
+        shipping: Lieferung
+        stock:
       user:
         account:
         addresses:
@@ -384,7 +629,7 @@ de-CH:
     are_you_sure: Sind Sie sicher
     are_you_sure_delete: Sind sie sicher, dass Sie diesen Eintrag löschen möchten?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Anmeldung fehlgeschlagen
     authorized:
     auto_capture:
@@ -696,7 +941,7 @@ de-CH:
     login_name: Benutzer
     logout: Abmelden
     logs:
-    look_for_similar_items: "Ähnliche Artikel"
+    look_for_similar_items: Ähnliche Artikel
     make_refund:
     make_sure_the_above_reimbursement_amount_is_correct:
     manage_promotion_categories:
@@ -821,6 +1066,8 @@ de-CH:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: Ihre Bestellung wurde erfolgreich bearbeitet
@@ -844,7 +1091,7 @@ de-CH:
     orders: Bestellungen
     other_items_in_other:
     out_of_stock: Ausverkauft
-    overview: "Übersicht"
+    overview: Übersicht
     package_from:
     pagination:
       next_page:
@@ -1286,3 +1533,27 @@ de-CH:
     zipcode:
     zone: Zone
     zones: Zonen
+    canceled: Abgebrochen
+    cannot_create_payment_link:
+    inventory_states:
+      canceled: Abgebrochen
+      returned: returned
+      shipped: Versendet
+    no_resource_found_link:
+    number:
+    store_credit:
+      display_action:
+        adjustment: Anpassung
+        credit: Credit
+        void: Credit
+        admin:
+          authorize:
+    store_credit_category:
+      default:
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity:
+        state: Kanton
+        shipment: Lieferung
+        cancel: Abbrechen
