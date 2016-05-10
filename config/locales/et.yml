@@ -1,3 +1,4 @@
+---
 et:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ et:
         phone: Telefon
         state: Maakond
         zipcode: Postiindeks
+        company: Ettevõte
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ et:
         iso_name: ISO Name
         name: Name
         numcode: ISO Code
+        states_required:
       spree/credit_card:
         base:
         cc_type:
@@ -31,11 +34,16 @@ et:
         number:
         verification_value:
         year:
+        card_code: Kaardikood
+        expiration: Aegub
       spree/inventory_unit:
         state:
       spree/line_item:
         price:
         quantity:
+        description: Toote kirjeldus
+        name: Nimi
+        total:
       spree/option_type:
         name:
         presentation:
@@ -54,6 +62,13 @@ et:
         special_instructions:
         state:
         total: Kokku
+        additional_tax_total: Maksud
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ et:
         zipcode:
       spree/payment:
         amount: Summa
+        number:
+        response_code:
+        state: Makse staatus
       spree/payment_method:
         name: Nimetus
+        active: Aktiivne
+        auto_capture:
+        description: Kirjeldus
+        display_on: Kuvatav väärtus
+        type: Varustaja
       spree/product:
         available_on: Saadaval alates
         cost_currency:
@@ -84,6 +107,16 @@ et:
         on_hand: Laoseis
         shipping_category: Tarnekategooria
         tax_category: Maksukategooria
+        depth: Sügavus
+        height: Kõrgus
+        meta_description: Kirjeldus
+        meta_keywords: Märksõnad
+        meta_title:
+        price: Hind
+        promotionable:
+        slug:
+        weight: Kaal
+        width: Laius
       spree/promotion:
         advertise:
         code:
@@ -103,6 +136,7 @@ et:
         name: Nimetus
       spree/return_authorization:
         amount: Kogus
+        pre_tax_total:
       spree/role:
         name: Nimetus
       spree/state:
@@ -126,14 +160,22 @@ et:
       spree/tax_category:
         description: Kirjeldus
         name: Nimetus
+        is_default:
+        tax_code:
       spree/tax_rate:
         amount: Rate
         included_in_price: Included in Price
         show_rate_in_label: Show rate in label
+        name: Nimi
       spree/taxon:
         name: Nimetus
         permalink: Püsiviide
         position: Positsioon
+        description: Kirjeldus
+        icon: Icon
+        meta_description: Kirjeldus
+        meta_keywords: Märksõnad
+        meta_title:
       spree/taxonomy:
         name: Nimetus
       spree/user:
@@ -152,6 +194,118 @@ et:
       spree/zone:
         description: Kirjeldus
         name: Nimetus
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Summa
+        label: Kirjeldus
+        name: Nimi
+        state: Maakond
+        adjustment_reason_id: Põhjus
+      spree/adjustment_reason:
+        active: Aktiivne
+        code: Kood
+        name: Nimi
+        state: Maakond
+      spree/carton:
+        tracking: Jälgimisnumber
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Kokku
+        reimbursement_status:
+        name: Nimi
+      spree/image:
+        alt: Alternatiivne tekst
+        attachment: Faili nimi
+      spree/legacy_user:
+        email:
+        password: Salasõna
+        password_confirmation: Kinnita salasõna
+      spree/option_value:
+        name: Nimi
+        presentation: Kuvatav väärtus
+      spree/product_property:
+        value: Väärtus
+      spree/refund:
+        amount: Summa
+        description: Kirjeldus
+        refund_reason_id: Põhjus
+      spree/refund_reason:
+        active: Aktiivne
+        name: Nimi
+        code: Kood
+      spree/reimbursement:
+        number:
+        reimbursement_status: Staatus
+        total: Kokku
+      spree/reimbursement/credit:
+        amount: Summa
+      spree/reimbursement_type:
+        name: Nimi
+        type: Tüüp
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Maakond
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Põhjus
+        total: Kokku
+      spree/return_reason:
+        name: Nimi
+        active: Aktiivne
+        memo:
+        number: Tagastatud toote number
+        state: Maakond
+      spree/shipping_category:
+        name: Nimi
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code: Kood
+        display_on: Kuvatav väärtus
+        name: Nimi
+        tracking_url:
+      spree/shipping_rate:
+        amount: Summa
+      spree/store_credit:
+        amount: Summa
+        memo:
+      spree/store_credit_event:
+        action: Toiming
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Aktiivne
+        address1: Tänav
+        address2: Tänav (jätkub)
+        backorderable_default:
+        city: Linn
+        code: Kood
+        country_id: Riik
+        default:
+        internal_name:
+        name: Nimi
+        phone: Telefon
+        propagate_all_variants:
+        state_id: Maakond
+        zipcode: Postiindeks
+      spree/stock_movement:
+        action: Toiming
+        quantity: Kogus
+      spree/stock_transfer:
+        created_at: Loodud
+        description: Kirjeldus
+        tracking_number:
+      spree/tracker:
+        analytics_id: Google Analytics ID
+        active: Aktiivne
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -206,11 +360,19 @@ et:
         one: Riik
         other: Riigid
       spree/credit_card:
+        one: Krediitkaart
+        other:
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
       spree/line_item:
       spree/option_type:
+        one:
+        other: Variatsioonid
       spree/option_value:
+        one:
+        other: valiku väärtused
       spree/order:
         one: Tellimus
         other: Tellimused
@@ -218,19 +380,36 @@ et:
         one: Makse
         other: Maksed
       spree/payment_method:
+        one: Makseviis
+        other: Makseviisid
       spree/product:
         one: Toode
         other: Tooted
       spree/promotion:
+        one:
+        other: Kampaaniad
       spree/promotion_category:
+        other:
       spree/property:
+        one: Omadus
+        other: Omadused
       spree/prototype:
+        one: Prototüüp
+        other: Prototüübid
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
+        one: Tagasta toode
+        other: Tagasta tooted
       spree/return_authorization_reason:
       spree/role:
+        one: Rollid
+        other: Rollid
       spree/shipment:
         one: Tarne
         other: Tarned
@@ -238,17 +417,25 @@ et:
         one: Tarnekategooria
         other: Tarnekategooriad
       spree/shipping_method:
+        one: Tarneviis
+        other: Tarneviisid
       spree/state:
         one: Maakond
         other: Maakonnad
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
         one: Maksukategooria
         other: Maksukategooriad
       spree/tax_rate:
+        other: Maksumäärad
       spree/taxon:
         one: Takson
         other: Taksonid
@@ -256,13 +443,34 @@ et:
         one: Taksonoomia
         other: Taksonoomiad
       spree/tracker:
+        other: Google Analytics
       spree/user:
         one: Kasutaja
         other: Kasutajad
       spree/variant:
+        one:
+        other: Variandid
       spree/zone:
         one: Zone
         other: Zones
+      spree/adjustment:
+        one: Täiendus
+        other: Täiendused
+      spree/calculator:
+        one: Kalkulaator
+      spree/legacy_user:
+        one: Kasutaja
+        other: Kasutajad
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Toote omadused
+      spree/refund:
+        one: Tagasimakse
+        other:
+      spree/store_credit_category:
+        one: Kategooria
+        other: Katergooriad
   devise:
     confirmations:
       confirmed: Sinu konto on edukalt kinnitatud. Sa oled nüüd sisse logitud.
@@ -330,6 +538,11 @@ et:
       refund:
       save: Salvesta
       update: Uuendus
+      add: Lisa
+      delete: Kustuta
+      remove: Eemalda
+      ship: Saada
+      split:
     activate: Activate
     active: Aktiivne
     add: Lisa
@@ -373,6 +586,12 @@ et:
         taxonomies:
         taxons:
         users: Kasutajad
+        checkout: Vormista tellimus
+        general: Üldine
+        payments: Maksed
+        settings: Sätted
+        shipping: Transport
+        stock:
       user:
         account:
         addresses:
@@ -412,7 +631,7 @@ et:
     are_you_sure: Kas oled kindel?
     are_you_sure_delete: Kas oled kindel, et soovid seda kirjet kustutada?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Tõrge autoriseerimisel
     authorized:
     auto_capture:
@@ -643,8 +862,8 @@ et:
     gateway: Lüüs
     gateway_config_unavailable:
     gateway_error: Lüüsi viga
-    general: "Üldine"
-    general_settings: "Üldised sätted"
+    general: Üldine
+    general_settings: Üldised sätted
     google_analytics: Google Analytics
     google_analytics_id: Google Analytics ID
     guest_checkout: Sooritas ostu külalisena
@@ -849,6 +1068,8 @@ et:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: Tellimus edastatud
@@ -872,7 +1093,7 @@ et:
     orders: Tellimused
     other_items_in_other:
     out_of_stock: Laost lõppenud
-    overview: "Ülevaade"
+    overview: Ülevaade
     package_from:
     pagination:
       next_page:
@@ -1314,3 +1535,27 @@ et:
     zipcode: Postiindeks
     zone: Tsoon
     zones: Tsoonid
+    canceled: Tühistatud
+    cannot_create_payment_link:
+    inventory_states:
+      canceled: Tühistatud
+      returned: Tagastamine
+      shipped: Tarnitud
+    no_resource_found_link: Lisa üks
+    number:
+    store_credit:
+      display_action:
+        adjustment: Täiendus
+        credit: Krediit
+        void: Krediit
+        admin:
+          authorize:
+    store_credit_category:
+      default:
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Kogus
+        state: Maakond
+        shipment: Tarne
+        cancel: Tühista
