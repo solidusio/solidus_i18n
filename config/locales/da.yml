@@ -1,3 +1,4 @@
+---
 da:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ da:
         phone: Telefon
         state: Delstat
         zipcode: Postnummer
+        company: Firma
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ da:
         iso_name: ISO-navn
         name: Navn
         numcode: ISO-kode
+        states_required: Stat/region kræves
       spree/credit_card:
         base:
         cc_type: Type
@@ -30,12 +33,17 @@ da:
         name:
         number: Nummer
         verification_value: CVV-kode
-        year: "År"
+        year: År
+        card_code: Kortkode
+        expiration: Udløbsdato
       spree/inventory_unit:
         state: Delstat
       spree/line_item:
         price: Pris
         quantity: Antal
+        description: Artikelbeskrivelse
+        name: Navn
+        total:
       spree/option_type:
         name: Navn
         presentation: Præsentation
@@ -54,6 +62,13 @@ da:
         special_instructions: Særlige forhold
         state: Stat
         total: Total
+        additional_tax_total: Moms
+        approved_at: Godkendt d.
+        approver_id: Godkendt af
+        canceled_at: Annulleret d.
+        canceler_id: Annulleret af
+        included_tax_total:
+        shipment_total: Leveret total
       spree/order/bill_address:
         address1: Adresse
         city: By
@@ -72,8 +87,16 @@ da:
         zipcode: Postnummer
       spree/payment:
         amount: Beløb
+        number:
+        response_code:
+        state: Betalingsstatus
       spree/payment_method:
         name: Navn
+        active: Aktiv
+        auto_capture:
+        description: Beskrivelse
+        display_on: Visning
+        type: Leverandør
       spree/product:
         available_on: Kan købes fra
         cost_currency: Kostvaluta
@@ -84,6 +107,16 @@ da:
         on_hand: På lager
         shipping_category: Forsendelseskategori
         tax_category: Momskategori
+        depth: Dybde
+        height: Højde
+        meta_description: Metabeskrivelse
+        meta_keywords: Metanøgleord
+        meta_title:
+        price: Hovedpris
+        promotionable:
+        slug:
+        weight: Vægt
+        width: Bredde
       spree/promotion:
         advertise: Reklamér
         code: Kode
@@ -103,6 +136,7 @@ da:
         name: Navn
       spree/return_authorization:
         amount: Antal
+        pre_tax_total:
       spree/role:
         name: Navn
       spree/state:
@@ -126,14 +160,22 @@ da:
       spree/tax_category:
         description: Beskrivelse
         name: Navn
+        is_default: Standard
+        tax_code:
       spree/tax_rate:
         amount: Sats
         included_in_price: Inkluderet i prisen
         show_rate_in_label: Vis stas i label
+        name: Navn
       spree/taxon:
         name: Navn
         permalink: Permalink
         position: Position
+        description: Beskrivelse
+        icon: Ikon
+        meta_description: Metabeskrivelse
+        meta_keywords: Metanøgleord
+        meta_title:
       spree/taxonomy:
         name: Navn
       spree/user:
@@ -152,6 +194,119 @@ da:
       spree/zone:
         description: Beskrivelse
         name: Navn
+        default_tax: Standardmomszone
+      spree/adjustment:
+        adjustable:
+        amount: Beløb
+        label: Beskrivelse
+        name: Navn
+        state: Delstat
+        adjustment_reason_id: Anledning
+      spree/adjustment_reason:
+        active: Aktiv
+        code: Kode
+        name: Navn
+        state: Delstat
+      spree/carton:
+        tracking: Sporing
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Navn
+      spree/image:
+        alt: Alternativ tekst
+        attachment: Filnavn
+      spree/legacy_user:
+        email: E-mail
+        password: Adgangskode
+        password_confirmation: Bekræft adgangskode
+      spree/option_value:
+        name: Navn
+        presentation: præsentation
+      spree/product_property:
+        value: Værdi
+      spree/refund:
+        amount: Beløb
+        description: Beskrivelse
+        refund_reason_id: Anledning
+      spree/refund_reason:
+        active: Aktiv
+        name: Navn
+        code: Kode
+      spree/reimbursement:
+        number: Ordrenummer
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Beløb
+      spree/reimbursement_type:
+        name: Navn
+        type: Type
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Delstat
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Anledning
+        total: Total
+      spree/return_reason:
+        name: Navn
+        active: Aktiv
+        memo:
+        number: RMA-nummer
+        state: Delstat
+      spree/shipping_category:
+        name: Navn
+      spree/shipment:
+        tracking: Track & trace nummer
+      spree/shipping_method:
+        admin_name:
+        code: Kode
+        display_on: Visning
+        name: Navn
+        tracking_url: Track & trace url
+      spree/shipping_rate:
+        tax_rate: Momssats
+        amount: Beløb
+      spree/store_credit:
+        amount: Beløb
+        memo:
+      spree/store_credit_event:
+        action: Handling
+      spree/stock_item:
+        count_on_hand: Antal tilgængelig
+      spree/stock_location:
+        admin_name:
+        active: Aktiv
+        address1: Adresse
+        address2: Adresse (forts.)
+        backorderable_default:
+        city: By
+        code: Kode
+        country_id: Land
+        default: Standard
+        internal_name:
+        name: Navn
+        phone: Telefonnummer
+        propagate_all_variants:
+        state_id: Delstat
+        zipcode: Postnummer
+      spree/stock_movement:
+        action: Handling
+        quantity: Antal
+      spree/stock_transfer:
+        created_at: Oprettet den
+        description: Beskrivelse
+        tracking_number: Track & trace nummer
+      spree/tracker:
+        analytics_id: Analytics-ID
+        active: Aktiv
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ da:
         one: Betalingskort
         other: Betalingskort
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Inventory Unit
         other: Inventory Units
@@ -216,7 +373,11 @@ da:
         one: Ordrelinje
         other: Ordrelinjer
       spree/option_type:
+        one: Alternativ udgave
+        other: Alternative udgaver
       spree/option_value:
+        one: Alternativ værdi
+        other: Alternative værdier
       spree/order:
         one: Ordre
         other: Ordrer
@@ -224,11 +385,16 @@ da:
         one: Betaling
         other: Betalinger
       spree/payment_method:
+        one: Betalingsmetode
+        other: Betalingsmetoder
       spree/product:
         one: Vare
         other: Varer
       spree/promotion:
+        one: Kampagne
+        other: Kampagner
       spree/promotion_category:
+        other:
       spree/property:
         one: Egenskab
         other: Egenskaber
@@ -236,8 +402,12 @@ da:
         one: Prototype
         other: Prototyper
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Return Authorization
         other: Return Authorizations
@@ -252,13 +422,20 @@ da:
         one: Leveringskategori
         other: Leveringskategorier
       spree/shipping_method:
+        one: Leveringsmetode
+        other: Leveringsmetoder
       spree/state:
         one: Delstat
         other: Delstater
       spree/state_change:
       spree/stock_location:
+        one: Lagersted
+        other: Lagersteder
       spree/stock_movement:
+        other: Lagerbevægelser
       spree/stock_transfer:
+        one: Lagerflytning
+        other: Lagerflytninger
       spree/tax_category:
         one: Momskategori
         other: Momskategorier
@@ -272,6 +449,7 @@ da:
         one: Taksonomi
         other: Taksonomier
       spree/tracker:
+        other: Statestik-tracker
       spree/user:
         one: Bruger
         other: Brugere
@@ -281,6 +459,24 @@ da:
       spree/zone:
         one: Zone
         other: Zoner
+      spree/adjustment:
+        one: Justering
+        other: Justeringer
+      spree/calculator:
+        one: Beregner
+      spree/legacy_user:
+        one: Bruger
+        other: Brugere
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Vareegenskaber
+      spree/refund:
+        one: Tilbagebetal
+        other:
+      spree/store_credit_category:
+        one: Kategori
+        other: Kategorier
   devise:
     confirmations:
       confirmed: Du har bekræftet din konto. Du er nu logget ind.
@@ -348,6 +544,11 @@ da:
       refund:
       save: Gem
       update: Opdater
+      add: Tilføj
+      delete: Slet
+      remove: Fjern
+      ship: lever
+      split: Del
     activate: Aktivér
     active: Aktiv
     add: Tilføj
@@ -391,6 +592,12 @@ da:
         taxonomies:
         taxons:
         users:
+        checkout: Til kassen
+        general: Generelt
+        payments: Betalinger
+        settings: Indstillinger
+        shipping: Levering
+        stock:
       user:
         account:
         addresses:
@@ -430,7 +637,7 @@ da:
     are_you_sure: Er du sikker?
     are_you_sure_delete: Er du sikker på at du vil slette denne post?
     associated_adjustment_closed: Den tilhørende justering er lukket, og vil ikke blive genberegnet. Vil du åben den?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Autorisation fejlede
     authorized:
     auto_capture:
@@ -636,7 +843,7 @@ da:
         user:
           signup: Tilmeld dig
     exceptions:
-      count_on_hand_setter: "Antal tilgængelig kan ikke sættes manuelt. Det sættes automatisk af recalculate_count_on_hand callback. Brug `update_column(:count_on_hand, value)` istedet."
+      count_on_hand_setter: Antal tilgængelig kan ikke sættes manuelt. Det sættes automatisk af recalculate_count_on_hand callback. Brug `update_column(:count_on_hand, value)` istedet.
     exchange_for:
     excl:
     existing_shipments:
@@ -834,8 +1041,8 @@ da:
       variant_not_deleted: Variant kunne ikke slettes
     num_orders:
     on_hand: På lager
-    open: "Åben"
-    open_all_adjustments: "Åbn alle justeringer"
+    open: Åben
+    open_all_adjustments: Åbn alle justeringer
     option_type: Alternativ udgave
     option_type_placeholder: Vælg en alternativ udgave
     option_types: Alternative udgaver
@@ -869,6 +1076,8 @@ da:
         subtotal:
         thanks: Tak for handelen.
         total:
+      inventory_cancellation:
+        dear_customer: Kære kunde,\n
     order_not_found: Vi kunne ikke finde din ordre. Prøv venligst sidste handling igen.
     order_number:
     order_processed_successfully: Din ordre er blevet modtaget
@@ -1103,7 +1312,7 @@ da:
     say_yes: Ja
     scope: Område
     search: Søg
-    search_results: "Søgeresultater for '%{keywords}'"
+    search_results: Søgeresultater for '%{keywords}'
     searching: Søger
     secure_connection_type: Sikker forbindelsestype
     security_settings: Sikkerhedsindstillinger
@@ -1326,7 +1535,7 @@ da:
     what_is_a_cvv: Hvad er en sikkerhedskode (CVC)?
     what_is_this: Hvad er dette?
     width: Bredde
-    year: "År"
+    year: År
     you_have_no_orders_yet: Du har endnu ingen ordre.
     your_cart_is_empty: Din indkøbskurv er tom
     your_order_is_empty_add_product: Din ordre er tom.
@@ -1334,3 +1543,27 @@ da:
     zipcode: Postnummer
     zone: Zone
     zones: Zoner
+    canceled: annulleret
+    cannot_create_payment_link: Vær venlig at opret nogle betalingsmuligheder først.
+    inventory_states:
+      canceled: annulleret
+      returned: returneret
+      shipped: leveret
+    no_resource_found_link: Tilføj en
+    number: Ordrenummer
+    store_credit:
+      display_action:
+        adjustment: Justering
+        credit: Kredit
+        void: Kredit
+        admin:
+          authorize:
+    store_credit_category:
+      default: Standard
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Antal
+        state: Delstat
+        shipment: Levering
+        cancel: Annuller
