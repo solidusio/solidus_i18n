@@ -1,3 +1,4 @@
+---
 en-IN:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ en-IN:
         phone: Phone
         state: State
         zipcode: Zip Code
+        company: Company
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ en-IN:
         iso_name: ISO Name
         name: Name
         numcode: ISO Code
+        states_required: States Required
       spree/credit_card:
         base:
         cc_type: Type
@@ -31,11 +34,16 @@ en-IN:
         number: Number
         verification_value: Verification Value
         year: Year
+        card_code: Card Code
+        expiration: Expiration
       spree/inventory_unit:
         state: State
       spree/line_item:
         price: Price
         quantity: Quantity
+        description: Item Description
+        name: Name
+        total:
       spree/option_type:
         name: Name
         presentation: Presentation
@@ -54,6 +62,13 @@ en-IN:
         special_instructions: Special Instructions
         state: State
         total: Total
+        additional_tax_total: Tax
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total: Ship Total
       spree/order/bill_address:
         address1: Billing address street
         city: Billing address city
@@ -72,8 +87,16 @@ en-IN:
         zipcode: Shipping address zipcode
       spree/payment:
         amount: Amount
+        number:
+        response_code:
+        state: Payment State
       spree/payment_method:
         name: Name
+        active: Active
+        auto_capture:
+        description: Description
+        display_on: Display
+        type: Provider
       spree/product:
         available_on: Available On
         cost_currency: Cost Currency
@@ -84,6 +107,16 @@ en-IN:
         on_hand: On Hand
         shipping_category: Shipping Category
         tax_category: Tax Category
+        depth: Depth
+        height: Height
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title:
+        price: Master Price
+        promotionable:
+        slug:
+        weight: Weight
+        width: Width
       spree/promotion:
         advertise: Advertise
         code: Code
@@ -103,6 +136,7 @@ en-IN:
         name: Name
       spree/return_authorization:
         amount: Amount
+        pre_tax_total:
       spree/role:
         name: Name
       spree/state:
@@ -126,14 +160,22 @@ en-IN:
       spree/tax_category:
         description: Description
         name: Name
+        is_default: Default
+        tax_code:
       spree/tax_rate:
         amount: Rate
         included_in_price: Included in Price
         show_rate_in_label: Show rate in label
+        name: Name
       spree/taxon:
         name: Name
         permalink: Permalink
         position: Position
+        description: Description
+        icon: Icon
+        meta_description: Meta Description
+        meta_keywords: Meta Keywords
+        meta_title:
       spree/taxonomy:
         name: Name
       spree/user:
@@ -152,6 +194,119 @@ en-IN:
       spree/zone:
         description: Description
         name: Name
+        default_tax: Default Tax Zone
+      spree/adjustment:
+        adjustable:
+        amount: Amount
+        label: Description
+        name: Name
+        state: County
+        adjustment_reason_id: Reason
+      spree/adjustment_reason:
+        active: Active
+        code: Code
+        name: Name
+        state: County
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Name
+      spree/image:
+        alt: Alternative Text
+        attachment: Filename
+      spree/legacy_user:
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation
+      spree/option_value:
+        name: Name
+        presentation: Presentation
+      spree/product_property:
+        value: Value
+      spree/refund:
+        amount: Amount
+        description: Description
+        refund_reason_id: Reason
+      spree/refund_reason:
+        active: Active
+        name: Name
+        code: Code
+      spree/reimbursement:
+        number: Number
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Amount
+      spree/reimbursement_type:
+        name: Name
+        type: Type
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: County
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Reason
+        total: Total
+      spree/return_reason:
+        name: Name
+        active: Active
+        memo:
+        number: RMA Number
+        state: County
+      spree/shipping_category:
+        name: Name
+      spree/shipment:
+        tracking: Tracking Number
+      spree/shipping_method:
+        admin_name:
+        code: Code
+        display_on: Display
+        name: Name
+        tracking_url: Tracking URL
+      spree/shipping_rate:
+        tax_rate: Tax Rate
+        amount: Amount
+      spree/store_credit:
+        amount: Amount
+        memo:
+      spree/store_credit_event:
+        action: Action
+      spree/stock_item:
+        count_on_hand: Count On Hand
+      spree/stock_location:
+        admin_name:
+        active: Active
+        address1: Street Address
+        address2: Street Address (cont'd)
+        backorderable_default:
+        city: Town / City
+        code: Code
+        country_id: Country
+        default: Default
+        internal_name:
+        name: Name
+        phone: Phone
+        propagate_all_variants:
+        state_id: County
+        zipcode: PIN Code
+      spree/stock_movement:
+        action: Action
+        quantity: Quantity
+      spree/stock_transfer:
+        created_at: Created At
+        description: Description
+        tracking_number: Tracking Number
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Active
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ en-IN:
         one: Credit Card
         other: Credit Cards
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Inventory Unit
         other: Inventory Units
@@ -216,7 +373,11 @@ en-IN:
         one: Line Item
         other: Line Items
       spree/option_type:
+        one: Option Type
+        other: Option Types
       spree/option_value:
+        one: Option Value
+        other: Option Values
       spree/order:
         one: Order
         other: Orders
@@ -224,11 +385,16 @@ en-IN:
         one: Payment
         other: Payments
       spree/payment_method:
+        one: Payment Method
+        other: Payment Methods
       spree/product:
         one: Product
         other: Products
       spree/promotion:
+        one: Promotion
+        other: Promotions
       spree/promotion_category:
+        other:
       spree/property:
         one: Property
         other: Properties
@@ -236,8 +402,12 @@ en-IN:
         one: Prototype
         other: Prototypes
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Return Authorization
         other: Return Authorizations
@@ -252,13 +422,20 @@ en-IN:
         one: Shipping Category
         other: Shipping Categories
       spree/shipping_method:
+        one: Delivery Method
+        other: Delivery Methods
       spree/state:
         one: State
         other: States
       spree/state_change:
       spree/stock_location:
+        one: Stock Location
+        other: Stock Locations
       spree/stock_movement:
+        other: Stock Movements
       spree/stock_transfer:
+        one: Stock Transfer
+        other: Stock Transfers
       spree/tax_category:
         one: Tax Category
         other: Tax Categories
@@ -272,6 +449,7 @@ en-IN:
         one: Taxonomy
         other: Taxonomies
       spree/tracker:
+        other: Analytics Trackers
       spree/user:
         one: User
         other: Users
@@ -281,6 +459,24 @@ en-IN:
       spree/zone:
         one: Zone
         other: Zones
+      spree/adjustment:
+        one: Adjustment
+        other: Adjustments
+      spree/calculator:
+        one: Calculator
+      spree/legacy_user:
+        one: User
+        other: Users
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Product Properties
+      spree/refund:
+        one: Refund
+        other:
+      spree/store_credit_category:
+        one: Category
+        other: Categories
   devise:
     confirmations:
       confirmed: Your account was successfully confirmed. You are now signed in.
@@ -348,6 +544,11 @@ en-IN:
       refund:
       save: Save
       update: Update
+      add: Add
+      delete: Delete
+      remove: Remove
+      ship: ship
+      split:
     activate: Activate
     active: Active
     add: Add
@@ -391,6 +592,12 @@ en-IN:
         taxonomies:
         taxons:
         users:
+        checkout: Checkout
+        general: General
+        payments: Payments
+        settings: Settings
+        shipping: Delivery
+        stock:
       user:
         account:
         addresses:
@@ -430,7 +637,7 @@ en-IN:
     are_you_sure: Are you sure
     are_you_sure_delete: Are you sure you want to delete this record?
     associated_adjustment_closed: The associated adjustment is closed, and will not be recalculated. Do you want to open it?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Authorization Failure
     authorized:
     auto_capture:
@@ -869,6 +1076,8 @@ en-IN:
         subtotal:
         thanks: Thank you for your business.
         total:
+      inventory_cancellation:
+        dear_customer: Dear Customer,\n
     order_not_found: We couldn't find your order. Please try that action again.
     order_number:
     order_processed_successfully: Your order has been processed successfully
@@ -1334,3 +1543,27 @@ en-IN:
     zipcode: Zip Code
     zone: Zone
     zones: Zones
+    canceled: canceled
+    cannot_create_payment_link: Please define some payment methods first.
+    inventory_states:
+      canceled: canceled
+      returned: returned
+      shipped: shipped
+    no_resource_found_link: Add One
+    number: Number
+    store_credit:
+      display_action:
+        adjustment: Adjustment
+        credit: Credit
+        void: Credit
+        admin:
+          authorize:
+    store_credit_category:
+      default: Default
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Quantity
+        state: County
+        shipment: Shipment
+        cancel: Cancel
