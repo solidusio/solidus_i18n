@@ -1,3 +1,4 @@
+---
 nb:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ nb:
         phone: Telefon
         state: Fylke
         zipcode: Postnummer
+        company: Firma
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ nb:
         iso_name: ISO Navn
         name: Navn
         numcode: Nummerkode
+        states_required: Fylke påkrevd
       spree/credit_card:
         base: Base
         cc_type: Type
@@ -30,12 +33,17 @@ nb:
         name:
         number: Nummer
         verification_value:
-        year: "År"
+        year: År
+        card_code: CVV-kode
+        expiration: Utgår
       spree/inventory_unit:
         state: status
       spree/line_item:
         price: Pris
         quantity: Antall
+        description: Beskrivelse
+        name: Navn
+        total:
       spree/option_type:
         name: Navn
         presentation: Presentasjon
@@ -54,6 +62,13 @@ nb:
         special_instructions: Spesielle instrukser
         state: status
         total: Total
+        additional_tax_total: Avgift
+        approved_at: godkjent den
+        approver_id: Godkjent av
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total: Leveringskostnader
       spree/order/bill_address:
         address1: Adresse
         city: By/Poststed
@@ -72,8 +87,16 @@ nb:
         zipcode: Postnummer
       spree/payment:
         amount: Beløp
+        number:
+        response_code:
+        state: Betalingsstatus
       spree/payment_method:
         name: Navn
+        active: Aktiv
+        auto_capture:
+        description: Beskrivelse
+        display_on: Vis
+        type: Tilbyder
       spree/product:
         available_on: Tilgjengelig fra
         cost_currency: Valuta
@@ -84,6 +107,16 @@ nb:
         on_hand: beholdning
         shipping_category: Forsendelseskategori
         tax_category: Avgiftskategori
+        depth: Dybde
+        height: Høyde
+        meta_description: Metabeskrivelse
+        meta_keywords: Metanøkkelord
+        meta_title:
+        price: Ordinær pris
+        promotionable:
+        slug: Slug
+        weight: Vekt
+        width: Bredde
       spree/promotion:
         advertise: Promotere
         code: Kode
@@ -103,6 +136,7 @@ nb:
         name: Navn
       spree/return_authorization:
         amount: Mengde
+        pre_tax_total:
       spree/role:
         name: Navn
       spree/state:
@@ -126,14 +160,22 @@ nb:
       spree/tax_category:
         description: Beskrivelse
         name: Navn
+        is_default: Default
+        tax_code:
       spree/tax_rate:
         amount: Mengde
         included_in_price: Inkluder i pris
         show_rate_in_label: Vis sats
+        name: Navn
       spree/taxon:
         name: Navn
         permalink: Permalenke
         position: Posisjon
+        description: Beskrivelse
+        icon: Ikon
+        meta_description: Metabeskrivelse
+        meta_keywords: Metanøkkelord
+        meta_title:
       spree/taxonomy:
         name: Navn
       spree/user:
@@ -152,6 +194,119 @@ nb:
       spree/zone:
         description: Beskrivelse
         name: Navn
+        default_tax: Standard avgiftsnivå
+      spree/adjustment:
+        adjustable:
+        amount: Beløp
+        label: Beskrivelse
+        name: Navn
+        state: Fylke
+        adjustment_reason_id: Grunn
+      spree/adjustment_reason:
+        active: Aktiv
+        code: Code
+        name: Navn
+        state: Fylke
+      spree/carton:
+        tracking: Sporing
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Navn
+      spree/image:
+        alt: Alternativ tekst
+        attachment: Filnavn
+      spree/legacy_user:
+        email: Epost
+        password: Passord
+        password_confirmation: Bekreft passord
+      spree/option_value:
+        name: Navn
+        presentation: Presentasjon
+      spree/product_property:
+        value: Verdi
+      spree/refund:
+        amount: Beløp
+        description: Beskrivelse
+        refund_reason_id: Grunn
+      spree/refund_reason:
+        active: Aktiv
+        name: Navn
+        code: Code
+      spree/reimbursement:
+        number: Nummer
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Beløp
+      spree/reimbursement_type:
+        name: Navn
+        type: Type
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Fylke
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Grunn
+        total: Total
+      spree/return_reason:
+        name: Navn
+        active: Aktiv
+        memo:
+        number: RMA Nummer
+        state: Fylke
+      spree/shipping_category:
+        name: Navn
+      spree/shipment:
+        tracking: Sporingsnummer
+      spree/shipping_method:
+        admin_name: Internt navn
+        code: Code
+        display_on: Vis
+        name: Navn
+        tracking_url: Sporingslenke
+      spree/shipping_rate:
+        tax_rate: Avgiftssats
+        amount: Beløp
+      spree/store_credit:
+        amount: Beløp
+        memo:
+      spree/store_credit_event:
+        action: Hendelse
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name: Internt navn
+        active: Aktiv
+        address1: Adresselinje 1
+        address2: Adresselinje 2
+        backorderable_default:
+        city: Sted
+        code: Code
+        country_id: Land
+        default: Default
+        internal_name: Internt navn
+        name: Navn
+        phone: Telefon
+        propagate_all_variants:
+        state_id: Fylke
+        zipcode: Postnummer
+      spree/stock_movement:
+        action: Hendelse
+        quantity:
+      spree/stock_transfer:
+        created_at: Opprettet
+        description: Beskrivelse
+        tracking_number: Sporingsnummer
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Aktiv
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ nb:
         one: Kredittkort
         other: Kredittkort
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Lagerenhet
         other: Lagerenheter
@@ -216,7 +373,11 @@ nb:
         one: Varelinje
         other: Varelinjer
       spree/option_type:
+        one: Variasjon
+        other: Variasjonstyper
       spree/option_value:
+        one: Option Value
+        other: Variasjonsverdier
       spree/order:
         one: Ordre
         other: Ordrer
@@ -224,11 +385,16 @@ nb:
         one: Betaling
         other: Betalinger
       spree/payment_method:
+        one: Betalingsform
+        other: Betalingsformer
       spree/product:
         one: Produkt
         other: Produkter
       spree/promotion:
+        one: Kampanje
+        other: Kampanjer
       spree/promotion_category:
+        other:
       spree/property:
         one: Egenskap
         other: Egenskaper
@@ -236,8 +402,12 @@ nb:
         one: Prototype
         other: Prototyper
       spree/refund_reason:
+        other: Refusjonsgrunner
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Returautorisasjon
         other: Returautorisasjoner
@@ -252,13 +422,20 @@ nb:
         one: Forsendelseskategori
         other: Forsendelseskategorier
       spree/shipping_method:
+        one: Leveransemåte
+        other: Leveransemåter
       spree/state:
         one: Status
         other: Statuser
       spree/state_change:
-      spree/stock_location: Lagerlokasjon
+      spree/stock_location:
+        one: Varelokasjon
+        other: Varelokasjoner
       spree/stock_movement:
-      spree/stock_transfer: Beholdningsendring
+        other: Beholdningsendring
+      spree/stock_transfer:
+        one: Beholdningsendring
+        other: Beholdningsendringer
       spree/tax_category:
         one: Avgiftskategori
         other: Avgiftskategorier
@@ -272,6 +449,7 @@ nb:
         one: Gruppering
         other: Grupperinger
       spree/tracker:
+        other: Analytics Trackers
       spree/user:
         one: Bruker
         other: Brukere
@@ -281,6 +459,24 @@ nb:
       spree/zone:
         one: Sone
         other: Soner
+      spree/adjustment:
+        one: Justering
+        other: Justeringer
+      spree/calculator:
+        one: Kalkulator
+      spree/legacy_user:
+        one: Bruker
+        other: Brukere
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Produktegenskaper
+      spree/refund:
+        one: Refusjon
+        other:
+      spree/store_credit_category:
+        one: Kategori
+        other: Kategorier
   devise:
     confirmations:
       confirmed:
@@ -346,6 +542,11 @@ nb:
       refund:
       save: Lagre
       update: Oppdater
+      add: Legg til
+      delete: Slett
+      remove: Fjern
+      ship: send
+      split: Del
     activate: Aktiver
     active: Aktiv
     add: Legg til
@@ -389,6 +590,12 @@ nb:
         taxonomies:
         taxons:
         users: Brukere
+        checkout: Til kassen
+        general: Generell
+        payments: Betalinger
+        settings: Innstillinger
+        shipping: Frakt
+        stock: Lager
       user:
         account:
         addresses:
@@ -428,7 +635,7 @@ nb:
     are_you_sure: Er du sikker
     are_you_sure_delete: Er du sikker på at du vil slette denne?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Autorisering feilet
     authorized:
     auto_capture:
@@ -833,8 +1040,8 @@ nb:
       variant_not_deleted: Variant kunne ikke slettes
     num_orders:
     on_hand: Tilgjengelig
-    open: "Åpen"
-    open_all_adjustments: "Åpne alle justeringer"
+    open: Åpen
+    open_all_adjustments: Åpne alle justeringer
     option_type: Variasjon
     option_type_placeholder: Variasjoner
     option_types: Variasjonstyper
@@ -868,6 +1075,8 @@ nb:
         subtotal: Delbeløp
         thanks: Takk for handelen.
         total: Totalbeløp
+      inventory_cancellation:
+        dear_customer: Kjære kunde,
     order_not_found: Ordren ble ikke funnet
     order_number: Ordre %{number}
     order_populator:
@@ -1329,7 +1538,7 @@ nb:
     what_is_a_cvv: Hva er en CVV-kode?
     what_is_this: Hva er dette?
     width: Bredde
-    year: "År"
+    year: År
     you_have_no_orders_yet: Du har ikke plassert noen ordrer hos oss ennå!
     your_cart_is_empty: Din handlekurv er tom
     your_order_is_empty_add_product: Ordren din er tom - Kjøp noe!
@@ -1337,3 +1546,27 @@ nb:
     zipcode: Postnummer
     zone: Sone
     zones: Soner
+    canceled: kansellert
+    cannot_create_payment_link: Vennligst legg til betalingsmetode først.
+    inventory_states:
+      canceled: kansellert
+      returned: returnert
+      shipped: sendt
+    no_resource_found_link: Legg til en
+    number: Nummer
+    store_credit:
+      display_action:
+        adjustment: Justering
+        credit: Kreditt
+        void: Kreditt
+        admin:
+          authorize:
+    store_credit_category:
+      default: Default
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity:
+        state: Fylke
+        shipment: Levering
+        cancel: Avbryt
