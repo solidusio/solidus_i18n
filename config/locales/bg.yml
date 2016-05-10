@@ -37,13 +37,13 @@ bg:
         card_code: Код на карта
         expiration: Срок на годност
       spree/inventory_unit:
-        state: County Държава
+        state: Статус
       spree/line_item:
         price: Цена
         quantity: Количество
         description: Описание на предмет
         name: Име
-        total:
+        total: Общо
       spree/option_type:
         name: Име
         presentation: Презентация
@@ -119,7 +119,7 @@ bg:
         width: Ширина
       spree/promotion:
         advertise: Рекламирай
-        code: Code Код
+        code: Код
         description: Описание
         event_name: Име на акция
         expires_at: Изтича на
@@ -165,11 +165,11 @@ bg:
       spree/tax_rate:
         amount: Процент
         included_in_price: Включен в цената
-        show_rate_in_label: label Покажи процента в цената
+        show_rate_in_label: Покажи процента в цената
         name: Име
       spree/taxon:
         name: Име
-        permalink: Permalink
+        permalink: Постоянен адрес
         position: Позиция
         description:
         icon: Икона
@@ -179,12 +179,12 @@ bg:
       spree/taxonomy:
         name: Име
       spree/user:
-        email: l И-мейл
+        email: И-мейл
         password: Парола
         password_confirmation: Повтори парола
       spree/variant:
         cost_currency: Валута
-        cost_price: Price Цена
+        cost_price: Фабрична Цена
         depth: Дълбочина
         height: Височина
         price: Цена
@@ -455,7 +455,7 @@ bg:
         one: Вариант
         other: Варианти
       spree/zone:
-        one: Zone Зона
+        one: Зона
         other: Зони
       spree/adjustment:
         one: Поправка
@@ -463,7 +463,7 @@ bg:
       spree/calculator:
         one: Калкулатор
       spree/legacy_user:
-        one: User
+        one: Потребител
         other: Потребители
       spree/log_entry:
         other:
@@ -482,7 +482,7 @@ bg:
     failure:
       inactive: Вашият акаунт все още не е активен.
       invalid: Грешен имейл или парола
-      invalid_token: Invalid authentication token.
+      invalid_token: Грешен токен за удостоверяване
       locked: Вашият акаунт е заключен.
       timeout: Вашата сесия е изтекла, моля влезте повторно.
       unauthenticated: Трябва да се впишете или регистрирате преди да продължите
@@ -491,7 +491,7 @@ bg:
       confirmation_instructions:
         subject: Инструкции за потвърждаване
       reset_password_instructions:
-        subject: Reset password instructions Инструкции за смяна на паролата
+        subject: Инструкции за смяна на паролата
       unlock_instructions:
         subject: Инструкции за отключване
     oauth_callbacks:
@@ -561,7 +561,7 @@ bg:
     add_product_properties: Добави характеристики на продукт
     add_rule_of_type: Добави правило от тип
     add_state: Добави състояние
-    add_stock: добави стока
+    add_stock: Добави стока
     add_stock_management: Добави управление на стока
     add_to_cart: Добави в кошницата
     add_variant: Добави вариант
@@ -876,7 +876,7 @@ bg:
     guest_user_account: Маркирай като гост.
     has_no_shipped_units: Няма пратени единици.
     height: Височина
-    hide_cents: Hide pence
+    hide_cents: Не показвай десетична част
     home: Дом
     i18n:
       available_locales: Достъпни места
