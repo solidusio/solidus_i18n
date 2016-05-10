@@ -1,3 +1,4 @@
+---
 ca:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ ca:
         phone: Telèfon
         state: Estat
         zipcode: Codi postal
+        company:
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ ca:
         iso_name: Nomeni ISO
         name: Nom
         numcode: Codi ISO
+        states_required:
       spree/credit_card:
         base:
         cc_type: Tipus
@@ -31,11 +34,16 @@ ca:
         number: Nombre
         verification_value: Codi de verificació
         year: Any
+        card_code: Codi de la targeta
+        expiration: Caducitat
       spree/inventory_unit:
         state: Província
       spree/line_item:
         price: Preu
         quantity: Quantitat
+        description: Descripció de l'article
+        name: Nom
+        total:
       spree/option_type:
         name:
         presentation:
@@ -54,6 +62,13 @@ ca:
         special_instructions: Instruccions especials
         state: Estat
         total: Total
+        additional_tax_total: Imposats
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ ca:
         zipcode:
       spree/payment:
         amount:
+        number:
+        response_code:
+        state: Estat del pagament
       spree/payment_method:
         name:
+        active: Actiu
+        auto_capture:
+        description: Descripció
+        display_on: Mostrar
+        type: Proveïdor
       spree/product:
         available_on: Disponible en
         cost_currency: Cost Moneda
@@ -84,6 +107,16 @@ ca:
         on_hand: Disponibles
         shipping_category: Categoria d'enviament
         tax_category: Categoria d'impostos
+        depth: Profunditat
+        height: Altura
+        meta_description: Fiqui descripció
+        meta_keywords: Fiqui paraules clau
+        meta_title:
+        price: Preu principal
+        promotionable:
+        slug:
+        weight: Pes
+        width: Ample
       spree/promotion:
         advertise: Advertise
         code: Codi
@@ -103,6 +136,7 @@ ca:
         name: Nom
       spree/return_authorization:
         amount: Quantitat
+        pre_tax_total:
       spree/role:
         name: Nom
       spree/state:
@@ -126,14 +160,22 @@ ca:
       spree/tax_category:
         description: Descripció
         name: Nom
+        is_default: Per omissió
+        tax_code:
       spree/tax_rate:
         amount: Taxa
         included_in_price: Included in Price
         show_rate_in_label: Show rate in label
+        name: Nom
       spree/taxon:
         name: Nom
         permalink: Enllaç permanent
         position: Posició
+        description: Descripció
+        icon: Icona
+        meta_description: Fiqui descripció
+        meta_keywords: Fiqui paraules clau
+        meta_title:
       spree/taxonomy:
         name: Nom
       spree/user:
@@ -152,6 +194,119 @@ ca:
       spree/zone:
         description: Descripció
         name: Nom
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Quantia
+        label: Descripció
+        name: Nom
+        state: Província
+        adjustment_reason_id: Raó
+      spree/adjustment_reason:
+        active: Actiu
+        code: Codi
+        name: Nom
+        state: Província
+      spree/carton:
+        tracking: Seguiment
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Nom
+      spree/image:
+        alt: Text alternatiu
+        attachment: Nom d'arxiu
+      spree/legacy_user:
+        email: Correu Electrònic
+        password: Contrasenya
+        password_confirmation: Confirmi la contrasenya
+      spree/option_value:
+        name: Nom
+        presentation: Presentació
+      spree/product_property:
+        value: valor
+      spree/refund:
+        amount: Quantia
+        description: Descripció
+        refund_reason_id: Raó
+      spree/refund_reason:
+        active: Actiu
+        name: Nom
+        code: Codi
+      spree/reimbursement:
+        number: Nombre
+        reimbursement_status: Estat
+        total: Total
+      spree/reimbursement/credit:
+        amount: Quantia
+      spree/reimbursement_type:
+        name: Nom
+        type: Tipus
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Província
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Raó
+        total: Total
+      spree/return_reason:
+        name: Nom
+        active: Actiu
+        memo:
+        number: Nombre RMA
+        state: Província
+      spree/shipping_category:
+        name: Nom
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code: Codi
+        display_on: Mostrar
+        name: Nom
+        tracking_url:
+      spree/shipping_rate:
+        tax_rate: Taxa d'impostos
+        amount: Quantia
+      spree/store_credit:
+        amount: Quantia
+        memo:
+      spree/store_credit_event:
+        action: Acció
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Actiu
+        address1: Adreça
+        address2: Adreça (continuació)
+        backorderable_default:
+        city: Ciutat
+        code: Codi
+        country_id: País
+        default: Per omissió
+        internal_name:
+        name: Nom
+        phone: Telèfon
+        propagate_all_variants:
+        state_id: Província
+        zipcode: Codi postal
+      spree/stock_movement:
+        action: Acció
+        quantity: Quantitat
+      spree/stock_transfer:
+        created_at:
+        description: Descripció
+        tracking_number:
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Actiu
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ ca:
         one: Targeta de crèdit
         other: Targetes de crèdit
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Unitat en inventari
         other: Unitats en inventari
@@ -216,7 +373,11 @@ ca:
         one: Article
         other: Articles
       spree/option_type:
+        one: Tipus d'opció
+        other: Tipus d'opció
       spree/option_value:
+        one: Valor de l'opció
+        other: Valors de l'opció
       spree/order:
         one: Comanda
         other: Comandes
@@ -224,11 +385,16 @@ ca:
         one: Pagament
         other: Pagaments
       spree/payment_method:
+        one: Mètode de pagament
+        other: Mètodes de pagament
       spree/product:
         one: Producte
         other: Productes
       spree/promotion:
+        one: Promoció
+        other: Promocions
       spree/promotion_category:
+        other:
       spree/property:
         one: Propietat
         other: Propietats
@@ -236,8 +402,12 @@ ca:
         one: Prototip
         other: Prototips
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Autorització de devolució
         other: Autoritzacions de devolució
@@ -252,13 +422,20 @@ ca:
         one: Categoria d'enviament
         other: Categories de enviament
       spree/shipping_method:
+        one: Mètode d'enviament
+        other: Mètodes d'enviament
       spree/state:
         one: Estat
         other: Estats
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
         one: Categoria d'impostos
         other: Categories d'impostos
@@ -272,6 +449,7 @@ ca:
         one: Propietat
         other: Propietats
       spree/tracker:
+        other: Trackers de Google Analytics
       spree/user:
         one: Usuari
         other: Usuaris
@@ -281,6 +459,24 @@ ca:
       spree/zone:
         one: Zona
         other:
+      spree/adjustment:
+        one: Ajust
+        other: Ajustos
+      spree/calculator:
+        one: Calculadora
+      spree/legacy_user:
+        one: Usuari
+        other: Usuaris
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Propietats del producte
+      spree/refund:
+        one: Retornar
+        other:
+      spree/store_credit_category:
+        one: Categoria
+        other: Categories
   devise:
     confirmations:
       confirmed:
@@ -346,6 +542,11 @@ ca:
       refund:
       save:
       update: Actualitzar
+      add: Afegir
+      delete: Eliminar
+      remove: Eliminar
+      ship: enviar
+      split:
     activate: Activate
     active: Actiu
     add: Afegir
@@ -389,6 +590,12 @@ ca:
         taxonomies:
         taxons:
         users:
+        checkout: Pagar
+        general: General
+        payments: Pagaments
+        settings: Configuració
+        shipping: Enviament
+        stock:
       user:
         account:
         addresses:
@@ -428,7 +635,7 @@ ca:
     are_you_sure: Està segur?
     are_you_sure_delete: Està segur que vol eliminar aquesta entrada?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Fallada d'autorització
     authorized:
     auto_capture:
@@ -867,6 +1074,8 @@ ca:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: La seva comanda s'ha processat correctament
@@ -1310,7 +1519,7 @@ ca:
       cannot_be_less_than_shipped_units: no pot ser menys que el nombre d'unitats enviades.
       cannot_destroy_line_item_as_inventory_units_have_shipped:
       exceeds_available_stock:
-      is_too_large: "és massa gran -- no hi ha suficients productes disponibles per a aquesta quantitat"
+      is_too_large: és massa gran -- no hi ha suficients productes disponibles per a aquesta quantitat
       must_be_int: ha de ser un sencer
       must_be_non_negative: ha de ser un valor no negatiu
       unpaid_amount_not_zero:
@@ -1332,3 +1541,27 @@ ca:
     zipcode: Codi Postal
     zone: Zona
     zones: Zones
+    canceled: cancel·lat
+    cannot_create_payment_link:
+    inventory_states:
+      canceled: cancel·lat
+      returned: retornat
+      shipped: enviat
+    no_resource_found_link: Afegeix un
+    number: Nombre
+    store_credit:
+      display_action:
+        adjustment: Ajust
+        credit: Crèdit
+        void: Crèdit
+        admin:
+          authorize:
+    store_credit_category:
+      default: Per omissió
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Quantitat
+        state: Província
+        shipment: Enviament
+        cancel: Cancel·lar
