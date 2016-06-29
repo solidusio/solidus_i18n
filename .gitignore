@@ -18,3 +18,5 @@ spec/dummy
 public/spree
 .ruby-version
 .ruby-gemset
+
+solidus_i18n.iml

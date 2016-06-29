@@ -375,6 +375,7 @@ it:
       cancel: Annulla
       continue: Continua
       create: Crea
+      delete: Elimina
       destroy: Elimina
       edit: Modifica
       list: Lista
@@ -399,6 +400,7 @@ it:
     add_state: Aggiungi Stato/Provincia
     add_stock: Aggiungi Scorte
     add_stock_management: Gestione Scorte
+    add_taxon: add_taxon
     add_to_cart: Aggiungi al Carrello
     add_variant: Aggiungi Variante
     additional_item: Costo Aggiuntivo Articolo
@@ -413,17 +415,28 @@ it:
     adjustments: Variazioni
     admin:
       tab:
+        areas: Areas
+        checkout: Checkout
         configuration: Impostazioni
+        general: General
         option_types: Opzioni
         orders: Ordini
         overview: Quadro generale
+        payments: Payments
         products: Prodotti
         promotion_categories: Categorie Promozione
         promotions: Promozioni
-        promotion_categories:
+        promotion_categories: Promotion categories
         properties: Proprietà
         prototypes: Prototipi
+        relation_types: Relation types
         reports: Report
+        settings: Settings
+        shipping: Shipping
+        stock: Stock
+        stock_items: Stock items
+        stock_transfers: Stock transfers
+        taxes: Taxes
         taxonomies: Tassonomie
         taxons: Taxon
         users: Utenti
@@ -481,11 +494,14 @@ it:
     average_order_value: Valore medio Ordine
     avs_response: Risposta AVS
     back: Indietro
+    backorderable_header: backorderable_header
     back_end: Backend
     back_to_payment: Torna al Pagamento
+    back_to_reports_list: back_to_reports_list
     back_to_resource_list: "Torna alla Lista %{resource}"
     back_to_rma_reason_list: Torna alla Lista Motivazioni RMA
     back_to_store: Torna al Negozio
+    back_to_taxonomies_list: back_to_taxonomies_list
     back_to_users_list: Torna alla Lista degli Utenti
     backorderable: Ordinabile anche se terminato
     backorderable_default: Ordinabile di default
@@ -575,6 +591,7 @@ it:
     create: Crea
     create_a_new_account: Crea un nuovo account
     create_new_order: Crea Nuovo Ordine
+    create_one: Create one
     create_reimbursement: Crea Rimborso
     created_at: Creato Il
     credit: Credito
@@ -712,6 +729,9 @@ it:
     gateway_error: Errore Gateway
     general: Generale
     general_settings: Impostazioni Generali
+    globalize:
+      locales_displayed_on_translation_forms: locales_displayed_on_translation_forms
+      no_translations_for_criteria: no_translations_for_criteria
     google_analytics: Google Analytics
     google_analytics_id: Analytics ID
     guest_checkout: Checkout Ospite
@@ -786,6 +806,11 @@ it:
     lifetime_stats: Statistiche Totali
     line_item_adjustments: Variazioni della riga d'ordine
     list: Lista
+    listing_orders: listing orders
+    listing_products: listing products
+    listing_reports: listing_reports
+    listing_tax_categories: listing_tax_categories
+    listing_users: listing_users
     loading: Caricamento
     locale_changed: Lingua cambiata
     location: Luogo
@@ -804,6 +829,7 @@ it:
     make_refund: Esegui rimborso
     make_sure_the_above_reimbursement_amount_is_correct: Assicurati che l'importo di rimborso qui sopra sia corretto
     manage_promotion_categories: Gestisci Categorie di Promozione
+    manage_stock: manage_stock
     manage_variants: Gestisci le Varianti
     manual_intervention_required: È richiesto un'intervento manuale
     master_price: Prezzo principale
@@ -828,6 +854,7 @@ it:
     name_or_sku: Nome o SKU (inserisci almeno i primi 4 caratteri del nome del prodotto)
     new: Nuovo
     new_adjustment: Nuova Variazione
+    new_adjustment_reason: new_adjustment_reason
     new_country: Nuova Nazione
     new_customer: Nuovo Cliente
     new_customer_return: Nuova Restituzione Cliente
@@ -853,6 +880,7 @@ it:
     new_stock_location: Nuovo Magazzino
     new_stock_movement: Nuovo Movimento di Magazzino
     new_stock_transfer: Nuovo Trasferimento di Magazzino
+    new_social_method: new_social_method
     new_tax_category: Nuova Categoria di Tassazione
     new_tax_rate: Nuova Aliquota
     new_taxon: Nuovo Taxon
@@ -862,10 +890,12 @@ it:
     new_variant: Nuova Variante
     new_zone: Nuova Zona
     next: Prossimo
+    'no': "no"
     no_actions_added: Nessuna azione aggiunta
     no_payment_found: Nessun pagamento trovato
     no_pending_payments: Nessun pagamento pendente
     no_products_found: Nessun prodotto trovato
+    no_resource: no resource
     no_resource_found: "Nessun %{resource} trovato"
     no_results: Nessun risultato
     no_returns_found: Nessuna restituazione trovata
@@ -1190,6 +1220,7 @@ it:
         thanks: Grazie per il tuo ordine.
         track_information: 'Informazione Tracciamento: %{tracking}'
         track_link: 'Link Tracciamento: %{url}'
+    shipment_number: Shipment number
     shipment_state: Stato Spedizione
     shipment_states:
       backorder: arretrato
@@ -1222,9 +1253,15 @@ it:
     show_only_complete_orders: Visualizza solo ordini completi
     show_only_considered_risky: Visualizza solo ordini a rischio
     show_rate_in_label: Mostra percentuale nell'etichetta
+    sign_in_through_one_of_these_services: sign_in_through_one_of_these_services
+    sign_in_with: sign_in_with
     sku: SKU
     skus: SKU
     slug: Slug
+    social_api_key: social_api_key
+    social_api_secret: social_api_secret
+    social_authentication_methods: social_authentication_methods
+    social_provider: social_provider
     source: Origine
     special_instructions: Istruzioni Speciali
     split: Diviso
@@ -1283,6 +1320,11 @@ it:
     stock_transfers: Trasferimenti di Magazzino
     stop: Stop
     store: Negozio
+    store_credit:
+      non_expiring: store_credit_non_expiring
+    store_credit_category:
+      default: store_credit_category_default
+    stores: stores
     street_address: Indirizzo
     street_address_2: Indirizzo (agg.)
     subtotal: Totale
@@ -1378,6 +1420,7 @@ it:
     value: Valore
     variant: Variante
     variant_placeholder: Scegli una variante
+    variant_search_placeholder: variant_search_placeholder
     variants: Varianti
     version: Versione
     void: Annullato
@@ -1385,6 +1428,7 @@ it:
     what_is_a_cvv: Cos'è il Codice CVV?
     what_is_this: Cos'è Questo?
     width: Larghezza
+    'yes': "yes"
     year: Anno
     you_have_no_orders_yet: Non hai alcun ordine
     your_cart_is_empty: Il tuo carrello è vuoto
