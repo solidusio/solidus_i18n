@@ -661,6 +661,10 @@ de:
       variants:
         table_filter:
           show_deleted: Gelöschte anzeigen
+        edit:
+          edit_variant: Variante bearbeiten
+        form:
+          pricing_hint: Preis Hinweis
       prices:
         any_country: Alle Länder
         edit:
@@ -892,6 +896,7 @@ de:
     editing_resource: Eintrag bearbeiten
     editing_rma_reason: Rückgabebewilligungsgrund bearbeiten
     editing_user: Benutzer bearbeiten
+    editing_stock_location: Lagerstätte bearbeiten
     eligibility_errors:
       messages:
         has_excluded_product: Der Warenkorb enthält Produkt/e, welche die Zuweisung des Gutschein-Codes verhindern.
