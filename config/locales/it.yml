@@ -734,6 +734,7 @@ it:
     adjustments: Modifiche
     admin:
       tab:
+        areas: Areas
         configuration: Impostazioni
         general: General
         option_types: Opzioni
