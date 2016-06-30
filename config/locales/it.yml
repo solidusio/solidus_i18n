@@ -735,6 +735,7 @@ it:
     admin:
       tab:
         areas: Areas
+        checkout: Checkout
         configuration: Impostazioni
         general: General
         option_types: Opzioni
