@@ -658,6 +658,17 @@ de:
         order_num: Bestellnummer
         orders: Bestellungen
         user_information: Benutzerinformationen
+      variants:
+        table_filter:
+          show_deleted: Gelöschte anzeigen
+      prices:
+        any_country: Alle Länder
+        edit:
+          edit_price: Preis bearbeiten
+        index:
+          amount_greater_than: Wert größer als
+          amount_less_than: Wert kleiner als
+          new_price: Neuer Preis
     administration: Verwaltung
     advertise: Bewerben
     agree_to_privacy_policy: Datenschutzerklärung akzeptieren
@@ -713,7 +724,9 @@ de:
     back_to_orders_list: Zurück zu Bestellungen
     back_to_payment: Zurück zur Zahlung
     back_to_payments_list: Zurück zu Zahlungen
+    back_to_products_list: Zurück zu Produkte
     back_to_resource_list: Zurück zur Bestellliste
+    back_to_reports_list: Zurück zu Berichte
     back_to_rma_reason_list: Zurück zur Rücksendeliste
     back_to_stock_locations_list: Zurück zur Lagerstandort Liste
     back_to_stock_movements_list: Zurück zur Bestandsführung Liste
@@ -965,6 +978,7 @@ de:
     guest_user_account: Ohne Registrierung bestellen
     has_no_shipped_units: hat keine gelieferten Einheiten
     height: Höhe
+    hidden: versteckt
     hide_cents: Centbeträge ausblenden
     home: Home
     i18n:
@@ -1672,6 +1686,7 @@ de:
     value: Wert
     variant: Variante
     variant_placeholder: Variante wählen
+    variant_properties: Varianten Eigenschaften
     variant_search: Variante
     variant_search_placeholder: "Artikel-Nr. oder Options-Wert"
     variants: Varianten
