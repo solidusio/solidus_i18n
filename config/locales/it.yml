@@ -1596,6 +1596,9 @@ it:
       create_line_items:
         description: Popola il carrello con la quantità specificata per la variante
         name: Crea elemento nell'ordine
+      create_quantity_adjustments:
+        description: quantity adjsutment description
+        name: quantity adjsustment name
       free_shipping:
         description: Rendi gratuite tutte le spedizioni dell'ordine
         name: Spedizione gratuita
