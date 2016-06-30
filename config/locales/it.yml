@@ -921,6 +921,7 @@ it:
     back_to_zones_list: Torna alla lista delle zone
     backorderable: Ordinabile anche se terminato
     backorderable_default: Ordinabile di default
+    backorderable_header: backorderable header
     backordered: Ordinato in backorder
     backorders_allowed: consentiti ordini anche se terminato
     balance_due: Saldo dovuto
