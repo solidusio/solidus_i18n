@@ -71,7 +71,7 @@ it:
         password: Password
         password_confirmation: Conferma password
       spree/line_item:
-        Descrizione: Descrizione articolo
+        description: Descrizione articolo
         name: Nome
         price: Prezzo
         quantity: Quantità
@@ -129,7 +129,7 @@ it:
       spree/payment_method:
         active: Attivo
         auto_capture: Cattura automaticamente
-        Descrizione: Descrizione
+        description: Descrizione
         display_on: Visualizza
         name: Nome
         preference_source: Fonte preferita
@@ -142,11 +142,11 @@ it:
         available_on: Disponibile dal
         cost_currency: Valuta Costo
         cost_price: Prezzo di Costo
-        Descrizione: Descrizione
+        description: Descrizione
         depth: Profondità
         height: Altezza
         master_price: Prezzo
-        meta_Descrizione: Meta Descrizione
+        meta_description: Meta Descrizione
         meta_keywords: Meta Keywords
         meta_title: Meta Titolo
         name: Nome
@@ -164,7 +164,7 @@ it:
         advertise: Pubblicizza
         apply_automatically: Applica automaticamente
         code: Codice
-        Descrizione: Descrizione
+        description: Descrizione
         event_name: Nome Evento
         expires_at: Scade il
         name: Nome
@@ -182,7 +182,7 @@ it:
         name: Nome
       spree/refund:
         amount: Totale
-        Descrizione: Descrizione
+        description: Descrizione
         refund_reason_id: Motivazione
       spree/refund_reason:
         active: Attivo
@@ -247,7 +247,7 @@ it:
         name: Nome
       spree/store:
         mail_from_address: Indirizzo Mittente Email
-        meta_Descrizione: Meta Descrizione
+        meta_description: Meta Descrizione
         meta_keywords: Meta Keywords
         name: Nome
         seo_title: Titolo SEO
@@ -294,7 +294,7 @@ it:
       spree/stock_transfer:
         created_at: Creato il
         created_by_id: Creato da
-        Descrizione: Descrizione
+        description: Descrizione
         destination_location_id: Location di destionazione
         finalized_at: Finalizzato alle
         finalized_by_id: Finalizzato da
@@ -303,7 +303,7 @@ it:
         source_location_id: Location di partenza
         tracking_number: Tracking number
       spree/tax_category:
-        Descrizione: Descrizione
+        description: Descrizione
         name: Nome
         is_default: Default
         tax_code: Codice tassa
@@ -313,9 +313,9 @@ it:
         name: Name
         show_rate_in_label: Mostra % tasse nella descrizione
       spree/taxon:
-        Descrizione: Descrizione
+        description: Descrizione
         icon: Icon
-        meta_Descrizione: Meta Descrizione
+        meta_description: Meta Descrizione
         meta_keywords: Meta Keywords
         meta_title: Meta Title
         name: Nome
@@ -340,7 +340,7 @@ it:
         weight: Peso
         width: Larghezza
       spree/zone:
-        Descrizione: Descrizione
+        description: Descrizione
         name: Nome
     errors:
       models:
@@ -1080,7 +1080,7 @@ it:
     deleted_successfully: Cancellato con succcesso.
     delivery: Consegna
     depth: Profondità
-    Descrizione: Descrizione
+    description: Descrizione
     destination: Destinazione
     destination_location: Destination location
     destroy: Elimina
@@ -1286,7 +1286,7 @@ it:
     is_not_available_to_shipment_address: non è disponibile per l'indirizzo di spedizione
     iso_name: Nome ISO
     item: articolo
-    item_Descrizione: Descrizione dell'articolo
+    item_description: Descrizione dell'articolo
     item_not_in_stock_transfer: Item is not part of the stock transfer
     item_total: Totale articoli
     item_total_rule:
@@ -1342,7 +1342,7 @@ it:
     max_items: Massimo di articoli
     member_since: Iscritto dal
     memo: Memo
-    meta_Descrizione: Meta Descrizione
+    meta_description: Meta Descrizione
     meta_keywords: Meta keyword
     meta_title: Meta title
     metadata: Metadata
@@ -1570,7 +1570,7 @@ it:
     process: Processa
     product: Prodotto
     product_details: Dettagli prodotto
-    product_has_no_Descrizione: Questo prodotto non ha una descrizione
+    product_has_no_description: Questo prodotto non ha una descrizione
     product_not_available_in_this_currency: Questo prodotto non è disponibile nella valuta selezionata
     product_properties: Proprietà del prodotto
     product_rule:
@@ -1588,16 +1588,16 @@ it:
     promotion_action: Azione della promozione
     promotion_action_types:
       create_adjustment:
-        Descrizione: Crea una variazione promozionale sull'ordine
+        description: Crea una variazione promozionale sull'ordine
         name: Crea variazione per tutto l'ordine
       create_item_adjustments:
-        Descrizione: Crea una variazione promozionale per un articolo
+        description: Crea una variazione promozionale per un articolo
         name: Crea variazione per un articolo
       create_line_items:
-        Descrizione: Popola il carrello con la quantità specificata per la variante
+        description: Popola il carrello con la quantità specificata per la variante
         name: Crea elemento nell'ordine
       free_shipping:
-        Descrizione: Rendi gratuite tutte le spedizioni dell'ordine
+        description: Rendi gratuite tutte le spedizioni dell'ordine
         name: Spedizione gratuita
     promotion_actions: Azioni
     promotion_category: Categoria promozione
@@ -1608,39 +1608,39 @@ it:
     promotion_rule: Regola promozione
     promotion_rule_types:
       first_order:
-        Descrizione: Deve essere il primo ordine del cliente
+        description: Deve essere il primo ordine del cliente
         name: Primo ordine
       item_total:
-        Descrizione: Il totale dell'ordine soddisfa questi criteri
+        description: Il totale dell'ordine soddisfa questi criteri
         name: Totale articolo
       landing_page:
-        Descrizione: Il cliente deve aver visitato la pagina specificata
+        description: Il cliente deve aver visitato la pagina specificata
         name: Landing page
       one_use_per_user:
-        Descrizione: Descrizione
+        description: Descrizione
         name: Nome
       option_value:
-        Descrizione: Descrizione
+        description: Descrizione
         name: Nome
       product:
-        Descrizione: L'ordine include i prodotti specificati
+        description: L'ordine include i prodotti specificati
         name: Prodotto/i
       taxon:
-        Descrizione: Descrizione
+        description: Descrizione
         name: Nome
       user:
-        Descrizione: Disponibile solo per gli utenti specificati
+        description: Disponibile solo per gli utenti specificati
         name: Utente
       nth_order:
-        Descrizione: Aggiunti una promozione ogni Nth ordini che un utente completa.
+        description: Aggiunti una promozione ogni Nth ordini che un utente completa.
         name: Nth ordine
         form_text: "Applica questa promozione all'ordine numero Nth: "
       first_repeat_purchase_since:
-        Descrizione: Disponibile solo per utenti che non hanno acquistato per un po' di tempo
+        description: Disponibile solo per utenti che non hanno acquistato per un po' di tempo
         name: Primo acquisto dopo
         form_text: "Applica questa promozione a utenti il cui ultimo ordine è stato oltre X giorni fa:"
       user_logged_in:
-        Descrizione: Disponibile solo per utenti autenticati
+        description: Disponibile solo per utenti autenticati
         name: L'utente ha effettuato il log-in
     promotion_uses: Numero utilizzi promozione
     promotionable: Promuovibile
@@ -2054,3 +2054,4 @@ it:
     zipcode: CAP
     zone: Zona
     zones: Zone
+  
