@@ -683,13 +683,12 @@ de:
     analytics_trackers: Zugriffsstatistik Tracker
     and: und
     api:
-      api:
-        access: Zugang
-        clear_key: Schlüssel löschen
-        generate_key: Schlüssel generieren
-        key: Schlüssel
-        no_key: Kein Schlüssel
-        regenerate_key: Schlüssel neu generieren
+      access: Zugang
+      clear_key: Schlüssel löschen
+      generate_key: Schlüssel generieren
+      key: Schlüssel
+      no_key: Kein Schlüssel
+      regenerate_key: Schlüssel neu generieren
       key_cleared: Schlüssel gelöscht
       key_generated: Schlüssel generiert
     approve: Zustimmen
