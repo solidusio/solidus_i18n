@@ -734,10 +734,10 @@ it:
     adjustments: Modifiche
     admin:
       tab:
-        areas: Areas
+        areas: Aree
         checkout: Checkout
         configuration: Impostazioni
-        general: General
+        general: Generale
         option_types: Opzioni
         orders: Ordini
         overview: Riepilogo
@@ -747,8 +747,8 @@ it:
         promotion_categories: Categorie promozioni
         properties: Proprietà
         prototypes: Prototipi
-        relation_types: Relation types
-        reports: Reports
+        relation_types: Tipologie di relazione
+        reports: Report
         rma: RMA
         settings: Preferenze
         shipping: Trasporto
