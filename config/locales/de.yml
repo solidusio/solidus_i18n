@@ -622,25 +622,29 @@ de:
           resend: Neu senden
           resume: wiederaufnehmen
       tab:
+        areas: Gebiete
+        checkout: Zur Kasse
         configuration: Konfiguration
+        general: Allgemein
         option_types: Optionen
         orders: Bestellungen
         overview: Übersicht
+        payments: Zahlungen
         products: Produkte
-        promotion_categories: Aktion Kategorien
         promotions: Aktion
+        promotion_categories: Aktion Kategorien
         properties: Eigenschaften
         prototypes: Prototypen
         reports: Berichte
-        taxonomies: Klassifikationen
-        taxons: Klassifikation
-        users: Benutzer
-        checkout: Zur Kasse
-        general: Allgemein
-        payments: Zahlungen
         settings: Einstellungen
         shipping: Lieferung
         stock: Lager
+        stock_items: Verwaltung
+        stock_transfers: Bewegungen
+        taxes: Steuern
+        taxonomies: Klassifikationen
+        taxons: Klassifikation
+        users: Benutzer
       user:
         account: Konto
         addresses: Adressen
