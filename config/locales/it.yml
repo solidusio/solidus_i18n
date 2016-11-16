@@ -17,6 +17,7 @@ it:
         lastname: Cognome
         phone: Telefono
         zipcode: CAP
+        state: Province
       spree/adjustment:
         adjustable: Modificabile
         amount: Totale
