@@ -17,7 +17,6 @@ it:
         lastname: Cognome
         phone: Telefono
         zipcode: CAP
-        state: Province
       spree/adjustment:
         adjustable: Modificabile
         amount: Totale
@@ -713,6 +712,8 @@ it:
     add_variant: Aggiungi variante
     adding_match: Adding match
     additional_item: Costo aggiuntivo articolo
+    address:
+      state: Province
     address1: Indirizzo
     address2: Indirizzo (cont.)
     adjustable: Variabile
