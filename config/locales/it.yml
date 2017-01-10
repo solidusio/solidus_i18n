@@ -352,6 +352,7 @@ it:
       signed_up: Benvenuto! Hai effettuato il login con successo.
       updated: Hai aggiornato il tuo account con successo.
     user_sessions:
+      
       signed_in: Hai effettuato il login con successo.
       signed_out: Hai effettuato il logout con successo.
   errors:
@@ -375,6 +376,7 @@ it:
       cancel: Annulla
       continue: Continua
       create: Crea
+      delete: Cancella
       destroy: Elimina
       edit: Modifica
       list: Lista
@@ -413,17 +415,28 @@ it:
     adjustments: Variazioni
     admin:
       tab:
+        areas: Aree
+        checkout: Check-out
         configuration: Impostazioni
+        general: Generale
         option_types: Opzioni
         orders: Ordini
         overview: Quadro generale
+        payments: Pagamenti
         products: Prodotti
-        promotion_categories: Categorie Promozione
-        promotions: Promozioni
         promotion_categories:
+        promotion_categories: Categorie Promozione
+        promotion_categories: Categorie di promozione
+        promotions: Promozioni
         properties: Proprietà
         prototypes: Prototipi
         reports: Report
+        settings: Impostazioni
+        shipping: Spedizione
+        stock: Azione
+        stock_items: Magazzino articoli
+        stock_transfers: Trasferimenti azionari
+        taxes: Tasse
         taxonomies: Tassonomie
         taxons: Taxon
         users: Utenti
@@ -482,11 +495,21 @@ it:
     avs_response: Risposta AVS
     back: Indietro
     back_end: Backend
+    back_to_adjustment_reason_list: Torna
     back_to_payment: Torna al Pagamento
+    back_to_payment_methods_list: Torna
+    back_to_refund_reason_list: Torna
     back_to_resource_list: "Torna alla Lista %{resource}"
     back_to_rma_reason_list: Torna alla Lista Motivazioni RMA
+    back_to_shipping_categories_list: Torna
+    back_to_shipping_methods_list: Torna
+    back_to_stock_locations_list: Torna
+    back_to_stock_transfers_list: Torna
     back_to_store: Torna al Negozio
+    back_to_tax_rates_list: Torna
+    back_to_trackers_list: Torna
     back_to_users_list: Torna alla Lista degli Utenti
+    back_to_zones_list: Torna
     backorderable: Ordinabile anche se terminato
     backorderable_default: Ordinabile di default
     backordered: Arretrato
@@ -573,6 +596,7 @@ it:
     coupon_code_not_found: Il codice coupon inserito non esiste. Per favore prova ancora.
     coupon_code_unknown_error: Questo codice coupon non può essere applicabile a quest'ordine
     create: Crea
+    create_one: Crea uno
     create_a_new_account: Crea un nuovo account
     create_new_order: Crea Nuovo Ordine
     create_reimbursement: Crea Rimborso
@@ -786,6 +810,12 @@ it:
     lifetime_stats: Statistiche Totali
     line_item_adjustments: Variazioni della riga d'ordine
     list: Lista
+    listing_countries: Nationi
+    listing_orders: Ordini
+    listing_products: Prodotti
+    listing_reports: Report
+    listing_tax_categories: Tasse
+    listing_users: Utenti
     loading: Caricamento
     locale_changed: Lingua cambiata
     location: Luogo
@@ -805,6 +835,7 @@ it:
     make_sure_the_above_reimbursement_amount_is_correct: Assicurati che l'importo di rimborso qui sopra sia corretto
     manage_promotion_categories: Gestisci Categorie di Promozione
     manage_variants: Gestisci le Varianti
+    manage_stock: Gestione magazzino
     manual_intervention_required: È richiesto un'intervento manuale
     master_price: Prezzo principale
     match_choices:
@@ -828,6 +859,7 @@ it:
     name_or_sku: Nome o SKU (inserisci almeno i primi 4 caratteri del nome del prodotto)
     new: Nuovo
     new_adjustment: Nuova Variazione
+    new_adjustment_reason: Nuova Motivo di regolazione
     new_country: Nuova Nazione
     new_customer: Nuovo Cliente
     new_customer_return: Nuova Restituzione Cliente
@@ -866,6 +898,7 @@ it:
     no_payment_found: Nessun pagamento trovato
     no_pending_payments: Nessun pagamento pendente
     no_products_found: Nessun prodotto trovato
+    no_resource: Vuoto
     no_resource_found: "Nessun %{resource} trovato"
     no_results: Nessun risultato
     no_returns_found: Nessuna restituazione trovata
@@ -873,6 +906,7 @@ it:
     no_shipping_method_selected: Nessun metodo di spedizione selezionato.
     no_state_changes: Nessun cambio di stato
     no_tracking_present: Non sono stati forniti dettagli sul tracciamento
+    no_variants_found_try_again: Nessun varianti trovate riprova
     none: Niente
     none_selected: Nessuno selezionato
     normal_amount: Quantità Normale
@@ -994,6 +1028,7 @@ it:
     pre_tax_refund_amount: Importo Rimborso al lordo delle tasse
     pre_tax_total: Totale al lordo delle tasse
     preferred_reimbursement_type: Tipologia di rimborso preferita
+    preference_source_none: Fonte preferenza nessuno
     presentation: Presentazione
     previous: Precedente
     previous_state_missing: "n.a."
@@ -1190,6 +1225,7 @@ it:
         thanks: Grazie per il tuo ordine.
         track_information: 'Informazione Tracciamento: %{tracking}'
         track_link: 'Link Tracciamento: %{url}'
+    shipment_number: numero di spedizione
     shipment_state: Stato Spedizione
     shipment_states:
       backorder: arretrato
@@ -1220,6 +1256,7 @@ it:
     show_active: Mostra Attivi
     show_deleted: Mostra Eliminati
     show_only_complete_orders: Visualizza solo ordini completi
+    show_only_open_transfers: Visualizza solo trasferimenti aperti
     show_only_considered_risky: Visualizza solo ordini a rischio
     show_rate_in_label: Mostra percentuale nell'etichetta
     sku: SKU
@@ -1378,6 +1415,7 @@ it:
     value: Valore
     variant: Variante
     variant_placeholder: Scegli una variante
+    variant_search_placeholder: Scegli una variante
     variants: Varianti
     version: Versione
     void: Annullato
