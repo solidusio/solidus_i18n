@@ -1,12 +1,26 @@
-language: ruby
-rvm:
-  - 2.1
-  - 2.2
-env:
-  - DB=mysql
-  - DB=postgres
 sudo: false
 cache: bundler
-before_script:
-  - bundle exec rake test_app
-script: bundle exec rspec spec
+language: ruby
+rvm:
+  - 2.3.1
+env:
+  matrix:
+    - SOLIDUS_BRANCH=v1.1 DB=postgres
+    - SOLIDUS_BRANCH=v1.2 DB=postgres
+    - SOLIDUS_BRANCH=v1.3 DB=postgres
+    - SOLIDUS_BRANCH=v1.4 DB=postgres
+    - SOLIDUS_BRANCH=v2.0 DB=postgres
+    - SOLIDUS_BRANCH=v2.1 DB=postgres
+    - SOLIDUS_BRANCH=master DB=postgres
+    - SOLIDUS_BRANCH=v1.1 DB=mysql
+    - SOLIDUS_BRANCH=v1.2 DB=mysql
+    - SOLIDUS_BRANCH=v1.3 DB=mysql
+    - SOLIDUS_BRANCH=v1.4 DB=mysql
+    - SOLIDUS_BRANCH=v2.0 DB=mysql
+    - SOLIDUS_BRANCH=v2.1 DB=mysql
+    - SOLIDUS_BRANCH=master DB=mysql
+before_install:
+  - rvm use @global
+  - gem uninstall bundler -x
+  - gem install bundler --version=1.13.7
+  - bundler --version

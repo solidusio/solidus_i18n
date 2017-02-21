@@ -1,13 +1,18 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+branch = ENV.fetch('SOLIDUS_BRANCH', 'master')
+gem "solidus", github: "solidusio/solidus", branch: branch
+
+if branch == 'master' || branch >= "v2.0"
+  gem "rails-controller-testing", group: :test
+end
+
+gem 'pg'
+gem 'sqlite3'
+gem 'mysql2'
+
+group :development, :test do
+  gem "pry-rails"
+end
 
 gemspec
-
-gem 'solidus', github: 'solidusio/solidus', branch: 'v1.1'
-
-if ENV['DB'] == 'mysql'
-  gem 'mysql2', '~> 0.3.20'
-elsif ENV['DB'] == 'postgres'
-  gem 'pg'
-else
-  gem 'sqlite3', '~> 1.3.10'
-end
