@@ -32,32 +32,7 @@ namespace :solidus_i18n do
     end
   end
 
-  desc 'Syncronize translation files with latest en (adds comments with fallback en value)'
-  task :sync do
-    puts 'Starting syncronization...'
-    words = translation_keys
-
-    Dir["#{locales_dir}/*.yml"].each do |filename|
-      basename = File.basename(filename, '.yml')
-      (comments, other) = SolidusI18n::Utils.read_file(filename, basename)
-      # Initializing hash variable as en fallback if it does not exist
-      words.each { |k, _v| other[k] ||= "#{words[k]}" }
-      # Remove if not defined in en locale
-      other.delete_if { |k, _v| !words[k] }
-      SolidusI18n::Utils.write_file(filename, basename, comments, other, false)
-    end
-  end
-
-  def translation_keys
-    (dummy_comments, words) = SolidusI18n::Utils.read_file(File.dirname(__FILE__) + '/default/solidus_core.yml', 'en')
-      words
-  end
-
   def locales_dir
     File.join File.dirname(__FILE__), 'config/locales'
-  end
-
-  def env_locale
-    ENV['LOCALE'].presence
   end
 end
