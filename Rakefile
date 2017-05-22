@@ -23,27 +23,13 @@ require 'solidus_i18n'
 namespace :solidus_i18n do
   desc 'Update by retrieving the latest Solidus locale files'
   task :update_default do
-    puts "Fetching latest Solidus locale file to #{locales_dir}"
-    require 'uri'
-    require 'net/https'
-
+    require 'open-uri'
+    puts "Fetching latest Solidus locale file"
     location = 'https://raw.github.com/solidusio/solidus/master/core/config/locales/en.yml'
-    begin
-      uri = URI.parse(location)
-      http = Net::HTTP.new(uri.host, uri.port)
-      http.use_ssl = true
-      http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-      puts "Getting from #{uri}"
-      request = Net::HTTP::Get.new(uri.request_uri)
-      case response = http.request(request)
-      when Net::HTTPRedirection then location = response['location']
-      when Net::HTTPClientError, Net::HTTPServerError then response.error!
-      end
-    end until Net::HTTPSuccess == response
 
-    FileUtils.mkdir_p(default_dir) unless File.directory?(default_dir)
-
-    File.open("#{default_dir}/solidus_core.yml", 'w') { |file| file << response.body }
+    open("#{locales_dir}/en.yml", 'wb') do |file|
+      file << open(location).read
+    end
   end
 
   desc 'Syncronize translation files with latest en (adds comments with fallback en value)'
@@ -69,10 +55,6 @@ namespace :solidus_i18n do
 
   def locales_dir
     File.join File.dirname(__FILE__), 'config/locales'
-  end
-
-  def default_dir
-    File.join File.dirname(__FILE__), 'default'
   end
 
   def env_locale
