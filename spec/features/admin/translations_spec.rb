@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-RSpec.feature 'Translations', :js do
+RSpec.feature 'Admin translations', :js do
   stub_authorization!
 
   given!(:store) { create(:store) }
@@ -51,6 +51,19 @@ RSpec.feature 'Translations', :js do
         expect(page).to have_content(french)
         expect(store.reload.preferred_available_locales).to include(:fr)
       end
+    end
+  end
+
+  context 'solidus_auth_devise pages translation' do
+    let(:locale) { :it }
+
+    background do
+      SolidusI18n::Config.available_locales = [:en, :it]
+    end
+
+    scenario 'the login page is translated' do
+      visit spree.admin_login_path(locale: locale)
+      expect(page).to have_content(/#{Spree.t(:admin_login, locale: locale)}/i)
     end
   end
 end
