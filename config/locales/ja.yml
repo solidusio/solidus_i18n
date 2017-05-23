@@ -468,6 +468,9 @@ ja:
       spree/order:
         one: 注文
         other: 注文
+      spree/page:
+        one: 特集ページ
+        other: 特集ページ
       spree/payment:
         one: 支払い
         other: 支払い
@@ -529,12 +532,12 @@ ja:
       spree/state_change:
         one: 状態変化
         other: 状態変化
-      spree/stock_movement:
-        one: 在庫遷移
-        other: 在庫遷移
       spree/stock_location:
         one: 在庫場所
         other: 在庫場所
+      spree/stock_movement:
+        one: 在庫遷移
+        other: 在庫遷移
       spree/stock_transfer:
         one: 在庫移動
         other: 在庫移動
@@ -567,9 +570,6 @@ ja:
       spree/zone:
         one: ゾーン
         other: ゾーン
-      spree/page:
-        one: 特集ページ
-        other: 特集ページ
       user:
         one: ユーザー
         other: ユーザー
@@ -678,29 +678,29 @@ ja:
         form:
           general: 一般
       tab:
+        areas: ゾーン
+        checkout: 決済
         configuration: 設定
+        general: 一般設定
         option_types: オプション
         orders: 注文
         overview: 概要
+        payments: 支払い方法
         products: 商品
-        promotions: プロモーション
         promotion_categories: プロモーションカテゴリ
+        promotions: プロモーション
         properties: 属性
         prototypes: 原型
         reports: レポート
-        taxonomies: ジャンルツリー
-        taxons: ジャンル単位
-        users: ユーザー
         settings: 設定
-        general: 一般設定
-        payments: 支払い方法
-        areas: ゾーン
-        taxes: 税金
-        checkout: 決済
         shipping: 配送方法
         stock: 在庫
         stock_items: 在庫品
         stock_transfers: 在庫移動
+        taxes: 税金
+        taxonomies: ジャンルツリー
+        taxons: ジャンル単位
+        users: ユーザー
       user:
         account: アカウント
         addresses: 住所
@@ -732,8 +732,8 @@ ja:
     analytics_trackers: Google アナリティクス
     and: と
     approve: 承認
-    approver: 承認者
     approved_at: 承認日時
+    approver: 承認者
     are_you_sure: 本当によろしいですか?
     are_you_sure_delete: 削除しますか?
     associated_adjustment_closed: 関連された調整が閉じられると、再計算しなくなります。それを開きますか？
@@ -745,14 +745,14 @@ ja:
     avs_response: AVS レスポンス
     back: 戻る
     back_end: バックエンド
-    backordered: 入荷待ち
-    back_to_resource_list: "%{resource} に戻る"
     back_to_payment: 支払いに戻る
+    back_to_resource_list: "%{resource} に戻る"
     back_to_rma_reason_list: 商品返品確認番号リストに戻る
     back_to_store: ショップに戻る
     back_to_users_list: ユーザー一覧に戻る
     backorderable: 入荷待ち可能
     backorderable_default: 入荷待ちデフォルト
+    backordered: 入荷待ち
     backorders_allowed: 入荷待ち許可
     balance_due: 未払額
     base_amount: 基準量
@@ -765,12 +765,12 @@ ja:
     calculator: 計算方法
     calculator_settings_warning: 計算方法のタイプを変更する場合は、計算方法の設定を編集する前に保存してください。
     cancel: キャンセル
-    canceler: キャンセル者
     canceled: キャンセル
     canceled_at: にキャンセル
-    cannot_create_payment_without_payment_methods: 支払い方法が選択されていないので、支払いを行うことができません
+    canceler: キャンセル者
     cannot_create_customer_returns: まだこの注文は発送単位がないため、顧客返金を作成できません。
     cannot_create_payment_link: まず支払い方法を定義してください。
+    cannot_create_payment_without_payment_methods: 支払い方法が選択されていないので、支払いを行うことができません
     cannot_create_returns: 未発送の注文品に対して返品が出来ません。注文をキャンセルし注文を作り直すか問い合わせて下さい。
     cannot_perform_operation: 処理出来ませんでした
     cannot_set_shipping_method_without_address: 顧客詳細が提供されるまで発送方法を設定できません。
@@ -885,18 +885,18 @@ ja:
     deleted_variants_present: 注文の商品のいくつかが既に購入不可となっています。
     delivery: 配送/お届け
     depth: 奥行き
-    details: 詳細
     description: 説明
     destination: 目的地
     destroy: 破壊する
+    details: 詳細
     discount_amount: 割引額
     dismiss_banner: いいえ。結構です！興味ありません。再びこのメッセージを表示しないでください。
     display: 表示
     doesnt_track_inventory: 在庫をトラッキングしません。
     edit: 編集
-    editing_country:
     edit_refund_reason:
     editing_adjustment_reason:
+    editing_country:
     editing_option_type:
     editing_payment_method:
     editing_product: 商品の編集
@@ -904,7 +904,6 @@ ja:
     editing_promotion_category:
     editing_property:
     editing_prototype:
-    edit_refund_reason:
     editing_refund_reason:
     editing_reimbursement:
     editing_reimbursement_type:
@@ -965,22 +964,21 @@ ja:
         user:
           signup: ユーザー登録
     exceptions:
-      count_on_hand_setter: 手動で手計算をセットできません。それはrecalculate_count_on_handコールバックで自動的にセットされます。`update_column(:count_on_hand,
-        value)`を代わりに利用してください。
+      count_on_hand_setter: 手動で手計算をセットできません。それはrecalculate_count_on_handコールバックで自動的にセットされます。`update_column(:count_on_hand, value)`を代わりに利用してください。
     exchange_for: に変換
-    expedited_exchanges_warning: 指定したどんな変換も保存後すぐに顧客に反映されます。もし顧客が元の商品を%{days_window}日以内に返さなかった場合、顧客はすべての量の商品に決済されます。
     excl: excl.
+    existing_shipments: 現在の発送
+    expedited_exchanges_warning: 指定したどんな変換も保存後すぐに顧客に反映されます。もし顧客が元の商品を%{days_window}日以内に返さなかった場合、顧客はすべての量の商品に決済されます。
     expiration: 有効期限
     extension: 拡張
-    existing_shipments: 現在の発送
     failed_payment_attempts: 支払いに失敗
     filename: ファイル名
     fill_in_customer_info: 顧客情報を埋めてください。
     filter: 検索
     filter_results: 検索結果
     finalize: 確定
-    find_a_taxon: ジャンル単位を見つける
     finalized: 確定済み
+    find_a_taxon: ジャンル単位を見つける
     first_item: 一品目の値段
     first_name: 名前（名）
     first_name_begins_with: 名前（名）が以下の文字列で始まる
@@ -1026,10 +1024,10 @@ ja:
     included_in_price: 価格に含まれる
     included_price_validation: はデフォルトのタックスゾーンを設定しない限り選択できません。
     incomplete: 不完全
-    info_product_has_multiple_skus: 'この商品は%{count}個あります:'
     info_number_of_skus_not_shown:
       one: ともう一つ
       other: と %{count}個
+    info_product_has_multiple_skus: 'この商品は%{count}個あります:'
     instructions_to_reset_password: 下のフォームを入力してからパスワードの再設定方法の説明がメールで送信されます。
     insufficient_stock: 在庫が十分ではありません。残り%{on_hand}個です。
     insufficient_stock_lines_present: いくつかの注文商品のが不十分です。
@@ -1084,7 +1082,6 @@ ja:
     location: 位置
     lock: ロック
     log_entries: ログエントリー
-    logs: ログ
     logged_in_as: ログイン
     logged_in_succesfully: ログインに成功しました
     logged_out: ログアウトしました。
@@ -1093,6 +1090,7 @@ ja:
     login_failed: ログイン認証失敗
     login_name: ログイン名
     logout: ログアウト
+    logs: ログ
     look_for_similar_items: 似た商品を探す
     make_refund: 返金する
     make_sure_the_above_reimbursement_amount_is_correct: 上記の返品量が正しいことを確認してください。
@@ -1122,9 +1120,9 @@ ja:
     name_or_sku: 品名もしくは品番
     new: 新規
     new_adjustment: 新規の値引き・追加請求
+    new_country: 新規国
     new_customer: 新規顧客
     new_customer_return: 新規顧客返品
-    new_country: 新規国
     new_image: 新規画像
     new_option_type: 新規オプション
     new_order: 新規注文
@@ -1138,12 +1136,12 @@ ja:
     new_prototype: 新規原型
     new_refund: 新規返金
     new_refund_reason: 新規返金理由
-    new_rma_reason: 新規RMA理由
     new_return_authorization: 新規返品依頼
+    new_rma_reason: 新規RMA理由
     new_role: 新規役割
+    new_shipment_at_location:
     new_shipping_category: 新規配送カテゴリー
     new_shipping_method: 新規配送方法
-    new_shipment_at_location:
     new_state: 新規都道府県（州）
     new_stock_location: 新規在庫場所
     new_stock_movement: 新規在庫移動
@@ -1161,11 +1159,11 @@ ja:
     no_payment_found: 支払いなし
     no_pending_payments: 延滞なし
     no_products_found: 商品が見付かりませんでした。
-    no_results: 検索結果がありませんでした。
-    no_rules_added: ルールが追加されていません
     no_resource_found: "%{resource}が見つかりませんでした。"
     no_resource_found_link: 新規追加
+    no_results: 検索結果がありませんでした。
     no_returns_found: 返品がありません。
+    no_rules_added: ルールが追加されていません
     no_shipping_method_selected: 配送方法が選択されていません。
     no_state_changes: まだ状態変化がありません。
     no_tracking_present: トラッキング詳細が提供されていません。
@@ -1262,8 +1260,8 @@ ja:
     payment_could_not_be_created: 支払いを作成できませんでした。
     payment_information: 支払い情報
     payment_method: 支払い方法
-    payment_methods: 支払い方法
     payment_method_not_supported: その支払い方法はサポートされていません。他のものを選択してください。
+    payment_methods: 支払い方法
     payment_processing_failed: 決済が失敗しました。入力した情報を確認してから再び決済を行ってみて下さい。
     payment_processor_choose_banner_text: もし決済処理会社の選択でお困りでしたら、どうぞ
     payment_processor_choose_link: こちらへ
@@ -1280,18 +1278,18 @@ ja:
       void: 無効
     payment_updated: 支払いが更新されました。
     payments: 支払い方法
+    pending: 未決定
     percent: パーセント
     percent_per_item: アイテムごとのパーセント
     permalink: パーマリンク
-    pending: 未決定
     phone: 電話番号
     place_order: 注文を送信する
     please_define_payment_methods: まず支払い方法を定義してください。
     please_enter_reasonable_quantity: 適切な量を入力してください。
     populate_get_error: 問題が発生しました。もう一度追加してみてください。
     powered_by: Powered by
-    pre_tax_refund_amount: 税前返金料
     pre_tax_amount: 税前料金
+    pre_tax_refund_amount: 税前返金料
     pre_tax_total: 税前合計
     preferred_reimbursement_type: 望ましい返済方法
     presentation: 表示名
@@ -1317,7 +1315,6 @@ ja:
         manual: 手動で選択
     products: 商品
     promotion: プロモーション
-    promotionable: プロモーション可能
     promotion_action: プロモーションアクション
     promotion_action_types:
       create_adjustment:
@@ -1358,17 +1355,18 @@ ja:
       product:
         description: 注文に特定の商品を含む
         name: 商品
+      taxon:
+        description: 指定したジャンル単位のみ
+        name: ジャンル単位
       user:
         description: 特定のユーザー限定
         name: ユーザー
       user_logged_in:
         description: ログイン中のユーザー限定
         name: ログイン中のユーザー
-      taxon:
-        description: 指定したジャンル単位のみ
-        name: ジャンル単位
-    promotions: プロモーション
     promotion_uses: プロモーション
+    promotionable: プロモーション可能
+    promotions: プロモーション
     propagate_all_variants:
     properties: 属性
     property: 属性
@@ -1399,6 +1397,16 @@ ja:
     reimburse: 払い戻す
     reimbursed: 払い戻し済み
     reimbursement: 払い戻し
+    reimbursement_mailer:
+      reimbursement_email:
+        days_to_send: 交換待ちの商品を送り返すのに%{days}必要です。
+        dear_customer: お客様
+        exchange_summary: 交換概要
+        for: for
+        instructions: 返品が実行されました。
+        refund_summary: 返品概要
+        subject: 返品通知
+        total_refunded: '返金合計: %{total}'
     reimbursement_perform_failed: 払い戻しが実行できませんでした。 %{error}
     reimbursement_status: 払い戻しステータス
     reimbursement_type: 払い戻しタイプ
@@ -1430,16 +1438,6 @@ ja:
     return_item_time_period_ineligible: 返品は期限切れです。
     return_items: 返品
     return_items_cannot_be_associated_with_multiple_orders: 返品商品は複数の注文の注文と関連づけることはできません。
-    reimbursement_mailer:
-      reimbursement_email:
-        days_to_send: 交換待ちの商品を送り返すのに%{days}必要です。
-        dear_customer: お客様
-        exchange_summary: 交換概要
-        for: for
-        instructions: 返品が実行されました。
-        refund_summary: 返品概要
-        subject: 返品通知
-        total_refunded: '返金合計: %{total}'
     return_number: 返品番号
     return_quantity: 返品数
     returned: 返品済み
@@ -1469,9 +1467,9 @@ ja:
     secure_connection_type: 接続保護のタイプ
     security_settings: セキュリティの設定
     select: 選択
-    select_from_prototype: 原型から選択
     select_a_return_authorization_reason: 返品認証の理由を選択してください
     select_a_stock_location: 在庫場所の選択
+    select_from_prototype: 原型から選択
     select_stock: 在庫の選択
     selected_quantity_not_available: "%{item}の選択は利用不可です。"
     send_copy_of_all_mails_to: 全てのメールのコピーをこの宛先に送る
@@ -1502,8 +1500,8 @@ ja:
       pending: 配送準備中
       ready: 配送可能
       shipped: 配送済み
-    shipment_transfer_success: 種別の移動に成功しました。
     shipment_transfer_error: 種別の移動中にエラーが発生しました。
+    shipment_transfer_success: 種別の移動に成功しました。
     shipments: 配送
     shipped: 発送済
     shipping: 送料
@@ -1538,7 +1536,6 @@ ja:
     start: 始め
     state: 都道府県（州）
     state_based: 都道府県（州）による区別
-    states: 都道府県（州）
     state_machine_states:
       accepted: 受付
       address: 住所
@@ -1559,9 +1556,9 @@ ja:
       given_to_customer: ふさわしい顧客
       invalid: 不正
       manual_intervention_required: 手動介入が必要
+      on_hand: 主導
       open: 公開
       order: 注文
-      on_hand: 主導
       payment: 支払い
       pending: 停止
       processing: 処理中
@@ -1571,6 +1568,7 @@ ja:
       returned: 返品
       shipped: 配送済み
       void: 空
+    states: 都道府県（州）
     states_required: 必須
     status: 状況
     stock: 在庫
@@ -1608,10 +1606,10 @@ ja:
     successfully_updated: "%{resource}が更新されました!"
     summary: 概要
     tax: 税金
-    tax_included: 税金 (incl.)
     tax_categories: 税金カテゴリー
     tax_category: 税金カテゴリー
     tax_code: 税金コード
+    tax_included: 税金 (incl.)
     tax_rate_amount_explanation: 税率は5%のとき、0.05と入力します。
     tax_rates: 税率
     taxon: ジャンル単位
@@ -1641,9 +1639,9 @@ ja:
     there_were_problems_with_the_following_fields: 以下の入力欄で問題がありました
     this_order_has_already_received_a_refund: この注文は既に返金受け取り済みです。
     thumbnail: サムネイル
-    tiers: 列
     tiered_flat_rate: 列の均一料金
     tiered_percent: 列パーセント
+    tiers: 列
     time: 時間
     to_add_variants_you_must_first_define: 種類を追加するには、まず以下を定義する必要があります。
     total: 合計
@@ -1686,17 +1684,17 @@ ja:
       choose_users: ユーザーの選択
     users: ユーザー
     validation:
-      unpaid_amount_not_zero: '量を完全に返品できません。 Still due: %{amount}'
       cannot_be_less_than_shipped_units: 配送ユニットの個数より小さくはできません
       cannot_destroy_line_item_as_inventory_units_have_shipped: いくつかの在庫が発送されたため項目を削除できません。
       exceeds_available_stock: 可能な在庫数を上回っています。項目の個数が正しく入力されていることを確認してください。
       is_too_large: 要求された量は在庫を超えています。
       must_be_int: 整数であることが必要です
       must_be_non_negative: 0以上の数字が必要です
+      unpaid_amount_not_zero: '量を完全に返品できません。 Still due: %{amount}'
     value: 値
     variant: 種類
-    variant_search_placeholder: 品名もしくは品番[SKU]
     variant_placeholder: 種類プレイスホルダ
+    variant_search_placeholder: 品名もしくは品番[SKU]
     variants: 種類
     version: バージョン
     void: 無効
