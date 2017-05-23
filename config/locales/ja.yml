@@ -1,57 +1,110 @@
 ja:
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        cancel: キャンセル
+        quantity: 量
+        shipment: 発送
+        state: 都道府県（州）
   activerecord:
     attributes:
       spree/address:
         address1: 住所1
         address2: 住所2
         city: 市区町村
+        company: 会社
         country: 国
         firstname: 名前（名）
         lastname: 名前（姓）
         phone: 電話番号
         state: 都道府県（州）
         zipcode: 郵便番号
+      spree/adjustment:
+        adjustable: 調整可能
+        adjustment_reason_id: 理由
+        amount: 金額
+        label: 説明
+        name: 名称
+        state: 都道府県（州）
+      spree/adjustment_reason:
+        active: 有効
+        code: コード
+        name: 名称
+        state: 都道府県（州）
+      spree/calculator/flat_rate:
+        preferred_amount: 金額
       spree/calculator/tiered_flat_rate:
         preferred_base_amount: 基準量
         preferred_tiers: 列
       spree/calculator/tiered_percent:
         preferred_base_percent: 基本％
         preferred_tiers: 列
+      spree/carton:
+        tracking: 追跡
       spree/country:
         iso: ISO
         iso3: ISO3
         iso_name: ISO名
         name: 名
         numcode: ISOコード
+        states_required: 必須
       spree/credit_card:
         base:
+        card_code: カード照合値[セキュリティーコード]
         cc_type: カード類
+        expiration: 有効期限
         month: 月
         name: 名前
         number: カード番号
         verification_value: 照合コード
         year: 年
+      spree/customer_return:
+        name: 名称
+        number: 返品番号
+        pre_tax_total: 税前合計
+        reimbursement_status: 払い戻しステータス
+        total: 合計
+      spree/image:
+        alt: 代替のテキスト
+        attachment: ファイル名
       spree/inventory_unit:
         state: 都道府県（州）
+      spree/legacy_user:
+        email: Eメール
+        password: パスワード
+        password_confirmation: パスワードの確認
       spree/line_item:
+        description: アイテム説明
+        name: 名称
         price: 価格
         quantity: 数量
+        total: 合計金額
       spree/option_type:
         name: 名称
         presentation: 表示
+      spree/option_value:
+        name: 名称
+        presentation: 表示名
       spree/order:
+        additional_tax_total: 税金
+        approved_at: 承認日時
+        approver_id: 承認者
+        canceled_at: にキャンセル
+        canceler_id: キャンセル者
         checkout_complete: 注文の受け付けを完了しました
         completed_at: 完了日時
         considered_risky: リスク度
         coupon_code: クーポンコード
         created_at: 注文日
         email: メールアドレス
+        included_tax_total: 税金 (incl.)
         ip_address: IPアドレス
         item_total: 合計個数
         name: 注文
         number: 注文番号
         payment_state: 支払い状態
         shipment_state: 配送状態
+        shipment_total: 発送合計
         special_instructions: 特記事項
         state: 状態
         total: 合計
@@ -74,18 +127,40 @@ ja:
       spree/payment:
         amount: 金額
         number: 数量
+        response_code: 取引ID
+        state: 支払い状況
       spree/payment_method:
+        active: 有効
+        auto_capture: 自動キャプチャ
+        description: 説明
+        display_on: 表示
         name: 名称
+        type: プロバイダー
+      spree/price:
+        amount: 価格
+        currency: 通貨
       spree/product:
         available_on: 販売開始日
         cost_currency: コストカレンシー
         cost_price: 原価
+        depth: 奥行き
         description: 説明
+        height: 高さ
         master_price: 値段
+        meta_description: メタ情報説明
+        meta_keywords: メタキーワード
+        meta_title: メタタイトル
         name: 商品名
         on_hand: 入荷数
+        price: 定価
+        promotionable: プロモーション可能
         shipping_category: 配達区間
+        slug: スラグ
         tax_category: 税区
+        weight: 重量
+        width: 横幅
+      spree/product_property:
+        value: 値
       spree/promotion:
         advertise: 表示する
         code: コード
@@ -103,12 +178,59 @@ ja:
         presentation: 表示
       spree/prototype:
         name: 名称
+      spree/refund:
+        amount: 金額
+        description: 説明
+        refund_reason_id: 理由
+      spree/refund_reason:
+        active: 有効
+        code: コード
+        name: 名称
+      spree/reimbursement:
+        number: 注文番号
+        reimbursement_status: 状況
+        total: 合計
+      spree/reimbursement/credit:
+        amount: 金額
+      spree/reimbursement_type:
+        name: 名称
+        type: 支払い方法
       spree/return_authorization:
         amount: 合計
+        pre_tax_total: 税前合計
+      spree/return_item:
+        acceptance_status: 受諾ステータス
+        acceptance_status_errors: 受諾エラー
+        charged: 支払い済み
+        exchange_variant: に変換
+        inventory_unit_state: 都道府県（州）
+        override_reimbursement_type_id: 払い戻しタイプ上書き
+        preferred_reimbursement_type_id: 望ましい返済方法
+        reception_status: 受信したステータス
+        return_reason: 理由
+        total: 合計
+      spree/return_reason:
+        active: 有効
+        memo: メモ
+        name: 名称
+        number: RMA番号
+        state: 都道府県（州）
       spree/role:
         name: 名称
       spree/shipment:
         number: 数量
+        tracking: 追跡ナンバー
+      spree/shipping_category:
+        name: 名称
+      spree/shipping_method:
+        admin_name: 内部の名前
+        code: コード
+        display_on: 表示
+        name: 名称
+        tracking_url: 追跡URL
+      spree/shipping_rate:
+        amount: 金額
+        tax_rate: 税率
       spree/state:
         abbr: 略語
         name: 名称
@@ -120,6 +242,31 @@ ja:
         type: タイプ
         updated: 更新
         user: ユーザー
+      spree/stock_item:
+        count_on_hand: 手計算
+      spree/stock_location:
+        active: 有効
+        address1: 住所
+        address2: 住所の続き
+        admin_name: 内部の名前
+        backorderable_default: 入荷待ちデフォルト
+        city: 市区町村
+        code: コード
+        country_id: 国
+        default: 初期設定
+        internal_name: 内部の名前
+        name: 名称
+        phone: 電話番号
+        propagate_all_variants:
+        state_id: 都道府県（州）
+        zipcode: 郵便番号
+      spree/stock_movement:
+        action: アクション
+        quantity: 量
+      spree/stock_transfer:
+        created_at: 作成日時
+        description: 説明
+        tracking_number: 追跡ナンバー
       spree/store:
         mail_from_address: メールアドレス
         meta_description: メタ 説明
@@ -127,19 +274,35 @@ ja:
         name: サイト名
         seo_title: SEO タイトル
         url: サイトURL
+      spree/store_credit:
+        amount: 金額
+        memo: メモ
+      spree/store_credit_event:
+        action: アクション
       spree/tax_category:
         description: 説明
+        is_default: 初期設定
         name: 名称
+        tax_code: 税金コード
       spree/tax_rate:
         amount: 率
         included_in_price: 税込み
+        name: 名称
         show_rate_in_label: 税率を見る
       spree/taxon:
+        description: 説明
+        icon: アイコン
+        meta_description: メタ情報説明
+        meta_keywords: メタキーワード
+        meta_title: メタタイトル
         name: 名称
         permalink: 固定リンク
         position: 位置
       spree/taxonomy:
         name: 名称
+      spree/tracker:
+        active: 有効
+        analytics_id: Google アナリティクス ID
       spree/user:
         email: Eメール
         password: パスワード
@@ -154,6 +317,7 @@ ja:
         weight: 重量
         width: 幅
       spree/zone:
+        default_tax: デフォルトのタックスゾーン
         description: 説明
         name: 名前
     errors:
@@ -221,6 +385,57 @@ ja:
       spree/address:
         one: 住所
         other: 住所
+      spree/adjustment:
+        one: 調整（値引き・追加料金）
+        other: 調整（値引き・追加料金）
+      spree/calculator/default_tax:
+        one: デフォルトの税
+        other: デフォルトの税
+      spree/calculator/flat_percent_item_total:
+        one: 定率
+        other: 定率
+      spree/calculator/flat_rate:
+        one: 定格(一注文につき)
+        other: 定格(一注文につき)
+      spree/calculator/flexi_rate:
+        one: 変動料金
+        other: 変動料金
+      spree/calculator/free_shipping:
+        one: 配送料無料
+        other: 配送料無料
+      spree/calculator/percent_on_line_item:
+        one: アイテムごとのパーセント
+        other: アイテムごとのパーセント
+      spree/calculator/percent_per_item:
+        one: アイテムごとのパーセント
+        other: アイテムごとのパーセント
+      spree/calculator/price_sack:
+        one: プライスサック
+        other: プライスサック
+      spree/calculator/returns/default_refund_amount:
+        one:
+        other:
+      spree/calculator/shipping/flat_percent_item_total:
+        one: 定率
+        other: 定率
+      spree/calculator/shipping/flat_rate:
+        one: 均一の比率
+        other: 均一の比率
+      spree/calculator/shipping/flexi_rate:
+        one: パッケージ商品ごとに柔軟な比率
+        other: パッケージ商品ごとに柔軟な比率
+      spree/calculator/shipping/per_item:
+        one: パッケージ商品ごとに均一の比率
+        other: パッケージ商品ごとに均一の比率
+      spree/calculator/shipping/price_sack:
+        one: 袋値段
+        other: 袋値段
+      spree/calculator/tiered_flat_rate:
+        one: 列の均一料金
+        other: 列の均一料金
+      spree/calculator/tiered_percent:
+        one: 列パーセント
+        other: 列パーセント
       spree/country:
         one: 国名
         other: 国名
@@ -230,12 +445,20 @@ ja:
       spree/customer_return:
         one: 返品
         other: 返品
+      spree/image:
+        one: 画像
+        other: 画像
       spree/inventory_unit:
         one: 在庫品単位
         other: 在庫品単位
+      spree/legacy_user:
+        one: ユーザー
+        other: ユーザー
       spree/line_item:
         one: 品目
         other: 品目
+      spree/log_entry:
+        other: ログエントリー
       spree/option_type:
         one: オプション
         other: オプション
@@ -251,9 +474,13 @@ ja:
       spree/payment_method:
         one: 支払い方法
         other: 支払い方法
+      spree/price:
+        one: 価格
       spree/product:
         one: 商品
         other: 商品
+      spree/product_property:
+        other: 商品情報
       spree/promotion:
         one: プロモーション
         other: プロモーション
@@ -266,6 +493,9 @@ ja:
       spree/prototype:
         one: 原型
         other: 原型
+      spree/refund:
+        one: 払い戻し
+        other: 返金
       spree/refund_reason:
         one: 返金理由
         other: 返金理由
@@ -308,6 +538,11 @@ ja:
       spree/stock_transfer:
         one: 在庫移動
         other: 在庫移動
+      spree/store:
+        one: ストア
+      spree/store_credit_category:
+        one: カテゴリー
+        other: カテゴリー
       spree/tax_category:
         one: 税区分
         other: 税区分
@@ -335,6 +570,9 @@ ja:
       spree/page:
         one: 特集ページ
         other: 特集ページ
+      user:
+        one: ユーザー
+        other: ユーザー
   devise:
     confirmations:
       confirmed: アカウントが正常に確認されました。ログインしました。
@@ -391,16 +629,20 @@ ja:
     account_updated: アカウントが更新されました。
     action: アクション
     actions:
+      add: 追加
       cancel: キャンセル
       continue: 続ける
       create: 作成
+      delete: 削除
       destroy: 削除
       edit: 編集
       list: リスト
       listing: 一覧
       new: 新規
       refund: 返金
+      remove: 削除
       save: 保存
+      split: 分割
       update: 更新
     activate: アクティベートする
     active: 有効
@@ -432,6 +674,9 @@ ja:
     adjustment_total: 調整（値引き・追加料金）総額
     adjustments: 調整（値引き・追加料金）
     admin:
+      promotions:
+        form:
+          general: 一般
       tab:
         configuration: 設定
         option_types: オプション
@@ -521,9 +766,11 @@ ja:
     calculator_settings_warning: 計算方法のタイプを変更する場合は、計算方法の設定を編集する前に保存してください。
     cancel: キャンセル
     canceler: キャンセル者
+    canceled: キャンセル
     canceled_at: にキャンセル
     cannot_create_payment_without_payment_methods: 支払い方法が選択されていないので、支払いを行うことができません
     cannot_create_customer_returns: まだこの注文は発送単位がないため、顧客返金を作成できません。
+    cannot_create_payment_link: まず支払い方法を定義してください。
     cannot_create_returns: 未発送の注文品に対して返品が出来ません。注文をキャンセルし注文を作り直すか問い合わせて下さい。
     cannot_perform_operation: 処理出来ませんでした
     cannot_set_shipping_method_without_address: 顧客詳細が提供されるまで発送方法を設定できません。
@@ -648,6 +895,7 @@ ja:
     doesnt_track_inventory: 在庫をトラッキングしません。
     edit: 編集
     editing_country:
+    edit_refund_reason:
     editing_adjustment_reason:
     editing_option_type:
     editing_payment_method:
@@ -768,6 +1016,7 @@ ja:
       this_file_language: 日本語 (ja-JP)
       translations: 翻訳
     icon: アイコン
+    identifier: 数量
     image: 画像
     images: 画像
     implement_eligible_for_return:
@@ -796,6 +1045,10 @@ ja:
     inventory_adjustment: 在庫調整
     inventory_error_flash_for_insufficient_quantity: カート内のアイテムが販売不可となりました。
     inventory_state: 在庫状態
+    inventory_states:
+      canceled: キャンセル
+      returned: 返品済み
+      shipped: 配送済み
     is_not_available_to_shipment_address: はこの配達先では発送出来ません。
     iso_name: ISO名
     item: アイテム
@@ -911,6 +1164,7 @@ ja:
     no_results: 検索結果がありませんでした。
     no_rules_added: ルールが追加されていません
     no_resource_found: "%{resource}が見つかりませんでした。"
+    no_resource_found_link: 新規追加
     no_returns_found: 返品がありません。
     no_shipping_method_selected: 配送方法が選択されていません。
     no_state_changes: まだ状態変化がありません。
@@ -931,6 +1185,7 @@ ja:
       variant_deleted: 種類を削除しました
       variant_not_deleted: 種類を削除することが出来ませんでした
     num_orders:
+    number: 注文番号
     on_hand: 入荷数
     open: 公開
     open_all_adjustments: すべての調整を開く
@@ -968,6 +1223,8 @@ ja:
         subtotal: '小計:'
         thanks: ご利用ありがとうございました。
         total: '合計: '
+      inventory_cancellation:
+        dear_customer: お客様へ
     order_not_found: 注文を見つけることができませんでした。リトライしていただくようお願いいたします。
     order_number: 注文 %{number}
     order_processed_successfully: 注文が完了しました。
@@ -1330,6 +1587,15 @@ ja:
     stock_transfers: 在庫移動
     stop: 終わり
     store: ストア
+    store_credit:
+      display_action:
+        adjustment: 調整（値引き・追加料金）
+        admin:
+          authorize: 認証しました。
+        credit: 債権
+        void: 債権
+    store_credit_category:
+      default: 初期設定
     street_address: 住所
     street_address_2: 住所の続き
     subtotal: 合計
@@ -1356,6 +1622,7 @@ ja:
       label: 注文はこれらの分類単位を含まなければなりません。
       match_all: すべて
       match_any: 最低一つ
+      match_none: なし
     taxonomies: ジャンルツリー
     taxonomy: ジャンルツリー
     taxonomy_edit: ジャンルツリーを編集する
@@ -1412,6 +1679,9 @@ ja:
     use_new_cc_or_payment_method: 新しいカードを利用 / 支払い方法
     use_s3: 商品画像の保存にAmazon S3を使用する
     user: ユーザー
+    user_role_rule:
+      match_all: すべて
+      match_any: 最低一つ
     user_rule:
       choose_users: ユーザーの選択
     users: ユーザー
