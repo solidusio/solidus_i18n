@@ -1,2 +1,2 @@
 <!-- insert_bottom '[data-hook=admin_configurations_sidebar_menu]'-->
-<%= tab :locales, url: spree.admin_locale_path %>
+<%= tab Spree.t(:i18n.locales), url: spree.admin_locale_path %>
