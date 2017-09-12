@@ -21,10 +21,34 @@ RSpec.describe 'Translation' do
     end
   end
 
-  # Chilean spanish is chosen
+  # Spanish of Chile is chosen.
   context 'when current locale is Chilean Spanish' do
     it 'translation is available' do
       I18n.locale = :'es-CL'
+      expect(translation).to eq 'Código Postal'
+    end
+  end
+
+  # Spanish of Mexico is chosen.
+  context 'when current locale is Chilean Spanish' do
+    it 'translation is available' do
+      I18n.locale = :'es-MX'
+      expect(translation).to eq 'Código Postal'
+    end
+  end
+
+  # Spanish of Ecuador is chosen.
+  context 'when current locale is Chilean Spanish' do
+    it 'translation is available' do
+      I18n.locale = :'es-EC'
+      expect(translation).to eq 'Código Postal'
+    end
+  end
+
+  # Spanish of Spain is chosen.
+  context 'when current locale is Chilean Spanish' do
+    it 'translation is available' do
+      I18n.locale = :es
       expect(translation).to eq 'Código Postal'
     end
   end
