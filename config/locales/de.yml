@@ -594,6 +594,7 @@ de:
     add_stock: Lager hinzufügen
     add_stock_management: Lagerverwaltung hinzufügen
     add_to_cart: In den Warenkorb
+    add_to_stock_location: Zu Lager hinzufügen
     add_variant: Variante hinzufügen
     additional_item: Kosten für weiteren Artikel
     address: Adresse
@@ -622,25 +623,29 @@ de:
           resend: Neu senden
           resume: wiederaufnehmen
       tab:
+        areas: Gebiete
+        checkout: Zur Kasse
         configuration: Konfiguration
+        general: Allgemein
         option_types: Optionen
         orders: Bestellungen
         overview: Übersicht
+        payments: Zahlungen
         products: Produkte
-        promotion_categories: Aktion Kategorien
         promotions: Aktion
+        promotion_categories: Aktion Kategorien
         properties: Eigenschaften
         prototypes: Prototypen
         reports: Berichte
-        taxonomies: Klassifikationen
-        taxons: Klassifikation
-        users: Benutzer
-        checkout: Zur Kasse
-        general: Allgemein
-        payments: Zahlungen
         settings: Einstellungen
         shipping: Lieferung
         stock: Lager
+        stock_items: Verwaltung
+        stock_transfers: Bewegungen
+        taxes: Steuern
+        taxonomies: Klassifikationen
+        taxons: Klassifikation
+        users: Benutzer
       user:
         account: Konto
         addresses: Adressen
@@ -653,6 +658,21 @@ de:
         order_num: Bestellnummer
         orders: Bestellungen
         user_information: Benutzerinformationen
+      variants:
+        table_filter:
+          show_deleted: Gelöschte anzeigen
+        edit:
+          edit_variant: Variante bearbeiten
+        form:
+          pricing_hint: Preis Hinweis
+      prices:
+        any_country: Alle Länder
+        edit:
+          edit_price: Preis bearbeiten
+        index:
+          amount_greater_than: Wert größer als
+          amount_less_than: Wert kleiner als
+          new_price: Neuer Preis
     administration: Verwaltung
     advertise: Bewerben
     agree_to_privacy_policy: Datenschutzerklärung akzeptieren
@@ -678,13 +698,12 @@ de:
     analytics_trackers: Zugriffsstatistik Tracker
     and: und
     api:
-      api:
-        access: Zugang
-        clear_key: Schlüssel löschen
-        generate_key: Schlüssel generieren
-        key: Schlüssel
-        no_key: Kein Schlüssel
-        regenerate_key: Schlüssel neu generieren
+      access: Zugang
+      clear_key: Schlüssel löschen
+      generate_key: Schlüssel generieren
+      key: Schlüssel
+      no_key: Kein Schlüssel
+      regenerate_key: Schlüssel neu generieren
       key_cleared: Schlüssel gelöscht
       key_generated: Schlüssel generiert
     approve: Zustimmen
@@ -703,8 +722,15 @@ de:
     avs_response: Ergebnis der Adressprüfung
     back: Zurück
     back_end: Backend
+    backordered: Nachbestellt
+    back_to_adjustments_list: Zurück zu Anpassungen
+    back_to_countries_list: Zurück zu Länder
+    back_to_orders_list: Zurück zu Bestellungen
     back_to_payment: Zurück zur Zahlung
+    back_to_payments_list: Zurück zu Zahlungen
+    back_to_products_list: Zurück zu Produkte
     back_to_resource_list: Zurück zur Bestellliste
+    back_to_reports_list: Zurück zu Berichte
     back_to_rma_reason_list: Zurück zur Rücksendeliste
     back_to_stock_locations_list: Zurück zur Lagerstandort Liste
     back_to_stock_movements_list: Zurück zur Bestandsführung Liste
@@ -713,7 +739,7 @@ de:
     backorder: Nachlieferung
     backorderable: Nachbestellbar
     backorderable_default: Nachbestellbar (standard)
-    backordered: Nachbestellt
+    backorderable_header: Nachbestellbar
     backorders_allowed: Nachbestellt (standard)
     balance_due: Soll
     base_amount: Grundwert
@@ -726,6 +752,8 @@ de:
     calculator: Rechner
     calculator_settings_warning: Wenn Sie den Berechungs-Typ ändern, müssen Sie erst speichern, bevor Sie die Berechnungs-Einstellungen bearbeiten können
     cancel: abbrechen
+    cancel_inventory: Stornieren
+    canceled: abgebrochen
     canceled_at: Abgebrochen am
     canceler: Abgebrochen von
     cannot_create_customer_returns: Kann Rücksendung nicht durchführen.
@@ -799,6 +827,7 @@ de:
     create_a_new_account: Neues Konto erstellen
     create_new_order: Neuer Bestellung
     create_reimbursement: Vergütung beantragen
+    create_one: Neu Erstellen.
     created_at: Erstellt am
     credit: Guthaben
     credit_allowed: Kredit erlaubt
@@ -867,6 +896,7 @@ de:
     editing_resource: Eintrag bearbeiten
     editing_rma_reason: Rückgabebewilligungsgrund bearbeiten
     editing_user: Benutzer bearbeiten
+    editing_stock_location: Lagerstätte bearbeiten
     eligibility_errors:
       messages:
         has_excluded_product: Der Warenkorb enthält Produkt/e, welche die Zuweisung des Gutschein-Codes verhindern.
@@ -928,6 +958,7 @@ de:
     filter: Filter
     filter_results: Ergebnisse filtern
     finalize: abschließen
+    finalize_all_adjustments: Alle Anpassungen abschließen
     finalized: abgeschlossen
     find_a_taxon: Klassifizierung suchen
     first_item: Kosten für das erste Produkt
@@ -939,6 +970,7 @@ de:
     forgot_password: Passwort vergessen?
     free_shipping: Versandkostenfrei
     free_shipping_amount: Versandkostenfreibetrag
+    from: Von
     front_end: Shop-Ansicht
     gateway: Schnittstelle
     gateway_config_unavailable: Schnittstelle für diese Umgebung nicht erhältlich
@@ -951,6 +983,7 @@ de:
     guest_user_account: Ohne Registrierung bestellen
     has_no_shipped_units: hat keine gelieferten Einheiten
     height: Höhe
+    hidden: versteckt
     hide_cents: Centbeträge ausblenden
     home: Home
     i18n:
@@ -1021,6 +1054,12 @@ de:
     lifetime_stats: 'Statistiken: Lebenszyklus'
     line_item_adjustments: Anpassungen Bestellposten
     list: Liste
+    listing_countries: Länder
+    listing_orders: Bestellungen
+    listing_products: Produkte
+    listing_reports: Berichte
+    listing_tax_categories: Steuer-Kategorien
+    listing_users: Benutzer
     loading: Laden
     loading_tree: Loading tree. Please wait…
     locale_changed: Sprache geändert
@@ -1041,6 +1080,7 @@ de:
     make_refund: Gutschrift erstellen
     make_sure_the_above_reimbursement_amount_is_correct: Stellen Sie sicher, dass die obrige Summe der Vergütung korrekt ist!
     manage_promotion_categories: Werbungskategorien editieren.
+    manage_stock: Lagerverwaltung
     manage_variants: Varianten editieren
     manual_intervention_required: Manuelles eingreifen erforderlich
     master_price: Verkaufspreis (netto)
@@ -1111,6 +1151,7 @@ de:
     no_results: Keine Ergebnisse
     no_returns_found: Keine Erstattung gefunden
     no_rules_added: Keine Regeln verfügbar
+    no_resource: 'Keine %{resource} gefunden.'
     no_shipping_method_selected: Keine Lieferungsart gewählt
     no_state_changes: Keine Statusänderung
     no_tracking_present: Keine Informationen zur Sendungsverfolgung angegeben.
@@ -1449,6 +1490,9 @@ de:
         thanks: Vielen Dank für Ihre Bestellung.
         track_information: 'Sendungsverfolgung: %{tracking}'
         track_link: 'Sendungsverfolgung: %{url}'
+    shipment_date: Lieferdatum
+    shipment_number: Liefernummer
+    shipment_numbers: Liefernummern
     shipment_state: Versandstatus
     shipment_states:
       backorder: Nachlieferung
@@ -1485,6 +1529,7 @@ de:
     show_discontinued: Eingestellte Anzeigen
     show_only_complete_orders: Nur abgeschlossene Bestellungen anzeigen
     show_only_considered_risky: Nur riskante Bestellungen anzeigen
+    show_only_open_transfers: Nur offene Bewegungen anzeigen
     show_rate_in_label: Zeige Steuer im Label
     sku: Artikelnummer
     skus: Artikelnummern
@@ -1617,6 +1662,7 @@ de:
     type_to_search: Typ suchen
     unable_to_connect_to_gateway: Konnte nicht zur Schnitstelle verbinden.
     unable_to_create_reimbursements: Konnte Vergütung nicht erstellen.
+    unfinalize_all_adjustments: Alle Anpassungen entsperren
     under_price: Unter %{price}
     unlock: Entsperren
     unrecognized_card_type: Unbekannter Kartentyp
@@ -1645,6 +1691,9 @@ de:
     value: Wert
     variant: Variante
     variant_placeholder: Variante wählen
+    variant_properties: Varianten Eigenschaften
+    variant_search: Variante
+    variant_search_placeholder: "Artikel-Nr. oder Options-Wert"
     variants: Varianten
     version: Version
     void: entwerten
@@ -1663,7 +1712,9 @@ de:
     canceled: Storniert
     cannot_create_payment_link: Bitte definieren Sie zuerst mindestens eine Zahlungsmethode.
     inventory_states:
+      backordered: Nachbestellt
       canceled: Storniert
+      on_hand: auf Lager
       returned: zurück erstattet
       shipped: Ausgeliefert
     no_resource_found_link: Hinzufügen
