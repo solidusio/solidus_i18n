@@ -1,3 +1,4 @@
+---
 sl-SI:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ sl-SI:
         phone:
         state:
         zipcode:
+        company:
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ sl-SI:
         iso_name:
         name:
         numcode:
+        states_required:
       spree/credit_card:
         base:
         cc_type:
@@ -31,11 +34,16 @@ sl-SI:
         number:
         verification_value:
         year:
+        card_code: Koda Kartice
+        expiration: Velja do
       spree/inventory_unit:
         state:
       spree/line_item:
         price:
         quantity:
+        description: Opis izdelka
+        name: Ime
+        total:
       spree/option_type:
         name:
         presentation:
@@ -54,6 +62,13 @@ sl-SI:
         special_instructions:
         state:
         total:
+        additional_tax_total: DDV
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ sl-SI:
         zipcode:
       spree/payment:
         amount:
+        number:
+        response_code:
+        state: Stanje plačila
       spree/payment_method:
         name:
+        active: Objavljeno
+        auto_capture:
+        description: Opis
+        display_on: Prikaži
+        type: Ponudnik
       spree/product:
         available_on:
         cost_currency:
@@ -84,6 +107,16 @@ sl-SI:
         on_hand:
         shipping_category:
         tax_category:
+        depth: Globina
+        height: Višina
+        meta_description: Meta opis
+        meta_keywords: Meta ključne besede
+        meta_title:
+        price: Osnovna cena
+        promotionable:
+        slug:
+        weight: Teža
+        width: Širina
       spree/promotion:
         advertise:
         code:
@@ -103,6 +136,7 @@ sl-SI:
         name:
       spree/return_authorization:
         amount:
+        pre_tax_total:
       spree/role:
         name:
       spree/state:
@@ -126,14 +160,22 @@ sl-SI:
       spree/tax_category:
         description:
         name:
+        is_default: Privzeto
+        tax_code:
       spree/tax_rate:
         amount:
         included_in_price:
         show_rate_in_label:
+        name: Ime
       spree/taxon:
         name:
         permalink:
         position:
+        description: Opis
+        icon: Ikona
+        meta_description: Meta opis
+        meta_keywords: Meta ključne besede
+        meta_title:
       spree/taxonomy:
         name:
       spree/user:
@@ -152,6 +194,118 @@ sl-SI:
       spree/zone:
         description:
         name:
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Znesek
+        label: Opis
+        name: Ime
+        state: Pokrajina
+        adjustment_reason_id: Razlog
+      spree/adjustment_reason:
+        active: Objavljeno
+        code: Koda
+        name: Ime
+        state: Pokrajina
+      spree/carton:
+        tracking: Sledenje
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Skupaj
+        reimbursement_status:
+        name: Ime
+      spree/image:
+        alt: Alternativni tekst
+        attachment: Datoteka
+      spree/legacy_user:
+        email:
+        password: Geslo
+        password_confirmation: Potrditev gesla
+      spree/option_value:
+        name: Ime
+        presentation: Prikazano ime
+      spree/product_property:
+        value: Vrednost
+      spree/refund:
+        amount: Znesek
+        description: Opis
+        refund_reason_id: Razlog
+      spree/refund_reason:
+        active: Objavljeno
+        name: Ime
+        code: Koda
+      spree/reimbursement:
+        number:
+        reimbursement_status: Status
+        total: Skupaj
+      spree/reimbursement/credit:
+        amount: Znesek
+      spree/reimbursement_type:
+        name: Ime
+        type: Tip
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Pokrajina
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Razlog
+        total: Skupaj
+      spree/return_reason:
+        name: Ime
+        active: Objavljeno
+        memo:
+        number: RMA šifra
+        state: Pokrajina
+      spree/shipping_category:
+        name: Ime
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code: Koda
+        display_on: Prikaži
+        name: Ime
+        tracking_url:
+      spree/shipping_rate:
+        amount: Znesek
+      spree/store_credit:
+        amount: Znesek
+        memo:
+      spree/store_credit_event:
+        action: Možnosti
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Objavljeno
+        address1: Ulica in hišna številka
+        address2: Ulica dodatno
+        backorderable_default:
+        city: Mesto
+        code: Koda
+        country_id: Država
+        default: Privzeto
+        internal_name:
+        name: Ime
+        phone: Telefon
+        propagate_all_variants:
+        state_id: Pokrajina
+        zipcode: Poštna številka
+      spree/stock_movement:
+        action: Možnosti
+        quantity:
+      spree/stock_transfer:
+        created_at:
+        description: Opis
+        tracking_number:
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Objavljeno
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -200,43 +354,123 @@ sl-SI:
               cannot_destroy_default_store:
     models:
       spree/address:
+        one:
+        other:
       spree/country:
+        one: Država
+        other:
       spree/credit_card:
+        one: Kreditna kartica
+        other:
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
       spree/line_item:
       spree/option_type:
+        one: Option Type
+        other: Možnosti izbire
       spree/option_value:
+        one: Option Value
+        other: Izbire
       spree/order:
+        one: Naročilo
+        other: Naročila
       spree/payment:
+        one: Plačilo
+        other: Plačila
       spree/payment_method:
+        one: Način plačila
+        other: Načini plačila
       spree/product:
+        one: Izdelek
+        other: Izdelki
       spree/promotion:
+        one:
+        other: Promocije
       spree/promotion_category:
+        other:
       spree/property:
+        one: Lastnost
+        other: Lastnosti
       spree/prototype:
+        one: Prototip
+        other: Prototipi
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
+        one: Avtorizacija vračila
+        other: Avtorizacije vračil
       spree/return_authorization_reason:
       spree/role:
+        one: Vloge
+        other: Vloge
       spree/shipment:
+        one: Pošiljka
+        other: Pošiljke
       spree/shipping_category:
+        one: Kategorija poštnine
+        other: Kategorije poštnine
       spree/shipping_method:
+        one: Način dostave
+        other: Načini dostave
       spree/state:
+        one: Pokrajina
+        other: Pokrajine
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
+        one: Davčna kategorija
+        other: Davčne kategorije
       spree/tax_rate:
+        other: Davčne stopnje
       spree/taxon:
+        one: Takson
+        other: Taksoni
       spree/taxonomy:
+        one: Taxonomy
+        other: Taksonomije
       spree/tracker:
+        other: Statistike
       spree/user:
+        one: Uporabnik
+        other: Uporabniki
       spree/variant:
+        one: Variant
+        other: Variante
       spree/zone:
+        one: Območje
+        other: Območja
+      spree/adjustment:
+        one: Prilagoditev
+        other: Prilagoditve
+      spree/calculator:
+        one: Kalkulator
+      spree/legacy_user:
+        one: Uporabnik
+        other: Uporabniki
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Lastnosti izdelka
+      spree/refund:
+        one: Povračilo
+        other:
+      spree/store_credit_category:
+        one: Kategorija
+        other: Kategorije
   devise:
     confirmations:
       confirmed:
@@ -302,6 +536,11 @@ sl-SI:
       refund:
       save:
       update: Posodobi
+      add: Dodaj
+      delete: Izbriši
+      remove: Odstrani
+      ship: pošlji
+      split:
     activate: Activate
     active: Objavljeno
     add: Dodaj
@@ -345,6 +584,12 @@ sl-SI:
         taxonomies:
         taxons:
         users:
+        checkout: Naročilo
+        general: Splošno
+        payments: Plačila
+        settings: Nastavitve
+        shipping: Poštnina
+        stock:
       user:
         account:
         addresses:
@@ -384,7 +629,7 @@ sl-SI:
     are_you_sure: Ste prepričani?
     are_you_sure_delete: Ste prepričani, da želite izbrisati ta vnos?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Napaka pri avtorizaciji
     authorized:
     auto_capture:
@@ -411,7 +656,7 @@ sl-SI:
     both: Oboje
     calculated_reimbursements:
     calculator: Kalkulator
-    calculator_settings_warning: "Če spreminjate tip kalkulatorja, morate pred urejanjem nastavitev najprej shraniti."
+    calculator_settings_warning: Če spreminjate tip kalkulatorja, morate pred urejanjem nastavitev najprej shraniti.
     cancel: prekini
     canceled_at:
     canceler:
@@ -423,7 +668,7 @@ sl-SI:
     capture: zajemi
     capture_events:
     card_code: Koda Kartice
-    card_number: "Številka Kartice"
+    card_number: Številka Kartice
     card_type:
     card_type_is: Tip kartice je
     cart: Košarica
@@ -821,13 +1066,15 @@ sl-SI:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: Vaše naročilo je bilo uspešno obdelano
     order_resumed:
     order_state:
       address: naslov
-      awaiting_return: "čakajo na vrnitev"
+      awaiting_return: čakajo na vrnitev
       canceled: preklicana
       cart: košarica
       complete: končaj
@@ -970,7 +1217,7 @@ sl-SI:
     prototype: Prototip
     prototypes: Prototipi
     provider: Ponudnik
-    provider_settings_warning: "Če spreminjate tip ponudnika, morate najprej shraniti predno lahko urejate nastavitve ponudnika"
+    provider_settings_warning: Če spreminjate tip ponudnika, morate najprej shraniti predno lahko urejate nastavitve ponudnika
     qty: Količina
     quantity:
     quantity_returned: Quantity Returned
@@ -1116,7 +1363,7 @@ sl-SI:
     show_only_complete_orders: Prikaži le dokončana naročila
     show_only_considered_risky:
     show_rate_in_label:
-    sku: "šifra"
+    sku: šifra
     skus:
     slug:
     source:
@@ -1277,7 +1524,7 @@ sl-SI:
     weight: Teža
     what_is_a_cvv: Kaj je CVV varnostna številka kreditne kartice?
     what_is_this: Kaj je to?
-    width: "Širina"
+    width: Širina
     year: Leto
     you_have_no_orders_yet: You have no orders yet.
     your_cart_is_empty: Vaša nakupovalna košarica je prazna
@@ -1286,3 +1533,27 @@ sl-SI:
     zipcode:
     zone: Območje
     zones: Območja
+    canceled: preklicana
+    cannot_create_payment_link:
+    inventory_states:
+      canceled: preklicana
+      returned: vračilo
+      shipped: poslano
+    no_resource_found_link:
+    number:
+    store_credit:
+      display_action:
+        adjustment: Prilagoditev
+        credit: Kredit
+        void: Kredit
+        admin:
+          authorize:
+    store_credit_category:
+      default: Privzeto
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity:
+        state: Pokrajina
+        shipment: Pošiljka
+        cancel: Prekini
