@@ -1,3 +1,4 @@
+---
 es-EC:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ es-EC:
         phone: Teléfono
         state: Provincia ó Estado
         zipcode: Código Postal
+        company: Compañia
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ es-EC:
         iso_name: Nombre ISO
         name: Nombre
         numcode: Código ISO
+        states_required: Provincias requeridas
       spree/credit_card:
         base:
         cc_type: Tipo
@@ -31,11 +34,16 @@ es-EC:
         number: Número
         verification_value: Valor verificación
         year: Año
+        card_code: Código de tarjeta
+        expiration: Vencimiento
       spree/inventory_unit:
         state: Provincia ó Estado
       spree/line_item:
         price: Precio
         quantity: Cantidad
+        description: Descripción del Artículo
+        name: Nombre
+        total:
       spree/option_type:
         name: Nombre
         presentation: Presentación
@@ -54,6 +62,13 @@ es-EC:
         special_instructions: Instrucciones especiales
         state: Estado
         total: Total
+        additional_tax_total: Tasa
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total: Total de envío
       spree/order/bill_address:
         address1: Calle dirección de facturación
         city: Ciudad dirección de facturación
@@ -72,8 +87,16 @@ es-EC:
         zipcode: Código postal dirección envío
       spree/payment:
         amount: Cuantía
+        number:
+        response_code:
+        state: Estado del Pago
       spree/payment_method:
         name: Nombre
+        active: Activa
+        auto_capture:
+        description: Descripción
+        display_on: Mostrar
+        type: Proveedor
       spree/product:
         available_on: Disponible
         cost_currency: Moneda de costo
@@ -84,6 +107,16 @@ es-EC:
         on_hand: En mano
         shipping_category: Categoría de envío
         tax_category: Categoría fiscal
+        depth: Ancho
+        height: Altura
+        meta_description: Descripción Meta
+        meta_keywords: Keywords Meta
+        meta_title:
+        price: Precio principal
+        promotionable:
+        slug:
+        weight: Peso
+        width: Longitud
       spree/promotion:
         advertise: Anuncio
         code: Código
@@ -103,6 +136,7 @@ es-EC:
         name: Nombre
       spree/return_authorization:
         amount: Cuantía
+        pre_tax_total:
       spree/role:
         name: Nombre
       spree/state:
@@ -126,14 +160,22 @@ es-EC:
       spree/tax_category:
         description: Descripción
         name: Nombre
+        is_default: Por defecto
+        tax_code:
       spree/tax_rate:
         amount: Tarifa
         included_in_price: Incluido en el precio
         show_rate_in_label: Mostrar tarifa en etiqueta
+        name: Nombre
       spree/taxon:
         name: Nombre
         permalink: Permalink
         position: Posición
+        description: Descripción
+        icon: Icono
+        meta_description: Descripción Meta
+        meta_keywords: Keywords Meta
+        meta_title:
       spree/taxonomy:
         name: Nombre
       spree/user:
@@ -152,6 +194,119 @@ es-EC:
       spree/zone:
         description: Descripción
         name: Nombre
+        default_tax: Zona de tasa por defecto
+      spree/adjustment:
+        adjustable:
+        amount: Cuantía
+        label: Descripción
+        name: Nombre
+        state: Provincia
+        adjustment_reason_id: Razón
+      spree/adjustment_reason:
+        active: Activa
+        code: Código
+        name: Nombre
+        state: Provincia
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Nombre
+      spree/image:
+        alt: Texto alternativo
+        attachment: Nombre de Fichero
+      spree/legacy_user:
+        email: Email
+        password: Password
+        password_confirmation: Confirmación del Password
+      spree/option_value:
+        name: Nombre
+        presentation: Presentación
+      spree/product_property:
+        value: Valor
+      spree/refund:
+        amount: Cuantía
+        description: Descripción
+        refund_reason_id: Razón
+      spree/refund_reason:
+        active: Activa
+        name: Nombre
+        code: Código
+      spree/reimbursement:
+        number: Número
+        reimbursement_status: Estatus
+        total: Total
+      spree/reimbursement/credit:
+        amount: Cuantía
+      spree/reimbursement_type:
+        name: Nombre
+        type: Tipo
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Provincia
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Razón
+        total: Total
+      spree/return_reason:
+        name: Nombre
+        active: Activa
+        memo:
+        number: Número RMA
+        state: Provincia
+      spree/shipping_category:
+        name: Nombre
+      spree/shipment:
+        tracking: Número de Tracking
+      spree/shipping_method:
+        admin_name: Nombre interno
+        code: Código
+        display_on: Mostrar
+        name: Nombre
+        tracking_url: URL de Tracking
+      spree/shipping_rate:
+        tax_rate: Tasa de impuesto
+        amount: Cuantía
+      spree/store_credit:
+        amount: Cuantía
+        memo:
+      spree/store_credit_event:
+        action: Acción
+      spree/stock_item:
+        count_on_hand: Disponible
+      spree/stock_location:
+        admin_name: Nombre interno
+        active: Activa
+        address1: Calle
+        address2: Calle (cont.)
+        backorderable_default:
+        city: Ciudad
+        code: Código
+        country_id: País
+        default: Por defecto
+        internal_name: Nombre interno
+        name: Nombre
+        phone: Teléfono
+        propagate_all_variants:
+        state_id: Provincia
+        zipcode: Postal
+      spree/stock_movement:
+        action: Acción
+        quantity: Cantidad
+      spree/stock_transfer:
+        created_at: Creada
+        description: Descripción
+        tracking_number: Número de Tracking
+      spree/tracker:
+        analytics_id: ID Analytics
+        active: Activa
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ es-EC:
         one: Tarjeta de Crédito.
         other: Tarjetas de Crédito
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Unidad de inventario.
         other: Unidades de inventario
@@ -216,7 +373,11 @@ es-EC:
         one: Línea de pedido
         other: Líneas de pedido
       spree/option_type:
+        one: Tipo de opción
+        other: Tipos de opción
       spree/option_value:
+        one: Valor de opción
+        other: Valores de opción
       spree/order:
         one: Pedido
         other: Pedidos
@@ -224,6 +385,8 @@ es-EC:
         one: Pago
         other: Pagos
       spree/payment_method:
+        one: Método de Pago
+        other: Métodos de Pago
       spree/product:
         one: Producto
         other: Productos
@@ -231,6 +394,7 @@ es-EC:
         one: Promoción
         other: Promociones
       spree/promotion_category:
+        other:
       spree/property:
         one: Propiedad
         other: Propiedades
@@ -238,8 +402,12 @@ es-EC:
         one: Prototipo
         other: Propotipos
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Autorización para devolución
         other: Autorizaciones para devolución
@@ -254,13 +422,20 @@ es-EC:
         one: Categoría de envío
         other: Categorías de envío
       spree/shipping_method:
+        one: Método de Envío
+        other: Métodos de Envío
       spree/state:
         one: Provincia
         other: Provincias
       spree/state_change:
       spree/stock_location:
+        one: Localización de stock
+        other: Localizaciones de Stock
       spree/stock_movement:
+        other: Movimientos del Stock
       spree/stock_transfer:
+        one: Transferencia de Stock
+        other: Transferencias de Stock
       spree/tax_category:
         one: Categoría fiscal
         other: Categorías fiscales
@@ -274,6 +449,7 @@ es-EC:
         one: Categoría
         other: Categorías
       spree/tracker:
+        other: Analytics Trackers
       spree/user:
         one: Usuario
         other: Usuarios
@@ -283,6 +459,24 @@ es-EC:
       spree/zone:
         one: Zona
         other: Zonas
+      spree/adjustment:
+        one: Ajuste
+        other: Ajustes
+      spree/calculator:
+        one: Calculador
+      spree/legacy_user:
+        one: Usuario
+        other: Usuarios
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Propiedades del producto
+      spree/refund:
+        one: Devolución
+        other:
+      spree/store_credit_category:
+        one: Categoría
+        other: Categorías
   devise:
     confirmations:
       confirmed: Tu cuenta fue confirmada satisfactoriamente. Ya estás registrado.
@@ -350,6 +544,11 @@ es-EC:
       refund:
       save: Guardar
       update: Actualizar
+      add: Añadir
+      delete: Borrar
+      remove: Quitar
+      ship: Enviar
+      split: Dividir
     activate: Activar
     active: Activa
     add: Añadir
@@ -393,6 +592,12 @@ es-EC:
         taxonomies:
         taxons:
         users: Usuarios
+        checkout: Realizar pedido
+        general: General
+        payments: Pagos
+        settings: Preferencias
+        shipping: Envío
+        stock:
       user:
         account:
         addresses:
@@ -432,7 +637,7 @@ es-EC:
     are_you_sure: "¿Estás seguro?"
     are_you_sure_delete: "¿Estás seguro de que quieres borrar este registro?"
     associated_adjustment_closed: El ajuste asociado está cerrado y no será recalculado. ¿Quieres abrirlo?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Fallo en la autorización
     authorized:
     auto_capture:
@@ -845,7 +1050,7 @@ es-EC:
     option_values: Valores de opción
     optional: Opcional
     options: Opciones
-    or: "ó"
+    or: ó
     or_over_price: "%{price} ó más"
     order: Pedido
     order_adjustments: Ajustes de pedido
@@ -871,6 +1076,8 @@ es-EC:
         subtotal:
         thanks: "¡Gracias por su compra!"
         total:
+      inventory_cancellation:
+        dear_customer: Estimado cliente,\n
     order_not_found: No pudimos encontrar tu pedido. Por favor intenta esta acción de nuevo
     order_number:
     order_processed_successfully: Tu pedido ha sido procesado con éxito
@@ -1290,7 +1497,7 @@ es-EC:
     transfer_from_location: Transferido desde
     transfer_stock: Transferencia de Stock
     transfer_to_location: Transferido a
-    tree: "Árbol"
+    tree: Árbol
     type: Tipo
     type_to_search: Tipo a buscar
     unable_to_connect_to_gateway: No es posible la conexión a la pasarela
@@ -1336,3 +1543,27 @@ es-EC:
     zipcode: Código Postal
     zone: Zona
     zones: Zonas
+    canceled: cancelada
+    cannot_create_payment_link: Por favor define algún método de pago primero
+    inventory_states:
+      canceled: cancelada
+      returned: devuelto
+      shipped: Enviado
+    no_resource_found_link: Añadir uno
+    number: Número
+    store_credit:
+      display_action:
+        adjustment: Ajuste
+        credit: Crédito
+        void: Crédito
+        admin:
+          authorize:
+    store_credit_category:
+      default: Por defecto
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Cantidad
+        state: Provincia
+        shipment: Envío
+        cancel: Cancelar
