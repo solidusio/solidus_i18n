@@ -1,3 +1,4 @@
+---
 fi:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ fi:
         phone: Puhelin
         state: Osavaltio tai maakunta
         zipcode: Postinumero
+        company: Yritys
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ fi:
         iso_name: ISO-nimi
         name: Nimi
         numcode: ISO-koodi
+        states_required: Maakunta vaaditaan
       spree/credit_card:
         base:
         cc_type: Tyyppi
@@ -31,11 +34,16 @@ fi:
         number: Numero
         verification_value: Tarkistuskoodi
         year: Vuosi
+        card_code: Kortin koodi
+        expiration: Erääntyminen
       spree/inventory_unit:
         state: Tila
       spree/line_item:
         price: Hinta
         quantity: Määrä
+        description: Tuotekuvaus
+        name: Nimi
+        total:
       spree/option_type:
         name: Nimi
         presentation: Julkinen nimi
@@ -54,6 +62,13 @@ fi:
         special_instructions: Erityisohjeet
         state: Tila
         total: Yhteensä
+        additional_tax_total: Vero
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total: Toimitus yhteensä
       spree/order/bill_address:
         address1: Maksajan katuosoite
         city: Maksajan postitoimipaikka
@@ -72,8 +87,16 @@ fi:
         zipcode: Vastaanottajan postinumero
       spree/payment:
         amount: Summa
+        number:
+        response_code:
+        state: Maksun tila
       spree/payment_method:
         name: Nimi
+        active: Käytössä
+        auto_capture:
+        description: Kuvaus
+        display_on: Näytä
+        type: Tarjoaja
       spree/product:
         available_on: Saatavilla
         cost_currency: Maksuvaluutta
@@ -84,6 +107,16 @@ fi:
         on_hand: Varastossa
         shipping_category: Toimituskategoria
         tax_category: Verokanta
+        depth: Syvyys
+        height: Korkeus
+        meta_description: Meta-kuvaus
+        meta_keywords: Meta-avainsanat
+        meta_title:
+        price: Toimitushinta
+        promotionable:
+        slug:
+        weight: Paino
+        width: Leveys
       spree/promotion:
         advertise: Mainosta
         code: Koodi
@@ -103,6 +136,7 @@ fi:
         name: Nimi
       spree/return_authorization:
         amount: Määrä
+        pre_tax_total:
       spree/role:
         name: Nimi
       spree/state:
@@ -126,14 +160,22 @@ fi:
       spree/tax_category:
         description: Kuvaus
         name: Nimi
+        is_default: Oletus
+        tax_code:
       spree/tax_rate:
         amount: Aste
         included_in_price: Sisältyy hintaan
         show_rate_in_label: Näytä veroprosentti hinnoissa
+        name: Nimi
       spree/taxon:
         name: Nimi
         permalink: Siisti url
         position: Sijainti
+        description: Kuvaus
+        icon: Kuvake
+        meta_description: Meta-kuvaus
+        meta_keywords: Meta-avainsanat
+        meta_title:
       spree/taxonomy:
         name: Nimi
       spree/user:
@@ -152,6 +194,119 @@ fi:
       spree/zone:
         description: Kuvaus
         name: Nimi
+        default_tax: Default Tax Zone
+      spree/adjustment:
+        adjustable:
+        amount: Määrä
+        label: Kuvaus
+        name: Nimi
+        state: Osavaltio
+        adjustment_reason_id: Syy
+      spree/adjustment_reason:
+        active: Käytössä
+        code: Koodi
+        name: Nimi
+        state: Osavaltio
+      spree/carton:
+        tracking: Seuranta
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Yhteensä
+        reimbursement_status:
+        name: Nimi
+      spree/image:
+        alt: Vaihtoehtoinen teksti
+        attachment: Tiedostonimi
+      spree/legacy_user:
+        email: Sähköposti
+        password: Salasana
+        password_confirmation: Vahvista salasana
+      spree/option_value:
+        name: Nimi
+        presentation: Esitys
+      spree/product_property:
+        value: Arvo
+      spree/refund:
+        amount: Määrä
+        description: Kuvaus
+        refund_reason_id: Syy
+      spree/refund_reason:
+        active: Käytössä
+        name: Nimi
+        code: Koodi
+      spree/reimbursement:
+        number: Numero
+        reimbursement_status: Tila
+        total: Yhteensä
+      spree/reimbursement/credit:
+        amount: Määrä
+      spree/reimbursement_type:
+        name: Nimi
+        type: Tyyppi
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Osavaltio
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Syy
+        total: Yhteensä
+      spree/return_reason:
+        name: Nimi
+        active: Käytössä
+        memo:
+        number: Palautusnumero (RMA)
+        state: Osavaltio
+      spree/shipping_category:
+        name: Nimi
+      spree/shipment:
+        tracking: Seurantatunnus
+      spree/shipping_method:
+        admin_name: Sisäinen nimi
+        code: Koodi
+        display_on: Näytä
+        name: Nimi
+        tracking_url: Seurantaosoite
+      spree/shipping_rate:
+        tax_rate: Veroaste
+        amount: Määrä
+      spree/store_credit:
+        amount: Määrä
+        memo:
+      spree/store_credit_event:
+        action: Toimenpide
+      spree/stock_item:
+        count_on_hand: Määrä varastossa
+      spree/stock_location:
+        admin_name: Sisäinen nimi
+        active: Käytössä
+        address1: Katuosoite
+        address2: Katuosoite (jatkoa)
+        backorderable_default:
+        city: Postitoimipaikka
+        code: Koodi
+        country_id: Maa
+        default: Oletus
+        internal_name: Sisäinen nimi
+        name: Nimi
+        phone: Puhelin
+        propagate_all_variants:
+        state_id: Osavaltio
+        zipcode: Postinumero
+      spree/stock_movement:
+        action: Toimenpide
+        quantity: Määrä
+      spree/stock_transfer:
+        created_at: Luotu
+        description: Kuvaus
+        tracking_number: Seurantatunnus
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Käytössä
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ fi:
         one: Luottokortti
         other: Luottokortit
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Myyntiyksikkö
         other: Myyntiyksikköä
@@ -216,7 +373,11 @@ fi:
         one: Tuoterivi
         other: Tuoterivit
       spree/option_type:
+        one: Valintatyyppi
+        other: Valintatyypit
       spree/option_value:
+        one: Valinta-arvo
+        other: Valinta-arvot
       spree/order:
         one: Tilaus
         other: Tilaukset
@@ -233,6 +394,7 @@ fi:
         one: Kampanja
         other: Kampanjat
       spree/promotion_category:
+        other:
       spree/property:
         one: Ominaisuus
         other: Ominaisuudet
@@ -240,8 +402,12 @@ fi:
         one: Prototyyppi
         other: Prototyypit
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Asiakaspalautus
         other: Asiakaspalautukset
@@ -266,6 +432,7 @@ fi:
         one: Varasto
         other: Varastot
       spree/stock_movement:
+        other: Varastosiirrot
       spree/stock_transfer:
         one: Varastosiirto
         other: Varastosiirrot
@@ -293,6 +460,24 @@ fi:
       spree/zone:
         one: Alue
         other: Alueet
+      spree/adjustment:
+        one: Hintamuutos
+        other: Hintamuutokset
+      spree/calculator:
+        one: Laskin
+      spree/legacy_user:
+        one: Käyttäjä
+        other: Käyttäjät
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Tuotteen ominaisuudet
+      spree/refund:
+        one: Hyvitä
+        other:
+      spree/store_credit_category:
+        one: Kategoria
+        other: Kategoriat
   devise:
     confirmations:
       confirmed: Kiitos tilisi vahvistamisesta! Kirjasimme sinut nyt sisään.
@@ -360,6 +545,11 @@ fi:
       refund:
       save: Tallenna
       update: Päivitä
+      add: Lisää
+      delete: Poista
+      remove: Poista
+      ship: toimita
+      split: Jaa osiin
     activate: Ota käyttöön
     active: Käytössä
     add: Lisää
@@ -403,6 +593,12 @@ fi:
         taxonomies:
         taxons:
         users: Käyttäjät
+        checkout: Kassa
+        general: Yleistä
+        payments: Maksut
+        settings: Asetukset
+        shipping: Toimitus
+        stock:
       user:
         account:
         addresses:
@@ -442,7 +638,7 @@ fi:
     are_you_sure: Oletko varma?
     are_you_sure_delete: Haluatko varmasti poistaa tämän tiedon?
     associated_adjustment_closed: Tähän liitetty hintamuutos on suljettu, joten sitä ei huomioida laskuissa. Haluatko avata sen?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Valtuutus epäonnistui
     authorized:
     auto_capture:
@@ -881,6 +1077,8 @@ fi:
         subtotal:
         thanks: Thank you for your business.
         total:
+      inventory_cancellation:
+        dear_customer: Hyvä asiakkaamme,\n
     order_not_found: Tilaustasi ei löytynyt näillä tiedoilla. Yritä ystävällisesti uudelleen.
     order_number:
     order_populator:
@@ -1350,3 +1548,27 @@ fi:
     zipcode: Postinumero
     zone: Alue
     zones: Alueet
+    canceled: peruutettu
+    cannot_create_payment_link: Ole hyvä ja määrittele ensin joitakin maksutapoja.
+    inventory_states:
+      canceled: peruutettu
+      returned: palautettu
+      shipped: toimitettu
+    no_resource_found_link: Lisää yksi
+    number: Numero
+    store_credit:
+      display_action:
+        adjustment: Hintamuutos
+        credit: Luotto
+        void: Luotto
+        admin:
+          authorize:
+    store_credit_category:
+      default: Oletus
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Määrä
+        state: Osavaltio
+        shipment: Toimitus
+        cancel: Peruuta
