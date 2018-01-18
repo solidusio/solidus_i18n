@@ -1,3 +1,4 @@
+---
 ro:
   activerecord:
     attributes:
@@ -5,12 +6,13 @@ ro:
         address1: Adresă
         address2: Adresă (continuare)
         city: Localitate
-        country: "Țara"
+        country: Țara
         firstname: Prenume
         lastname: Nume
         phone: Telefon
         state: Județ / Regiune
         zipcode: Cod poștal
+        company: Firma
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ ro:
         iso_name: Denumire ISO
         name: Nume
         numcode: Cod ISO
+        states_required: Județe obligatorii
       spree/credit_card:
         base: Bază
         cc_type: Tip
@@ -31,11 +34,16 @@ ro:
         number: Număr
         verification_value: Cod de verificare
         year: An
+        card_code: Codul cardului
+        expiration: Expirare
       spree/inventory_unit:
         state: Județ / Regiune
       spree/line_item:
         price: Preț
         quantity: Cantitate
+        description: Descriere articol
+        name: Nume
+        total:
       spree/option_type:
         name: Nume
         presentation: Prezentare
@@ -54,6 +62,13 @@ ro:
         special_instructions: Instrucțiuni speciale
         state: Județ / Regiune
         total: Total
+        additional_tax_total: Taxe
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total: Total livrare
       spree/order/bill_address:
         address1: Strada adresă de facturare
         city: Oraș adresă de facturare
@@ -72,8 +87,16 @@ ro:
         zipcode: Cod poștal adresă de livrare
       spree/payment:
         amount: Valoare
+        number:
+        response_code:
+        state: Status plată
       spree/payment_method:
         name: Nume
+        active: Activ
+        auto_capture:
+        description: Descriere
+        display_on: Arată
+        type: Furnizor
       spree/product:
         available_on: Disponibil de la
         cost_currency: Valută preț de cost
@@ -81,9 +104,19 @@ ro:
         description: Descriere
         master_price: Preț de bază
         name: Nume
-        on_hand: "În stoc"
+        on_hand: În stoc
         shipping_category: Categorie de livrare
         tax_category: Categorie taxă
+        depth: Adâncime
+        height: Înălțime
+        meta_description: Descriere meta
+        meta_keywords: Cuvinte cheie meta
+        meta_title:
+        price: Preț de bază
+        promotionable:
+        slug:
+        weight: Greutate
+        width: Lățime
       spree/promotion:
         advertise: Promovează
         code: Cod
@@ -92,7 +125,7 @@ ro:
         expires_at: Expiră la
         name: Nume
         path: Cale
-        starts_at: "Începe la"
+        starts_at: Începe la
         usage_limit: Limită de folosire
       spree/promotion_category:
         name:
@@ -103,6 +136,7 @@ ro:
         name: Nume
       spree/return_authorization:
         amount: Suma
+        pre_tax_total:
       spree/role:
         name: Nume
       spree/state:
@@ -126,14 +160,22 @@ ro:
       spree/tax_category:
         description: Descriere
         name: Nume
+        is_default: Standard
+        tax_code:
       spree/tax_rate:
         amount: Tarif
         included_in_price: Inclus în preț
         show_rate_in_label: Afișează cursul în etichetă
+        name: Nume
       spree/taxon:
         name: Nume
         permalink: Permalink
         position: Poziție
+        description: Descriere
+        icon: Icoană
+        meta_description: Descriere meta
+        meta_keywords: Cuvinte cheie meta
+        meta_title:
       spree/taxonomy:
         name: Nume
       spree/user:
@@ -144,7 +186,7 @@ ro:
         cost_currency: Valută preț de cost
         cost_price: Preț de cost
         depth: Adâncime
-        height: "Înălțime"
+        height: Înălțime
         price: Preț
         sku: Cod produs
         weight: Greutate
@@ -152,6 +194,119 @@ ro:
       spree/zone:
         description: Descriere
         name: Naume
+        default_tax: Zonă de taxare prestabilită
+      spree/adjustment:
+        adjustable:
+        amount: Suma
+        label: Descriere
+        name: Nume
+        state: Județ / regiune
+        adjustment_reason_id: Motiv
+      spree/adjustment_reason:
+        active: Activ
+        code: Cod
+        name: Nume
+        state: Județ / regiune
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Nume
+      spree/image:
+        alt: Text alternativ
+        attachment: Nume fișier
+      spree/legacy_user:
+        email: Email
+        password: Parola
+        password_confirmation: Confirmă parola
+      spree/option_value:
+        name: Nume
+        presentation: Descriere
+      spree/product_property:
+        value: Valoare
+      spree/refund:
+        amount: Suma
+        description: Descriere
+        refund_reason_id: Motiv
+      spree/refund_reason:
+        active: Activ
+        name: Nume
+        code: Cod
+      spree/reimbursement:
+        number: Număr
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Suma
+      spree/reimbursement_type:
+        name: Nume
+        type: Tastează
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Județ / regiune
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Motiv
+        total: Total
+      spree/return_reason:
+        name: Nume
+        active: Activ
+        memo:
+        number: Număr pentru avizul de retur a mărfii
+        state: Județ / regiune
+      spree/shipping_category:
+        name: Nume
+      spree/shipment:
+        tracking: Număr de tracking
+      spree/shipping_method:
+        admin_name:
+        code: Cod
+        display_on: Arată
+        name: Nume
+        tracking_url: URL de tracking
+      spree/shipping_rate:
+        tax_rate: Tarif taxă
+        amount: Suma
+      spree/store_credit:
+        amount: Suma
+        memo:
+      spree/store_credit_event:
+        action: Acțiune
+      spree/stock_item:
+        count_on_hand: Valoare stoc
+      spree/stock_location:
+        admin_name:
+        active: Activ
+        address1: Strada
+        address2: Strada (cont.)
+        backorderable_default:
+        city: Oraș / Localitate
+        code: Cod
+        country_id: Țara
+        default: Standard
+        internal_name:
+        name: Nume
+        phone: Telefon
+        propagate_all_variants:
+        state_id: Județ / regiune
+        zipcode: Cod poștal
+      spree/stock_movement:
+        action: Acțiune
+        quantity: Cantitate
+      spree/stock_transfer:
+        created_at: Creat la
+        description: Descriere
+        tracking_number: Număr de tracking
+      spree/tracker:
+        analytics_id: ID Analytics
+        active: Activ
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -203,12 +358,14 @@ ro:
         one: Adresă
         other: Adrese
       spree/country:
-        one: "Țara"
-        other: "Țări"
+        one: Țara
+        other: Țări
       spree/credit_card:
         one: Card de credit
         other: Carduri de credit
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Unitatea de inventar
         other: Unități de inventar
@@ -216,7 +373,11 @@ ro:
         one: Element
         other: Elemente
       spree/option_type:
+        one: Tip opțiune
+        other: Tipuri opțiune
       spree/option_value:
+        one: Valoarea opțiune
+        other: Valori opțiuni
       spree/order:
         one: Comandă
         other: Comenzi
@@ -224,11 +385,16 @@ ro:
         one: Plată
         other: Plăți
       spree/payment_method:
+        one: Metodă de plată
+        other: Metode de plată
       spree/product:
         one: Produs
         other: Produse
       spree/promotion:
+        one: Promoție
+        other: Promoții
       spree/promotion_category:
+        other:
       spree/property:
         one: Proprietate
         other: Proprietăți
@@ -236,8 +402,12 @@ ro:
         one: Prototip
         other: Prototipuri
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Autorizație de retur
         other: Autorizații de retur
@@ -252,13 +422,20 @@ ro:
         one: Categorie de expediție
         other: Categorii de expediții
       spree/shipping_method:
+        one: Metodă livrare
+        other: Metode livrare
       spree/state:
         one: Județ / Regiune
         other: Județe / Regiuni
       spree/state_change:
       spree/stock_location:
+        one: Locație stoc
+        other: Locații stoc
       spree/stock_movement:
+        other: Mișcări stoc
       spree/stock_transfer:
+        one: Transfer stoc
+        other: Transferuri stoc
       spree/tax_category:
         one: Categorie de taxare
         other: Categorii de taxare
@@ -272,6 +449,7 @@ ro:
         one: Clasificare
         other: Clasificări
       spree/tracker:
+        other: Analytics Trackers
       spree/user:
         one: Utilizator
         other: Utilizatori
@@ -281,6 +459,24 @@ ro:
       spree/zone:
         one: Zonă
         other: Zone
+      spree/adjustment:
+        one: Re-evaluare
+        other: Re-evaluare
+      spree/calculator:
+        one: Calculator
+      spree/legacy_user:
+        one: Utilizator
+        other: Utilizatori
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Proprietăți produs
+      spree/refund:
+        one: Restituire
+        other:
+      spree/store_credit_category:
+        one: Categorie
+        other: Categorii
   devise:
     confirmations:
       confirmed: Contul dumneavoastră a fost confirmat cu succes. Sunteți autentificat.
@@ -340,7 +536,7 @@ ro:
       cancel: Anulează
       continue: Continuă
       create: Creează
-      destroy: "Șterge"
+      destroy: Șterge
       edit: Editează
       list: Listează
       listing: Listare
@@ -348,6 +544,11 @@ ro:
       refund:
       save: Salvează
       update: Actualizează
+      add: Adaugă
+      delete: Șterge
+      remove: Șterge
+      ship: livrează
+      split: Divide
     activate: Activează
     active: Activ
     add: Adaugă
@@ -391,6 +592,12 @@ ro:
         taxonomies:
         taxons:
         users: Utilizatori
+        checkout: Efectuați plata
+        general: General
+        payments: Plăți
+        settings: Setări
+        shipping: Livrare
+        stock:
       user:
         account:
         addresses:
@@ -423,27 +630,27 @@ ro:
     analytics_desc_list_3: Niciun cod de instalat
     analytics_desc_list_4: Este complet gratuit!
     analytics_trackers: Analytics Trackers
-    and: "și"
+    and: și
     approve:
     approved_at:
     approver:
     are_you_sure: Ești sigur(ă)
     are_you_sure_delete: Ești sigur(ă) că vrei să ștergi această înregistrare?
     associated_adjustment_closed: Ajustarea asociată este închisă și nu va fi recalculată. Doriți să o deschideți?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Autorizare nereușită
     authorized:
     auto_capture:
     available_on: Disponibil de la
     average_order_value:
     avs_response:
-    back: "Înapoi"
+    back: Înapoi
     back_end: Interfața de administrare
     back_to_payment:
     back_to_resource_list:
     back_to_rma_reason_list:
-    back_to_store: "Înapoi la magazin"
-    back_to_users_list: "Înapoi la lista de utilizatori"
+    back_to_store: Înapoi la magazin
+    back_to_users_list: Înapoi la lista de utilizatori
     backorderable: Permite comenzi în așteptare
     backorderable_default:
     backordered:
@@ -466,7 +673,7 @@ ro:
     cannot_create_returns: Nu poți genera un retur deoarece această comandă nu a fost livrată încă.
     cannot_perform_operation: Operațiunea cerută nu poate fi îndeplinită
     cannot_set_shipping_method_without_address: Metoda de livrare nu poate fi setată înaintea furnizării datelor clientului.
-    capture: "Înregistrare"
+    capture: Înregistrare
     capture_events:
     card_code: Codul cardului
     card_number: Numărul cardului
@@ -490,8 +697,8 @@ ro:
     clear_cache_warning:
     click_and_drag_on_the_products_to_sort_them:
     clone: Clonă
-    close: "Închide"
-    close_all_adjustments: "Închide toate ajustările"
+    close: Închide
+    close_all_adjustments: Închide toate ajustările
     code: Cod
     company: Firma
     complete: complet
@@ -508,8 +715,8 @@ ro:
     could_not_create_customer_return:
     could_not_create_stock_movement: A apărut o problemă la salvarea mișcării de stoc. Vă rog reîncercați.
     count_on_hand: Valoare stoc
-    countries: "Țări"
-    country: "Țara"
+    countries: Țări
+    country: Țara
     country_based: Bazat pe țară
     country_name: Nume
     country_names:
@@ -573,13 +780,13 @@ ro:
     default_refund_amount:
     default_tax: Taxă prestabilită
     default_tax_zone: Zonă de taxare prestabilită
-    delete: "Șterge"
+    delete: Șterge
     deleted_variants_present:
     delivery: Livrare
     depth: Adâncime
     description: Descriere
     destination: Destinație
-    destroy: "Șterge"
+    destroy: Șterge
     details:
     discount_amount: Valoare reducere
     dismiss_banner: Nu, mulțumesc! Nu sunt interesat, nu mai afișa acest mesaj din nou.
@@ -634,7 +841,7 @@ ro:
           contents_changed: Conținutul comenzii a fost modificat
         page_view: Pagină vizualizată
         user:
-          signup: "Înregistrare utilizator"
+          signup: Înregistrare utilizator
     exceptions:
       count_on_hand_setter:
     exchange_for:
@@ -670,7 +877,7 @@ ro:
     guest_checkout: Comandă oaspete
     guest_user_account: Comandă ca oaspete
     has_no_shipped_units: Nu are unități de expediție
-    height: "Înălțime"
+    height: Înălțime
     hide_cents: Ascunde subunități monetare (bani)
     home: Acasă
     i18n:
@@ -726,11 +933,11 @@ ro:
       path: Cale
     last_name: Nume
     last_name_begins_with: Numele începe cu
-    learn_more: "Învață mai multe"
+    learn_more: Învață mai multe
     lifetime_stats:
     line_item_adjustments:
     list: Listă
-    loading: "Încarcă"
+    loading: Încarcă
     locale_changed: Localizare schimbat
     location: Locație
     lock: Blochează
@@ -869,12 +1076,14 @@ ro:
         subtotal:
         thanks: Vă mulțumim pentru comanda efectuată.
         total:
+      inventory_cancellation:
+        dear_customer: Stimate client,\n
     order_not_found: Nu am putut găsi comanda dumneavoastră. Vă rugăm încercați din nou.
     order_processed_successfully: Comanda a fost procesată cu succes
     order_resumed:
     order_state:
       address: adresă
-      awaiting_return: "în așteptarea returului"
+      awaiting_return: în așteptarea returului
       canceled: anulat
       cart: coș cumpărături
       complete: procesat
@@ -919,7 +1128,7 @@ ro:
       credit_owed: credit datorat
       failed: nereușit
       paid: plătit
-      pending: "în așteptare"
+      pending: în așteptare
       processing: se procesează
       void: void
     payment_updated: Plată salvată
@@ -1035,8 +1244,8 @@ ro:
     refund_reasons:
     refunded_amount:
     refunds:
-    register: "Înregistrează-te ca utilizator nou"
-    registration: "Înregistrare"
+    register: Înregistrează-te ca utilizator nou
+    registration: Înregistrare
     reimburse:
     reimbursed:
     reimbursement:
@@ -1058,8 +1267,8 @@ ro:
     reimbursements:
     reject:
     rejected:
-    remember_me: "Ține-mi minte datele"
-    remove: "Șterge"
+    remember_me: Ține-mi minte datele
+    remove: Șterge
     rename: Redenumește
     report:
     reports: Rapoarte
@@ -1136,7 +1345,7 @@ ro:
       backorder: comandă în afara stocului
       canceled:
       partial: parțial
-      pending: "în așteptare"
+      pending: în așteptare
       ready: pregătit
       shipped: livrat
     shipment_transfer_error:
@@ -1333,3 +1542,27 @@ ro:
     zipcode: Cod poștal
     zone: Zonă
     zones: Zone
+    canceled: anulat
+    cannot_create_payment_link: Vă rugăm, definiție metode de plată prima dată.
+    inventory_states:
+      canceled: anulat
+      returned: returnat
+      shipped: livrat
+    no_resource_found_link: Adaugă unul
+    number: Număr
+    store_credit:
+      display_action:
+        adjustment: Re-evaluare
+        credit: Credit
+        void: Credit
+        admin:
+          authorize:
+    store_credit_category:
+      default: Standard
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Cantitate
+        state: Județ / regiune
+        shipment: Livrare
+        cancel: Anulează
