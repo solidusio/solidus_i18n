@@ -1,3 +1,4 @@
+---
 sv:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ sv:
         phone: Telefon
         state: Län
         zipcode: Postnummer
+        company: Företag
       spree/calculator/tiered_flat_rate:
         preferred_base_amount: Basbelopp
         preferred_tiers: Nivåer
@@ -23,6 +25,7 @@ sv:
         iso_name: ISO-namn
         name: Namn
         numcode: ISO-kod
+        states_required: Län krävs
       spree/credit_card:
         base:
         cc_type: Typ
@@ -30,12 +33,17 @@ sv:
         name: Namn
         number: Nummer
         verification_value: Verifikationvärde
-        year: "År"
+        year: År
+        card_code: Säkerhetskod
+        expiration: Upphörande
       spree/inventory_unit:
         state: Status
       spree/line_item:
         price: Pris
         quantity: Antal
+        description: Artikelbeskrivning
+        name: Namn
+        total: Total pris
       spree/option_type:
         name: Namn
         presentation: Presentation
@@ -54,6 +62,13 @@ sv:
         special_instructions: Särskilda instruktioner
         state: Status
         total: Totalt
+        additional_tax_total: Moms
+        approved_at: Datum godkänt
+        approver_id: Attestant
+        canceled_at: Avbeställd datum
+        canceler_id: Avbeställare
+        included_tax_total: Moms (inkl.)
+        shipment_total: Leverans totalt
       spree/order/bill_address:
         address1: Faktureringsadress, gata
         city: Faktureringsadress, ort
@@ -72,8 +87,16 @@ sv:
         zipcode: Fraktadress, postnr.
       spree/payment:
         amount: Belopp
+        number: Identifierare
+        response_code: Transaktions ID
+        state: Betalningsstatus
       spree/payment_method:
         name: Namn
+        active: Aktiv
+        auto_capture: Auto-capture
+        description: Beskrivning
+        display_on: Visa
+        type: Leverantör
       spree/product:
         available_on: Tillgänglig
         cost_currency: Kostnadsvaluta
@@ -84,6 +107,16 @@ sv:
         on_hand: På lager
         shipping_category: Fraktkategori
         tax_category: Momskategori
+        depth: Djup
+        height: Höjd
+        meta_description: Metabeskrivning
+        meta_keywords: Metanyckelord
+        meta_title: Rubrik
+        price: Grundpris
+        promotionable:
+        slug: Permalänk
+        weight: Vikt
+        width: Bredd
       spree/promotion:
         advertise: Annonsera
         code: Rabattkod
@@ -103,6 +136,7 @@ sv:
         name: Namn
       spree/return_authorization:
         amount: Belopp
+        pre_tax_total:
       spree/role:
         name: Namn
       spree/state:
@@ -126,14 +160,22 @@ sv:
       spree/tax_category:
         description: Beskrivning
         name: Namn
+        is_default: Förvald
+        tax_code: Momskod
       spree/tax_rate:
         amount: Sats
         included_in_price: Ingår i priset
         show_rate_in_label: Visa momssats i etikett
+        name: Namn
       spree/taxon:
         name: Namn
         permalink: Permalink
         position: Position
+        description: Beskrivning
+        icon: Ikon
+        meta_description: Metabeskrivning
+        meta_keywords: Metanyckelord
+        meta_title: Rubrik
       spree/taxonomy:
         name: Namn
       spree/user:
@@ -152,6 +194,119 @@ sv:
       spree/zone:
         description: Beskrivning
         name: Namn
+        default_tax: Förvald moms-zon
+      spree/adjustment:
+        adjustable: Justerbar
+        amount: Belopp
+        label: Beskrivning
+        name: Namn
+        state: Län
+        adjustment_reason_id: Anledning
+      spree/adjustment_reason:
+        active: Aktiv
+        code: Kod
+        name: Namn
+        state: Län
+      spree/carton:
+        tracking: Spårning
+      spree/customer_return:
+        number: Returnummer
+        pre_tax_total:
+        total: Totalt
+        reimbursement_status: Ersättningsstatus
+        name: Namn
+      spree/image:
+        alt: Alternativ text
+        attachment: Filnamn
+      spree/legacy_user:
+        email: Epost
+        password: Lösenord
+        password_confirmation: Bekräfta lösenord
+      spree/option_value:
+        name: Namn
+        presentation: Presentation
+      spree/product_property:
+        value: Värde
+      spree/refund:
+        amount: Belopp
+        description: Beskrivning
+        refund_reason_id: Anledning
+      spree/refund_reason:
+        active: Aktiv
+        name: Namn
+        code: Kod
+      spree/reimbursement:
+        number: Nummer
+        reimbursement_status: Status
+        total: Totalt
+      spree/reimbursement/credit:
+        amount: Belopp
+      spree/reimbursement_type:
+        name: Namn
+        type: Typ
+      spree/return_item:
+        acceptance_status: Accept status
+        acceptance_status_errors: Accept fel
+        charged: Debiterad
+        exchange_variant:
+        inventory_unit_state: Län
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id: Önskad ersättningstyp
+        reception_status:
+        return_reason: Anledning
+        total: Totalt
+      spree/return_reason:
+        name: Namn
+        active: Aktiv
+        memo: PM
+        number: RMA-nummer
+        state: Län
+      spree/shipping_category:
+        name: Namn
+      spree/shipment:
+        tracking: Spårnings-nummer
+      spree/shipping_method:
+        admin_name: Internt namn
+        code: Kod
+        display_on: Visa
+        name: Namn
+        tracking_url: Spårnings URL
+      spree/shipping_rate:
+        tax_rate: Momsklass
+        amount: Belopp
+      spree/store_credit:
+        amount: Belopp
+        memo: PM
+      spree/store_credit_event:
+        action: Åtgärd
+      spree/stock_item:
+        count_on_hand: Tillgängligt
+      spree/stock_location:
+        admin_name: Internt namn
+        active: Aktiv
+        address1: Adress
+        address2: Adress (forts.)
+        backorderable_default:
+        city: Ort
+        code: Kod
+        country_id: Land
+        default: Förvald
+        internal_name: Internt namn
+        name: Namn
+        phone: Telefon
+        propagate_all_variants:
+        state_id: Län
+        zipcode: Postnr.
+      spree/stock_movement:
+        action: Åtgärd
+        quantity: Antal
+      spree/stock_transfer:
+        created_at: Skapad
+        description: Beskrivning
+        tracking_number: Spårnings-nummer
+      spree/tracker:
+        analytics_id: Analytics-ID
+        active: Aktiv
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -170,7 +325,7 @@ sv:
         spree/classification:
           attributes:
             taxon_id:
-              already_linked: "är redan länkad till denna produkt"
+              already_linked: är redan länkad till denna produkt
         spree/credit_card:
           attributes:
             base:
@@ -183,7 +338,7 @@ sv:
         spree/refund:
           attributes:
             amount:
-              greater_than_allowed: "är större än tillåten mängd."
+              greater_than_allowed: är större än tillåten mängd.
         spree/reimbursement:
           attributes:
             base:
@@ -248,8 +403,8 @@ sv:
         one: Prototype
         other: Prototyper
       spree/refund_reason:
-        one: "Återbetalning skäl"
-        other: "Återbetalning skäl"
+        one: Återbetalning skäl
+        other: Återbetalning skäl
       spree/reimbursement:
         one: Ersättning
         other: Ersättningar
@@ -284,6 +439,7 @@ sv:
         one: Leverans plats
         other: Leverans platser
       spree/stock_movement:
+        other: Lagerrörelser
       spree/stock_transfer:
         one: Lageröverföring
         other: Lageröverföringar
@@ -311,6 +467,24 @@ sv:
       spree/zone:
         one: Zone
         other: Zoner
+      spree/adjustment:
+        one: Justering
+        other: Ändringar
+      spree/calculator:
+        one: Kalkylator
+      spree/legacy_user:
+        one: Användare
+        other: Användare
+      spree/log_entry:
+        other: Logg poster
+      spree/product_property:
+        other: Produktegenskaper
+      spree/refund:
+        one: Återbetala
+        other: Återbetalning
+      spree/store_credit_category:
+        one: Kategori
+        other: Kategorier
   devise:
     confirmations:
       confirmed: Ditt konto är bekräftat. Du kan nu logga in.
@@ -365,7 +539,7 @@ sv:
     accepted: Godkänd
     account: Konto
     account_updated: Konto uppdaterat
-    action: "Åtgärd"
+    action: Åtgärd
     actions:
       cancel: Avbryt
       continue: Fortsätt
@@ -375,9 +549,14 @@ sv:
       list: Lista
       listing: Lista
       new: Ny
-      refund: "Återbetalning"
+      refund: Återbetalning
       save: Spara
       update: Uppdatera
+      add: Lägg till
+      delete: Ta bort
+      remove: Ta bort
+      ship: leverera
+      split: Dela
     activate: Aktivera
     active: Aktiv
     add: Lägg till
@@ -402,16 +581,16 @@ sv:
     adjustable: Justerbar
     adjustment: Justering
     adjustment_amount: Belopp
-    adjustment_successfully_closed: "Ändring är framgångsrikt stängd!"
-    adjustment_successfully_opened: "Ändring är framgångsrikt öppnad!"
+    adjustment_successfully_closed: Ändring är framgångsrikt stängd!
+    adjustment_successfully_opened: Ändring är framgångsrikt öppnad!
     adjustment_total: Summa justeringar
-    adjustments: "Ändringar"
+    adjustments: Ändringar
     admin:
       tab:
         configuration: Konfiguration
         option_types: Tillvalstyper
         orders: Beställningar
-        overview: "Översikt"
+        overview: Översikt
         products: Produkter
         promotions: Kampanjer
         promotion_categories: Kampanjkategorier
@@ -421,6 +600,12 @@ sv:
         taxonomies: Taxonomier
         taxons: Klasser
         users: Användare
+        checkout: Kassa
+        general: Allmänt
+        payments: Betalningar
+        settings: Inställningar
+        shipping: Leverans
+        stock: Lager
       user:
         account: Konto
         addresses: Adresser
@@ -457,10 +642,10 @@ sv:
     approve: godkänn
     approved_at: Datum godkänt
     approver: Attestant
-    are_you_sure: "Är du säker?"
-    are_you_sure_delete: "Är du säker på att du vill ta bort denna post?"
+    are_you_sure: Är du säker?
+    are_you_sure_delete: Är du säker på att du vill ta bort denna post?
     associated_adjustment_closed: Den tillhörande justeringen är stängd, och blir inte omräknad. Vill du öppna den?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Auktorisationen misslyckades
     authorized: Auktoriserad
     auto_capture: Auto-capture
@@ -742,7 +927,7 @@ sv:
     inventory_adjustment: Inventariejustering
     inventory_error_flash_for_insufficient_quantity: En artikel i din varukorg är inte längre tillgänglig.
     inventory_state: Lagerstatus
-    is_not_available_to_shipment_address: "är inte tillgänglig till fraktadress"
+    is_not_available_to_shipment_address: är inte tillgänglig till fraktadress
     iso_name: Iso namn
     item: Artikel
     item_description: Artikelbeskrivning
@@ -870,8 +1055,8 @@ sv:
       variant_not_deleted: Varianten kunde inte tas bort
     num_orders: "# Beställningar"
     on_hand: Tillgängligt
-    open: "Öppen"
-    open_all_adjustments: "Öppna alla ändringar"
+    open: Öppen
+    open_all_adjustments: Öppna alla ändringar
     option_type: Alternativtyp
     option_type_placeholder: Välj typ av alternativ
     option_types: Alternativtyper
@@ -905,6 +1090,8 @@ sv:
         subtotal: 'Delsumma:'
         thanks: Tack för dit köp.
         total: 'Totalsumma:'
+      inventory_cancellation:
+        dear_customer: Bäste kund,\n
     order_not_found: Vi kunde inte hitta din order. Gör ett nytt försök.
     order_number: Beställning %{number}
     order_processed_successfully: Din order har tagits emot.
@@ -922,13 +1109,13 @@ sv:
       resumed: fortsatt
       returned: returnerad
     order_summary: Ordersammanfattning
-    order_sure_want_to: "Är du säker på att du vill %{event} denna order?"
+    order_sure_want_to: Är du säker på att du vill %{event} denna order?
     order_total: Summa att betala
     order_updated: Order uppdaterad
     orders: Ordrar
     other_items_in_other: Andra artiklar i beställningen
     out_of_stock: Ej i lager
-    overview: "Översikt"
+    overview: Översikt
     package_from: paket från
     pagination:
       next_page: nästa sida »
@@ -973,7 +1160,7 @@ sv:
     pre_tax_amount:
     pre_tax_refund_amount:
     pre_tax_total:
-    preferred_reimbursement_type: "Önskad ersättningstyp"
+    preferred_reimbursement_type: Önskad ersättningstyp
     presentation: Presentation
     previous: Föregående
     previous_state_missing:
@@ -1067,11 +1254,11 @@ sv:
     received: Mottaget
     reception_status:
     reference: Referens
-    refund: "Återbetala"
+    refund: Återbetala
     refund_amount_must_be_greater_than_zero:
-    refund_reasons: "Återbetalning anledning"
-    refunded_amount: "Återbetalningsbelopp"
-    refunds: "Återbetalning"
+    refund_reasons: Återbetalning anledning
+    refunded_amount: Återbetalningsbelopp
+    refunds: Återbetalning
     register: Registrera dig
     registration: Registrering
     reimburse: Ersätta
@@ -1084,7 +1271,7 @@ sv:
         exchange_summary:
         for: för
         instructions: Din ersättning har behandlats.
-        refund_summary: "Återbetalnings sammanfattning"
+        refund_summary: Återbetalnings sammanfattning
         subject: Ersättnings notifiering
         total_refunded:
     reimbursement_perform_failed:
@@ -1101,10 +1288,10 @@ sv:
     report: Rapport
     reports: Rapporter
     resend: Skicka igen
-    reset_password: "Återställ mitt lösenord"
+    reset_password: Återställ mitt lösenord
     response_code: Svarskod
-    resume: "återuppta"
-    resumed: "Återupptagen"
+    resume: återuppta
+    resumed: Återupptagen
     return: returera
     return_authorization: Returauktorisation
     return_authorization_reasons:
@@ -1233,14 +1420,14 @@ sv:
       invalid: Ogiltigt
       manual_intervention_required:
       on_hand: I lager
-      open: "Öppen"
+      open: Öppen
       order: Beställning
       payment: Betalning
       pending: Avvaktande
       processing: Under bearbetning
       ready: Klar
-      reimbursed: "Återbetald"
-      resumed: "Återupptagen"
+      reimbursed: Återbetald
+      resumed: Återupptagen
       returned: Returnerad
       shipped: Skickad
       void: Void
@@ -1289,8 +1476,8 @@ sv:
       match_any: minst en
     taxonomies: Klassificeringar
     taxonomy: Klassificering
-    taxonomy_edit: "Ändra Klassificering"
-    taxonomy_tree_error: "Ändringen har inte accepterats och trädet har återställts till sitt tidigare tillstånd. Var god försök igen."
+    taxonomy_edit: Ändra Klassificering
+    taxonomy_tree_error: Ändringen har inte accepterats och trädet har återställts till sitt tidigare tillstånd. Var god försök igen.
     taxonomy_tree_instruction: "* Högerklicka på en kategori för att komma åt menyn för att lägga till, ta bort eller sortera klasser."
     taxons: Klasser
     test: Test
@@ -1321,9 +1508,9 @@ sv:
     tracking_url: Spårnings URL
     tracking_url_placeholder: ex. http://quickship.com/package?num=:tracking
     transaction_id: Transaktions ID
-    transfer_from_location: "Överflyttning från"
-    transfer_stock: "Överflyttning lager"
-    transfer_to_location: "Överflyttning till"
+    transfer_from_location: Överflyttning från
+    transfer_stock: Överflyttning lager
+    transfer_to_location: Överflyttning till
     tree: Träd
     type: Typ
     type_to_search: Skriv för sökning
@@ -1347,8 +1534,8 @@ sv:
     validation:
       cannot_be_less_than_shipped_units: får inte vara mindre än antalet levererade enheter.
       cannot_destroy_line_item_as_inventory_units_have_shipped:
-      exceeds_available_stock: "Överstiger tillgängligt lager. Var säker på att radartikeln har ett giltigt antal."
-      is_too_large: "är för stor – vi har inte så mycket i lager!"
+      exceeds_available_stock: Överstiger tillgängligt lager. Var säker på att radartikeln har ett giltigt antal.
+      is_too_large: är för stor – vi har inte så mycket i lager!
       must_be_int: måste vara ett heltal
       must_be_non_negative: måste vara ett positivt tal
       unpaid_amount_not_zero: 'Beloppet har inte ersatts till fullo. Kvarstår: %{amount}'
@@ -1362,7 +1549,7 @@ sv:
     what_is_a_cvv: Vad är en säkerthetskod (CVV)?
     what_is_this: Vad är det här?
     width: Bredd
-    year: "År"
+    year: År
     you_have_no_orders_yet: Du har inga order än.
     your_cart_is_empty: Varukorgen är tom
     your_order_is_empty_add_product: Din order är tom, sök och lägg till produkten ovan
@@ -1370,3 +1557,27 @@ sv:
     zipcode: Postnummer
     zone: Zon
     zones: Zoner
+    canceled: annulerad
+    cannot_create_payment_link: Definiera först någon betalningsmetod
+    inventory_states:
+      canceled: annulerad
+      returned: returnerad
+      shipped: levererad
+    no_resource_found_link: Addera en
+    number: Nummer
+    store_credit:
+      display_action:
+        adjustment: Justering
+        credit: Kredit
+        void: Kredit
+        admin:
+          authorize: Auktoriserad
+    store_credit_category:
+      default: Förvald
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Antal
+        state: Län
+        shipment: Leverans
+        cancel: Avbryt
