@@ -1,3 +1,4 @@
+---
 id:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ id:
         phone: Telepon
         state: Provinsi
         zipcode: Kode Pos
+        company: Perusahaan
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ id:
         iso_name: Nama ISO
         name: Nama
         numcode: Kode ISO
+        states_required: Memerlukan Provinsi
       spree/credit_card:
         base: Basis
         cc_type: Tipe
@@ -31,11 +34,16 @@ id:
         number: Nomor
         verification_value: Kode Verifikasi
         year: Tahun
+        card_code: Kode Kartu
+        expiration: Waktu kedaluwarsa
       spree/inventory_unit:
         state: Status
       spree/line_item:
         price: Harga
         quantity: Kuantitas
+        description: Deskripsi Barang
+        name: Nama
+        total: Total Harga
       spree/option_type:
         name: Nama
         presentation: Presentasi
@@ -54,6 +62,13 @@ id:
         special_instructions: Instruksi Tambahan
         state: State
         total: Total
+        additional_tax_total: Pajak
+        approved_at: Disetujui pada
+        approver_id: Disetujui oleh
+        canceled_at: Dibatalkan pada
+        canceler_id: Dibatalkan oleh
+        included_tax_total: Termasuk Pajak
+        shipment_total: Total Pengiriman
       spree/order/bill_address:
         address1: Alamat penagihan nama jalan
         city: Alamat penagihan kota
@@ -72,8 +87,16 @@ id:
         zipcode: Alamat pengiriman kode pos
       spree/payment:
         amount: Jumlah
+        number:
+        response_code:
+        state: Status pembayaran
       spree/payment_method:
         name: Nama
+        active: Aktif
+        auto_capture: auto capture
+        description: Deskripsi
+        display_on: Tampilan
+        type: Penyedia
       spree/product:
         available_on: Tersedia Pada
         cost_currency: Kurs Biaya
@@ -84,6 +107,16 @@ id:
         on_hand: Yang Tersedia
         shipping_category: Kategori Pengiriman
         tax_category: Kategori Pajak
+        depth: Kedalaman
+        height: Tinggi
+        meta_description: Deskripsi Meta
+        meta_keywords: Kata Kunci Meta
+        meta_title: Judul Meta
+        price: Harga Master
+        promotionable:
+        slug: Slug
+        weight: Berat
+        width: Lebar
       spree/promotion:
         advertise: Iklan
         code: Kode
@@ -103,6 +136,7 @@ id:
         name: Nama
       spree/return_authorization:
         amount: Jumlah
+        pre_tax_total:
       spree/role:
         name: Nama
       spree/state:
@@ -119,21 +153,29 @@ id:
       spree/store:
         mail_from_address:
         meta_description:
-        meta_keywords: 
+        meta_keywords:
         name: Nama
         seo_title: Judul SEO
         url:
       spree/tax_category:
         description: Deskripsi
         name: Nama
+        is_default: Nilai Awal
+        tax_code: Kode Pajak
       spree/tax_rate:
         amount: Persentase
         included_in_price: Termasuk dalam Harga
         show_rate_in_label: Tunjukan persentase di label
+        name: Nama
       spree/taxon:
         name: Nama
         permalink: Permalink
         position: Posisi
+        description: Deskripsi
+        icon: Ikon
+        meta_description: Deskripsi Meta
+        meta_keywords: Kata Kunci Meta
+        meta_title: Judul Meta
       spree/taxonomy:
         name: Nama
       spree/user:
@@ -152,6 +194,119 @@ id:
       spree/zone:
         description: Deskripsi
         name: Nama
+        default_tax: Wilayah Pajak Awal
+      spree/adjustment:
+        adjustable:
+        amount: Jumlah
+        label: Deskripsi
+        name: Nama
+        state: Provinsi
+        adjustment_reason_id: Sebab
+      spree/adjustment_reason:
+        active: Aktif
+        code: Kode
+        name: Nama
+        state: Provinsi
+      spree/carton:
+        tracking: Pelacakan
+      spree/customer_return:
+        number: Nomor Pengembalian Barang
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Nama
+      spree/image:
+        alt: Alternatif
+        attachment: Nama file
+      spree/legacy_user:
+        email: Email
+        password: Kata sandi
+        password_confirmation: Konfirmasi Kata Sandi
+      spree/option_value:
+        name: Nama
+        presentation: Presentasi
+      spree/product_property:
+        value: Nilai
+      spree/refund:
+        amount: Jumlah
+        description: Deskripsi
+        refund_reason_id: Sebab
+      spree/refund_reason:
+        active: Aktif
+        name: Nama
+        code: Kode
+      spree/reimbursement:
+        number: Nomor
+        reimbursement_status: Status
+        total: Total
+      spree/reimbursement/credit:
+        amount: Jumlah
+      spree/reimbursement_type:
+        name: Nama
+        type: Tipe
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged: charged
+        exchange_variant:
+        inventory_unit_state: Provinsi
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Sebab
+        total: Total
+      spree/return_reason:
+        name: Nama
+        active: Aktif
+        memo: Memo
+        number: Nomor RMA
+        state: Provinsi
+      spree/shipping_category:
+        name: Nama
+      spree/shipment:
+        tracking: Nomor Pelacakan
+      spree/shipping_method:
+        admin_name:
+        code: Kode
+        display_on: Tampilan
+        name: Nama
+        tracking_url:
+      spree/shipping_rate:
+        tax_rate: Persentase Pajak
+        amount: Jumlah
+      spree/store_credit:
+        amount: Jumlah
+        memo: Memo
+      spree/store_credit_event:
+        action: Aksi
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Aktif
+        address1: Alamat Jalan
+        address2: Alamat Jalan (lanjutan)
+        backorderable_default:
+        city: Kota
+        code: Kode
+        country_id: Negara
+        default: Nilai Awal
+        internal_name:
+        name: Nama
+        phone: Telepon
+        propagate_all_variants:
+        state_id: Provinsi
+        zipcode: Kode Pos
+      spree/stock_movement:
+        action: Aksi
+        quantity: Jumlah
+      spree/stock_transfer:
+        created_at: Dibuat Saat
+        description: Deskripsi
+        tracking_number: Nomor Pelacakan
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Aktif
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ id:
         one: Kartu Kredit
         other: Kartu kredit lainnya
       spree/customer_return:
+        one: Pengembalian kostumer
+        other: Pengembalian kostumer
       spree/inventory_unit:
         one: Satuan Unit
         other: Satuan Unit lainnya
@@ -216,7 +373,11 @@ id:
         one: Barang
         other: Barang lainnya
       spree/option_type:
+        one: Pilihan tipe
+        other: Pilihan tipe
       spree/option_value:
+        one: Pilihan nilai
+        other: Pilihan nilai
       spree/order:
         one: Pemesanan
         other: Pemesanan lainnya
@@ -224,10 +385,14 @@ id:
         one: Pembayaran
         other: Pembayaran lainnya
       spree/payment_method:
+        one: Metode Pembayaran
+        other: Metode Pembayaran
       spree/product:
         one: Produk
         other: Produk lainnya
       spree/promotion:
+        one: Promosi
+        other: Promosi
       spree/promotion_category:
       spree/property:
         one: Properti
@@ -236,8 +401,12 @@ id:
         one: Prototipe
         other: Prototipe lainnya
       spree/refund_reason:
+        other: Alasan Pengembalian Uang
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Otorisasi Pengembalian
         other: Otorisasi Pengembalian lainnya
@@ -252,13 +421,20 @@ id:
         one: Kategori Pengiriman
         other: Kategori Pengiriman lainnya
       spree/shipping_method:
+        one: Metode Pengiriman
+        other: Metode Pengiriman
       spree/state:
         one: Provinsi
         other: Provinsi lainnya
       spree/state_change:
       spree/stock_location:
+        one: Lokasi Stok
+        other: Lokasi Stok
       spree/stock_movement:
+        other: Pergerakan Stok
       spree/stock_transfer:
+        one: Pemindahan Stok
+        other: Pemindahan Stok
       spree/tax_category:
         one: Kategori Pajak
         other: Kategori Pajak lainnya
@@ -272,6 +448,7 @@ id:
         one: Taksonomi
         other: Taksonomi lainnya
       spree/tracker:
+        other: Analisis tracker
       spree/user:
         one: Pengguna
         other: Pengguna lainnya
@@ -281,6 +458,24 @@ id:
       spree/zone:
         one: Wilayah
         other: Wilayah-wilayah
+      spree/adjustment:
+        one: Penyesuaian
+        other: Penambahan
+      spree/calculator:
+        one: Kalkulator
+      spree/legacy_user:
+        one: Pengguna
+        other: Pengguna
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Properti Produk
+      spree/refund:
+        one: Pengembalian Uang
+        other:
+      spree/store_credit_category:
+        one: Kategori
+        other: Kategori
   devise:
     confirmations:
       confirmed: Akun Anda telah berhasil di konfirmasi. Anda sekarang telah masuk sistem.
@@ -346,6 +541,11 @@ id:
       refund:
       save: Simpan
       update: Pembaharuan
+      add: Tambahkan
+      delete: Hapus
+      remove: Menghapus
+      ship: Kirim
+      split: Urai
     activate: Aktivasi
     active: Aktif
     add: Tambahkan
@@ -388,6 +588,12 @@ id:
         taxonomies:
         taxons:
         users:
+        checkout: Checkout
+        general: Umum
+        payments: Pembayaran
+        settings: Pengaturan
+        shipping: Mengirimkan
+        stock:
       user:
         account:
         addresses:
@@ -427,7 +633,7 @@ id:
     are_you_sure: Anda yakin?
     are_you_sure_delete: Anda yakin mau menghilangkan record berikut?
     associated_adjustment_closed: Penyesuaian yang dimaksud telah ditutup. Apakah Anda mau membukanya?
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Gagal Otorisasi
     authorized: Otorisasi
     auto_capture: auto capture
@@ -866,6 +1072,8 @@ id:
         subtotal:
         thanks: Terima kasih.
         total:
+      inventory_cancellation:
+        dear_customer: Untuk pelanggan,\n
     order_not_found: Kami tidak dapat menemukan pemesanan Anda. Silahkan coba lagi.
     order_number: Nomor Pemesanan
     order_processed_successfully: Pemesanan anda telah berhasil diproses
@@ -893,7 +1101,7 @@ id:
     package_from: paket dari
     pagination:
       first: halaman awal
-      previous: « halaman sebelumnya
+      previous: "« halaman sebelumnya"
       next_page: halaman selanjutnya »
       previous_page: "« halaman sebelumnya"
       truncate: "…"
@@ -1333,3 +1541,27 @@ id:
     zipcode: Kode Pos
     zone: Wilayah
     zones: Wilayah
+    canceled: Telah dibatalkan
+    cannot_create_payment_link: Silahkan mendefinisikan beberapa metode pembayaran pertama.
+    inventory_states:
+      canceled: Telah dibatalkan
+      returned: kembali
+      shipped: dikirim
+    no_resource_found_link: Tambahkan satu
+    number: Nomor
+    store_credit:
+      display_action:
+        adjustment: Penyesuaian
+        credit: Kredit
+        void: Kredit
+        admin:
+          authorize: Otorisasi
+    store_credit_category:
+      default: Nilai Awal
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity: Jumlah
+        state: Provinsi
+        shipment: Pengiriman
+        cancel: Batal
