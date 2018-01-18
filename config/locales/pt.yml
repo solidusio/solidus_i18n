@@ -1,3 +1,4 @@
+---
 pt:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ pt:
         phone: Telefone
         state: Estado
         zipcode: Código Postal
+        company:
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ pt:
         iso_name: Nome ISO
         name: Nome
         numcode: Código ISO
+        states_required:
       spree/credit_card:
         base:
         cc_type: Tipo
@@ -31,11 +34,16 @@ pt:
         number: Número
         verification_value:
         year:
+        card_code: Código do cartão
+        expiration: Expiração
       spree/inventory_unit:
         state:
       spree/line_item:
         price: Preço
         quantity: Quantidade
+        description: Descrição do Artigo
+        name: Nome
+        total:
       spree/option_type:
         name: Nome
         presentation:
@@ -54,6 +62,13 @@ pt:
         special_instructions:
         state:
         total:
+        additional_tax_total: Imposto
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ pt:
         zipcode:
       spree/payment:
         amount: Quantia
+        number:
+        response_code:
+        state: Distrito do Pagamento
       spree/payment_method:
         name: Nome
+        active: Ativo
+        auto_capture:
+        description: Descrição
+        display_on: Mostrar
+        type: Provedor
       spree/product:
         available_on:
         cost_currency:
@@ -84,6 +107,16 @@ pt:
         on_hand:
         shipping_category:
         tax_category:
+        depth: Espessura
+        height: Altura
+        meta_description: Descrição
+        meta_keywords: Palavras-Chave
+        meta_title:
+        price: Preço Principal
+        promotionable:
+        slug:
+        weight: Peso
+        width: Largura
       spree/promotion:
         advertise: Advertise
         code: Código
@@ -103,6 +136,7 @@ pt:
         name:
       spree/return_authorization:
         amount:
+        pre_tax_total:
       spree/role:
         name:
       spree/state:
@@ -126,14 +160,22 @@ pt:
       spree/tax_category:
         description:
         name:
+        is_default: Padrão
+        tax_code:
       spree/tax_rate:
         amount:
         included_in_price:
         show_rate_in_label:
+        name: Nome
       spree/taxon:
         name:
         permalink:
         position:
+        description: Descrição
+        icon: Icone
+        meta_description: Descrição
+        meta_keywords: Palavras-Chave
+        meta_title:
       spree/taxonomy:
         name:
       spree/user:
@@ -152,6 +194,118 @@ pt:
       spree/zone:
         description:
         name:
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Montante
+        label: Descrição
+        name: Nome
+        state: Distrito
+        adjustment_reason_id: Razões
+      spree/adjustment_reason:
+        active: Ativo
+        code: Código
+        name: Nome
+        state: Distrito
+      spree/carton:
+        tracking: Rastreio
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Total
+        reimbursement_status:
+        name: Nome
+      spree/image:
+        alt: Texto alternativo
+        attachment: Nome do arquivo
+      spree/legacy_user:
+        email: Email
+        password:
+        password_confirmation: Confirmação da password
+      spree/option_value:
+        name: Nome
+        presentation: Apresentação
+      spree/product_property:
+        value: Valor
+      spree/refund:
+        amount: Montante
+        description: Descrição
+        refund_reason_id: Razões
+      spree/refund_reason:
+        active: Ativo
+        name: Nome
+        code: Código
+      spree/reimbursement:
+        number: Número
+        reimbursement_status: Estado
+        total: Total
+      spree/reimbursement/credit:
+        amount: Montante
+      spree/reimbursement_type:
+        name: Nome
+        type: Tipo
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Distrito
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Razões
+        total: Total
+      spree/return_reason:
+        name: Nome
+        active: Ativo
+        memo:
+        number: Número RMA
+        state: Distrito
+      spree/shipping_category:
+        name: Nome
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code: Código
+        display_on: Mostrar
+        name: Nome
+        tracking_url:
+      spree/shipping_rate:
+        amount: Montante
+      spree/store_credit:
+        amount: Montante
+        memo:
+      spree/store_credit_event:
+        action: Ação
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Ativo
+        address1: Endereço
+        address2: Endereço (compl.)
+        backorderable_default:
+        city: Cidade
+        code: Código
+        country_id: País
+        default: Padrão
+        internal_name:
+        name: Nome
+        phone: Telefone
+        propagate_all_variants:
+        state_id: Distrito
+        zipcode: Código Postal
+      spree/stock_movement:
+        action: Ação
+        quantity:
+      spree/stock_transfer:
+        created_at:
+        description: Descrição
+        tracking_number:
+      spree/tracker:
+        analytics_id: Analytics ID
+        active: Ativo
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -200,43 +354,123 @@ pt:
               cannot_destroy_default_store:
     models:
       spree/address:
+        one:
+        other:
       spree/country:
+        one: País
+        other:
       spree/credit_card:
+        one: Cartão de Crédito
+        other: Credit Cards
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
       spree/line_item:
       spree/option_type:
+        one: Tipo de Opção
+        other: Tipos de Opção
       spree/option_value:
+        one: Valor da Opção
+        other: Valores das Opções
       spree/order:
+        one: Pedido
+        other: Encomendas
       spree/payment:
+        one: Pagamento
+        other: Pagamentos
       spree/payment_method:
+        one: Método de Pagamento
+        other: Métodos de Pagamento
       spree/product:
+        one: Produto
+        other: Produtos
       spree/promotion:
+        one: Promoção
+        other: Promoções
       spree/promotion_category:
+        other:
       spree/property:
+        one: Propriedade
+        other: Propriedades
       spree/prototype:
+        one: Protótipo
+        other: Protótipos
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
+        one: Autorização de devolução
+        other: Autorizações de devolução
       spree/return_authorization_reason:
       spree/role:
+        one: Funções
+        other: Funções
       spree/shipment:
+        one: Distribuição
+        other: Entregas
       spree/shipping_category:
+        one: Categoria de Entrega
+        other: Categorias de Entrega
       spree/shipping_method:
+        one: Método de Entrega
+        other: Métodos de Entrega
       spree/state:
+        one: Distrito
+        other: Distritos
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
+        one: Categoria de Imposto
+        other: Categorias de Imposto
       spree/tax_rate:
+        other: Taxas de imposto
       spree/taxon:
+        one: Taxón
+        other: Taxons
       spree/taxonomy:
+        one: Taxonomy
+        other: Taxonomias
       spree/tracker:
+        other: Analytics Trackers
       spree/user:
+        one: utilizador
+        other: utilizadores
       spree/variant:
+        one: Variant
+        other: Variantes
       spree/zone:
+        one: Zona
+        other: Zonas
+      spree/adjustment:
+        one: Acerto
+        other: Acertos
+      spree/calculator:
+        one: Calculadora
+      spree/legacy_user:
+        one: utilizador
+        other: utilizadores
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Propriedades do Produto
+      spree/refund:
+        one: Restituição
+        other:
+      spree/store_credit_category:
+        one: Categoria
+        other: Categorias
   devise:
     confirmations:
       confirmed:
@@ -302,6 +536,11 @@ pt:
       refund:
       save:
       update: Atualizar
+      add: Adicionar
+      delete: Apagar
+      remove: Remover
+      ship: entrega
+      split:
     activate: Activate
     active: Ativo
     add: Adicionar
@@ -345,6 +584,12 @@ pt:
         taxonomies:
         taxons:
         users:
+        checkout: Finalizar compra
+        general: Geral
+        payments: Pagamentos
+        settings: Configurações
+        shipping: Entrega
+        stock:
       user:
         account:
         addresses:
@@ -384,7 +629,7 @@ pt:
     are_you_sure: Tem a certeza?
     are_you_sure_delete: Tem a certeza que deseja remover este registo?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Falha na autorização
     authorized:
     auto_capture:
@@ -823,6 +1068,8 @@ pt:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: O seu pedido foi processado com sucesso.
@@ -1242,7 +1489,7 @@ pt:
     transfer_from_location:
     transfer_stock:
     transfer_to_location:
-    tree: "Árvore"
+    tree: Árvore
     type: Tipo
     type_to_search: Tipo de pesquisa
     unable_to_connect_to_gateway: Impossível conectar-se ao Gateway
@@ -1266,7 +1513,7 @@ pt:
       cannot_be_less_than_shipped_units: não pode ser menor que o número de unidades enviadas.
       cannot_destroy_line_item_as_inventory_units_have_shipped:
       exceeds_available_stock:
-      is_too_large: "é muito grande -- quantidade em stock não consegue cobrir este pedido!"
+      is_too_large: é muito grande -- quantidade em stock não consegue cobrir este pedido!
       must_be_int: deve ser um inteiro
       must_be_non_negative: deve ser um valor positivo ou zero
       unpaid_amount_not_zero:
@@ -1288,3 +1535,27 @@ pt:
     zipcode:
     zone: Zona
     zones: Zonas
+    canceled: cancelado
+    cannot_create_payment_link:
+    inventory_states:
+      canceled: cancelado
+      returned: devolvido
+      shipped: entregue
+    no_resource_found_link:
+    number: Número
+    store_credit:
+      display_action:
+        adjustment: Acerto
+        credit: Crédito
+        void: Crédito
+        admin:
+          authorize:
+    store_credit_category:
+      default: Padrão
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity:
+        state: Distrito
+        shipment: Distribuição
+        cancel: Cancelar
