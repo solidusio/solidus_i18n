@@ -1,3 +1,4 @@
+---
 lv:
   activerecord:
     attributes:
@@ -11,6 +12,7 @@ lv:
         phone: Telefons
         state: Rajons
         zipcode: Pasta indekss
+        company:
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -23,6 +25,7 @@ lv:
         iso_name: ISO vārds
         name: Nosaukums
         numcode: ISO kods
+        states_required:
       spree/credit_card:
         base:
         cc_type: Tips
@@ -31,11 +34,16 @@ lv:
         number: Numurs
         verification_value:
         year: Gads
+        card_code: Kartes kods
+        expiration: Izbeigšanās
       spree/inventory_unit:
         state: Apgabals
       spree/line_item:
         price: Cena
         quantity: Daudzums
+        description: Vienības apraksts
+        name: Nosaukums
+        total:
       spree/option_type:
         name: Nosaukums
         presentation: Presentation
@@ -54,6 +62,13 @@ lv:
         special_instructions:
         state:
         total:
+        additional_tax_total: Nodokļi
+        approved_at:
+        approver_id:
+        canceled_at:
+        canceler_id:
+        included_tax_total:
+        shipment_total:
       spree/order/bill_address:
         address1:
         city:
@@ -72,8 +87,16 @@ lv:
         zipcode:
       spree/payment:
         amount:
+        number:
+        response_code:
+        state: Maksājuma statuss
       spree/payment_method:
         name:
+        active: Aktīvs
+        auto_capture:
+        description: Apraksts
+        display_on: Rādīt
+        type: Piegādātājs
       spree/product:
         available_on: Pieejams pēc
         cost_currency:
@@ -84,6 +107,16 @@ lv:
         on_hand: Pieejams
         shipping_category: Piegādes kategorija
         tax_category: Nodokļu kategorija
+        depth: Dziļums
+        height: Augstums
+        meta_description: Meta apraksts
+        meta_keywords: Meta atslēgas vārdi
+        meta_title:
+        price:
+        promotionable:
+        slug:
+        weight:
+        width: Platums
       spree/promotion:
         advertise:
         code:
@@ -103,6 +136,7 @@ lv:
         name: Nosaukums
       spree/return_authorization:
         amount: Summa
+        pre_tax_total:
       spree/role:
         name: Nosaukums
       spree/state:
@@ -126,14 +160,22 @@ lv:
       spree/tax_category:
         description: Apraksts
         name: Nosaukums
+        is_default:
+        tax_code:
       spree/tax_rate:
         amount: Summa
         included_in_price: Included in Price
         show_rate_in_label: Show rate in label
+        name: Nosaukums
       spree/taxon:
         name: Nosaukums
         permalink: Permalink
         position: Stāvoklis
+        description: Apraksts
+        icon: Icon
+        meta_description: Meta apraksts
+        meta_keywords: Meta atslēgas vārdi
+        meta_title:
       spree/taxonomy:
         name: Nosaukums
       spree/user:
@@ -152,6 +194,119 @@ lv:
       spree/zone:
         description: Apraksts
         name: Nosaukums
+        default_tax:
+      spree/adjustment:
+        adjustable:
+        amount: Summa
+        label: Apraksts
+        name: Nosaukums
+        state: Stāvoklis
+        adjustment_reason_id: Iemesls
+      spree/adjustment_reason:
+        active: Aktīvs
+        code: Kods
+        name: Nosaukums
+        state: Stāvoklis
+      spree/carton:
+        tracking: Tracking
+      spree/customer_return:
+        number:
+        pre_tax_total:
+        total: Kopā
+        reimbursement_status:
+        name: Nosaukums
+      spree/image:
+        alt: Cits teksts
+        attachment: Faila nosaukums
+      spree/legacy_user:
+        email: E-pasts
+        password: Parole
+        password_confirmation: Paroles apstiprinājums
+      spree/option_value:
+        name: Nosaukums
+        presentation: Prezentācija
+      spree/product_property:
+        value: Vērtība
+      spree/refund:
+        amount: Summa
+        description: Apraksts
+        refund_reason_id: Iemesls
+      spree/refund_reason:
+        active: Aktīvs
+        name: Nosaukums
+        code: Kods
+      spree/reimbursement:
+        number:
+        reimbursement_status:
+        total: Kopā
+      spree/reimbursement/credit:
+        amount: Summa
+      spree/reimbursement_type:
+        name: Nosaukums
+        type: Tips
+      spree/return_item:
+        acceptance_status:
+        acceptance_status_errors:
+        charged:
+        exchange_variant:
+        inventory_unit_state: Stāvoklis
+        override_reimbursement_type_id:
+        preferred_reimbursement_type_id:
+        reception_status:
+        return_reason: Iemesls
+        total: Kopā
+      spree/return_reason:
+        name: Nosaukums
+        active: Aktīvs
+        memo:
+        number: RMA numurs
+        state: Stāvoklis
+      spree/shipping_category:
+        name: Nosaukums
+      spree/shipment:
+        tracking:
+      spree/shipping_method:
+        admin_name:
+        code: Kods
+        display_on: Rādīt
+        name: Nosaukums
+        tracking_url:
+      spree/shipping_rate:
+        tax_rate: Nodokļu likme
+        amount: Summa
+      spree/store_credit:
+        amount: Summa
+        memo:
+      spree/store_credit_event:
+        action: Darbība
+      spree/stock_item:
+        count_on_hand:
+      spree/stock_location:
+        admin_name:
+        active: Aktīvs
+        address1: Ielas adrese
+        address2: Ielas adrese (turpinājums)
+        backorderable_default:
+        city: Pilsēta
+        code: Kods
+        country_id: Valsts
+        default:
+        internal_name:
+        name: Nosaukums
+        phone: Telefons
+        propagate_all_variants:
+        state_id: Stāvoklis
+        zipcode: Pasta indekss
+      spree/stock_movement:
+        action: Darbība
+        quantity:
+      spree/stock_transfer:
+        created_at:
+        description: Apraksts
+        tracking_number:
+      spree/tracker:
+        analytics_id: Analītiķa ID
+        active: Aktīvs
     errors:
       models:
         spree/calculator/tiered_flat_rate:
@@ -209,6 +364,8 @@ lv:
         one: Credit Card
         other: Credit Cards
       spree/customer_return:
+        one:
+        other:
       spree/inventory_unit:
         one: Krājuma vienība
         other: Krājuma vienības
@@ -216,7 +373,11 @@ lv:
         one: Pozīcijas vienība
         other: Pozīcijas vienības
       spree/option_type:
+        one: Option Type
+        other: Opciju tips
       spree/option_value:
+        one: Option Value
+        other: Opciju vērtība
       spree/order:
         one: Pasūtījums
         other: Pasūtījumi
@@ -224,11 +385,16 @@ lv:
         one: Maksājums
         other: Maksājumi
       spree/payment_method:
+        one: Maksājuma metode
+        other: Maksājuma metodes
       spree/product:
         one: Produkts
         other: Produkti
       spree/promotion:
+        one:
+        other: Akcijas
       spree/promotion_category:
+        other:
       spree/property:
         one: Property
         other: Properties
@@ -236,8 +402,12 @@ lv:
         one: Prototips
         other: Prototipi
       spree/refund_reason:
+        other:
       spree/reimbursement:
+        one:
+        other:
       spree/reimbursement_type:
+        other:
       spree/return_authorization:
         one: Atgriešanas autorizācija
         other: Atgriešanas autorizācijas
@@ -252,13 +422,20 @@ lv:
         one: Piegādes kategorija
         other: Piegādes kategorijas
       spree/shipping_method:
+        one: Sūtīšanas metode
+        other: Sūtīšanas metodes
       spree/state:
-        one: "Štats"
-        other: "Štati"
+        one: Štats
+        other: Štati
       spree/state_change:
       spree/stock_location:
+        one:
+        other:
       spree/stock_movement:
+        other:
       spree/stock_transfer:
+        one:
+        other:
       spree/tax_category:
         one: Nodokļu kategorija
         other: Nodokļu kategorijas
@@ -266,15 +443,40 @@ lv:
         one: Nodokļu likme
         other: Nodokļu likmes
       spree/taxon:
+        one:
+        other:
       spree/taxonomy:
+        one:
+        other: Klasifikatori
       spree/tracker:
+        other:
       spree/user:
         one: Lietotājs
         other: Lietotāji
       spree/variant:
+        one: Variant
+        other: Varianti
       spree/zone:
         one: Zona
         other: Zonas
+      spree/adjustment:
+        one: Piemērošana
+        other: Piemērošanas
+      spree/calculator:
+        one: Kalkulātors
+      spree/legacy_user:
+        one: Lietotājs
+        other: Lietotāji
+      spree/log_entry:
+        other:
+      spree/product_property:
+        other: Produkta īpašības
+      spree/refund:
+        one: Atmaksāt
+        other:
+      spree/store_credit_category:
+        one: Kategorija
+        other: Kategorijas
   devise:
     confirmations:
       confirmed:
@@ -340,6 +542,11 @@ lv:
       refund:
       save:
       update: Atjauninājums
+      add: Pievienot
+      delete: Izdzēst
+      remove:
+      ship: sūtīt
+      split:
     activate: Activate
     active: Aktīvs
     add: Pievienot
@@ -383,6 +590,12 @@ lv:
         taxonomies:
         taxons:
         users:
+        checkout: Pasūtīt
+        general: Vispārīgi
+        payments: Maksājumi
+        settings: Uzstādījumi
+        shipping: Sūtās
+        stock:
       user:
         account:
         addresses:
@@ -422,7 +635,7 @@ lv:
     are_you_sure: Vai esiet pārliecināts?
     are_you_sure_delete: Vai esiet pārliecināts, ka vēlaties dzēst šo ierakstu?
     associated_adjustment_closed:
-    at_symbol: '@'
+    at_symbol: "@"
     authorization_failure: Autorizācija neizdevās
     authorized:
     auto_capture:
@@ -861,6 +1074,8 @@ lv:
         subtotal:
         thanks:
         total:
+      inventory_cancellation:
+        dear_customer:
     order_not_found:
     order_number:
     order_processed_successfully: Jūsu pasūtījums ir apstrādāts veiksmīgi
@@ -939,7 +1154,7 @@ lv:
     process: Apstrādāt
     product: Produkts
     product_details: Produkta detaļas
-    product_has_no_description: "Šim produktam nav nosaukuma"
+    product_has_no_description: Šim produktam nav nosaukuma
     product_not_available_in_this_currency:
     product_properties: Produkta īpašības
     product_rule:
@@ -1326,3 +1541,27 @@ lv:
     zipcode:
     zone: Zona
     zones: Zonas
+    canceled:
+    cannot_create_payment_link:
+    inventory_states:
+      canceled:
+      returned:
+      shipped:
+    no_resource_found_link:
+    number:
+    store_credit:
+      display_action:
+        adjustment: Piemērošana
+        credit: Kredīts
+        void: Kredīts
+        admin:
+          authorize:
+    store_credit_category:
+      default:
+  activemodel:
+    attributes:
+      spree/order_cancellations:
+        quantity:
+        state: Stāvoklis
+        shipment: Sūtījums
+        cancel: Atcelt
