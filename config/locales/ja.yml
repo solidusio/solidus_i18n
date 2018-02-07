@@ -529,11 +529,6 @@ ja:
     country: "国"
     country_based: "国による区別"
     country_name: "名前"
-    country_names:
-      CA: "カナダ"
-      FRA: "フランス"
-      ITA: "イタリア"
-      US: "アメリカ"
     coupon: "クーポン"
     coupon_code: "クーポンコード"
     coupon_code_already_applied: "そのクーポンはすでにこの注文に適用されています。"
