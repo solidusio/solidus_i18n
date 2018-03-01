@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'routing-filter', '~> 0.6.0'
   s.add_runtime_dependency 'solidus_core', ['>= 1.1', '< 3']
   s.add_runtime_dependency 'solidus_support'
-  s.add_runtime_dependency 'deface', '~> 1.0'
+  s.add_runtime_dependency 'deface', '1.3.0'
 
   s.add_development_dependency 'byebug'
   s.add_development_dependency 'capybara', '~> 2.17'
