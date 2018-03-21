@@ -55,15 +55,13 @@ RSpec.feature 'Admin translations', :js do
   end
 
   context 'solidus_auth_devise pages translation' do
-    let(:locale) { :it }
-
     background do
-      SolidusI18n::Config.available_locales = [:en, :it]
+      store.update_attributes(preferred_available_locales: [:en, :it])
     end
 
     scenario 'the login page is translated' do
-      visit spree.admin_login_path(locale: locale)
-      expect(page).to have_content(/#{Spree.t(:admin_login, locale: locale)}/i)
+      visit spree.admin_login_path(locale: "it")
+      expect(page).to have_content(/#{Spree.t(:admin_login, locale: :it)}/i)
     end
   end
 end
