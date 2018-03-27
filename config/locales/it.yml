@@ -604,7 +604,7 @@ it:
         add: Nuovo credito
         back_to_user_list: Lista utenti
         select_reason: Motivo
-    admin_login: Login
+    admin_login: Login amministratore
     administration: Amministrazione
     advertise: Promuovi
     agree_to_privacy_policy: Accetta Politica di Privacy
@@ -708,6 +708,7 @@ it:
       other: Subtotale (%{count} articoli)
     categories: Categorie
     category: Categoria
+    change_my_password: Cambia la mia password
     charged: Addebitato
     check_for_spree_alerts: Visualizza le segnalazioni di Spree
     checkout: Checkout
