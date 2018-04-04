@@ -281,50 +281,6 @@ ca:
       spree/zone:
         one: Zona
         other:
-  devise:
-    confirmations:
-      confirmed:
-      send_instructions:
-    failure:
-      inactive: El seu compte no s'ha estat activat encara.
-      invalid: Correu electrònic o contrasenya no vàlids.
-      invalid_token: Token d'autenticació no vàlid.
-      locked: El seu compte està bloquejat.
-      timeout:
-      unauthenticated:
-      unconfirmed:
-    mailer:
-      confirmation_instructions:
-        subject:
-      reset_password_instructions:
-        subject:
-      unlock_instructions:
-        subject:
-    oauth_callbacks:
-      failure:
-      success:
-    unlocks:
-      send_instructions:
-      unlocked:
-    user_passwords:
-      user:
-        cannot_be_blank:
-        send_instructions:
-        updated:
-    user_registrations:
-      destroyed:
-      inactive_signed_up:
-      signed_up:
-      updated:
-    user_sessions:
-      signed_in:
-      signed_out:
-  errors:
-    messages:
-      already_confirmed:
-      not_found: no trobat
-      not_locked:
-      not_saved:
   spree:
     abbreviation: Abreviatura
     accept:
@@ -1027,7 +983,18 @@ ca:
     receive: rebre
     receive_stock:
     received: Rebut
-    reception_status:
+    reception_states:
+      awaiting: En espera
+      cancelled: Cancel·lat
+      expired: Expirat
+      given_to_customer: Entregat al client
+      in_transit: En trànsit
+      lost_in_transit: Perdut en trànsit
+      received: Rebut
+      shipped_wrong_item: Article incorrecte
+      short_shipped: No inclòs en l'enviament
+      unexchanged: Sense canvis
+    reception_status: Estat de recepció
     reference:
     refund: Retornar
     refund_amount_must_be_greater_than_zero:
