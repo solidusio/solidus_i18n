@@ -41,7 +41,7 @@ id:
         presentation: Presentasi
       spree/order:
         checkout_complete: Checkout Selesai
-        completed_at: Terpenuhi Saat
+        completed_at: Selesai pada waktu
         considered_risky: Dianggap berisiko
         coupon_code: Kode Kupon
         created_at: Tanggal Pemesanan
@@ -55,21 +55,21 @@ id:
         state: State
         total: Total
       spree/order/bill_address:
-        address1: Alamat penagihan nama jalan
-        city: Alamat penagihan kota
-        firstname: Alamat penagihan nama depan
-        lastname: Alamat penagihan nama keluarga
-        phone: Alamat penagihan nomor telepon
-        state: Alamat penagihan nama propinsi
-        zipcode: Alamat penagihan kode pos
+        address1: Alamat penagihan
+        city: Kota/Kab
+        firstname: Nama Depan
+        lastname: Nama Belakang
+        phone: Nomor telepon
+        state: Propinsi
+        zipcode: Kode pos
       spree/order/ship_address:
-        address1: Alamat pengiriman nama jalan
-        city: Alamat pengiriman kota
-        firstname: Alamat pengiriman nama depan
-        lastname: Alamat pengiriman nama keluarga
-        phone: Alamat pengirimian telepon
-        state: Alamat pengiriman provinsi
-        zipcode: Alamat pengiriman kode pos
+        address1: Alamat Pengiriman
+        city: Kota/Kab
+        firstname: Nama Depan
+        lastname: Nama Belakang
+        phone: Nomor telepon
+        state: Propinsi
+        zipcode: Kode pos
       spree/payment:
         amount: Jumlah
       spree/payment_method:
@@ -119,7 +119,7 @@ id:
       spree/store:
         mail_from_address:
         meta_description:
-        meta_keywords: 
+        meta_keywords:
         name: Nama
         seo_title: Judul SEO
         url:
@@ -349,9 +349,9 @@ id:
     activate: Aktivasi
     active: Aktif
     add: Tambahkan
-    add_action_of_type: Tambahkan Aksi Dari Tipe
+    add_action_of_type:
     add_country: Tambahkan Negara
-    add_coupon_code:
+    add_coupon_code: Tambahkan Kode Kupon
     add_new_header: Tambahkan Header
     add_new_style: Tambahkan Style Baru
     add_one: Tambahkan satu
@@ -404,7 +404,7 @@ id:
     all: Semua
     all_adjustments_closed: Semua penyesuaian berhasil ditutup!
     all_adjustments_opened: Semua penyesuaian berhasil dibuka!
-    all_departments: Semua departemen
+    all_departments: Semua Kategori
     all_items_have_been_returned:
     allow_ssl_in_development_and_test: Memperbolehkan SSL untuk development dan test
     allow_ssl_in_production: Memperbolehkan SSL untuk production
@@ -514,6 +514,7 @@ id:
       FRA:
       ITA:
       US:
+      ID:
     coupon: Kupon
     coupon_code: Kode kupon
     coupon_code_already_applied: Kode kupon suda diaplikasikan ke pemesanan ini sebelumnya.
@@ -673,7 +674,7 @@ id:
     i18n:
       available_locales:
       language: Bahasa
-      localization_settings: Pengaturan Lokalisasi
+      localization_settings: Pengaturan Bahasa
       this_file_language: Indonesian (ID)
     icon: Ikon
     identifier:
@@ -780,7 +781,7 @@ id:
     new_payment_method: Metode baru pembayaran
     new_product: Produk baru
     new_promotion: Promosi baru
-    new_promotion_category:
+    new_promotion_category: Kategori Promosi Baru
     new_property: Properti baru
     new_prototype: Prototipe baru
     new_refund:
@@ -1101,7 +1102,7 @@ id:
     say_no: Tidak
     say_yes: Ya
     scope: Cakupan
-    search: Cari
+    search: Aku mau belanja ...
     search_results: Hasil Pencarian '%{keywords}'
     searching: Pencarian
     secure_connection_type: Jenis Koneksi Aman
