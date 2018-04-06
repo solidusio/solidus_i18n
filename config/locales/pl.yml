@@ -470,11 +470,6 @@ pl:
     country: Kraj
     country_based: Siedziba w kraju
     country_name: Nazwa
-    country_names:
-      CA: Kanada
-      FRA: Francja
-      ITA: Włochy
-      US: Stany Zjednoczone Ameryki Północnej
     coupon: Kupon
     coupon_code: Kod kuponu
     coupon_code_already_applied: Do tego zamówienia wykorzystano już kod kuponu

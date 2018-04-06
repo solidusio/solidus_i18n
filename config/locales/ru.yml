@@ -525,11 +525,6 @@ ru:
     country: "Страна"
     country_based: "Страна"
     country_name: "Имя"
-    country_names:
-      CA:
-      FRA:
-      ITA:
-      US:
     coupon: "Купон"
     coupon_code: "Код купона"
     coupon_code_already_applied: "Скидочный купон уже был применен к этому заказу"

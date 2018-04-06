@@ -572,11 +572,6 @@ sk:
     country: "Krajina"
     country_based: Krajina
     country_name: "Názov"
-    country_names:
-      CA: "Kanada"
-      FRA: "Francúzsko"
-      ITA: "Taliansko"
-      US: "Spojené štáty americké"
     coupon: "Kupón"
     coupon_code: "Kupónový kód"
     coupon_code_already_applied: "Na túto objednávku už bol uplatnený kupónový kód"
