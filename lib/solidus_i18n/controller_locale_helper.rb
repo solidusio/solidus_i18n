@@ -6,8 +6,6 @@ module SolidusI18n
     extend ActiveSupport::Concern
 
     included do
-      prepend_before_action :set_user_language
-
       private
 
       # Overrides the Spree::Core::ControllerHelpers::Common logic so that only
@@ -15,13 +13,11 @@ module SolidusI18n
       # actually be set
       def set_user_language
         # params[:locale] can be added by routing-filter gem
-        I18n.locale = \
+        I18n.locale =
           if params[:locale] && current_store.preferred_available_locales.include?(params[:locale].to_sym)
             params[:locale]
-          elsif respond_to?(:config_locale, true) && !config_locale.blank?
-            config_locale
           else
-            Rails.application.config.i18n.default_locale || I18n.default_locale
+            super
           end
       end
     end
