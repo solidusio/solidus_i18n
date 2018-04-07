@@ -853,16 +853,16 @@ id:
     order_information: Informasi Pemesanan
     order_mailer:
       cancel_email:
-        dear_customer: Untuk pelanggan,\n
-        instructions: Pemesanan anda telah DIBATALKAN.  Silahkan simpan informasi pendaftaran ini untuk catatan anda.
+        dear_customer: Halo Pelanggan Planetmedika,
+        instructions: Pemesanan anda telah DIBATALKAN
         order_summary_canceled: Rekap pemesanan [DIBATALKAN]
         subject: Pembatalan order
         subtotal:
         total:
       confirm_email:
-        dear_customer: Untuk pelanggan,\n
-        instructions: Silahkan melihat dan menyimpan urutan informasi sebagai berikut untuk catatan anda.
-        order_summary: Rekap pemesanan
+        dear_customer: Halo,
+        instructions: Terimakasih sudah belanja di Planetmedika.com
+        order_summary: Berikut Rekap pemesanan anda
         subject: Konfirmasi pemesanan
         subtotal:
         thanks: Terima kasih.
