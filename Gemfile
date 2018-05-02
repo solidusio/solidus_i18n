@@ -11,7 +11,7 @@ end
 
 gem 'chromedriver-helper' if ENV['CI']
 
-gem 'pg', '~> 0.21'
+gem 'pg', '~> 1.0'
 gem 'sqlite3'
 gem 'mysql2', '~> 0.4.10'
 
