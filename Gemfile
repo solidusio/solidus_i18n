@@ -13,7 +13,7 @@ gem 'chromedriver-helper' if ENV['CI']
 
 gem 'pg', '~> 0.21'
 gem 'sqlite3'
-gem 'mysql2', '~> 0.4.10'
+gem 'mysql2', '~> 0.5.1'
 
 group :development, :test do
   gem "pry-rails"
