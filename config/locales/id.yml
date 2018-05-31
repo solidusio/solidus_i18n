@@ -466,9 +466,6 @@ id:
     country_based: Berdasarkan negara
     country_name: Nama Negara
     country_names:
-      CA:
-      FRA:
-      ITA:
       US:
       ID:
     coupon: Kupon
@@ -588,7 +585,7 @@ id:
           contents_changed: Konten pemesanan berganti
         page_view: Halaman statis telah dilihat
         user:
-          signup: Pendaftaran pengguna
+          signup: Daftar akun baru sekarang
     exceptions:
       count_on_hand_setter:
     exchange_for:
@@ -693,7 +690,7 @@ id:
     logged_in_succesfully: Login berhasil
     logged_out: Anda telah keluar.
     login: Login
-    login_as_existing: Login sebagai Pelanggan yang Terdaftar
+    login_as_existing: Login Pelanggan Lama
     login_failed: Otentikasi login gagal.
     login_name: Login
     logout: Keluar
@@ -702,7 +699,7 @@ id:
     make_refund: Melakukan pengembalian
     make_sure_the_above_reimbursement_amount_is_correct:
     manage_promotion_categories:
-    manage_variants:
+    manage_variants: Pengaturan Varian
     manual_intervention_required:
     master_price: Harga Master
     match_choices:
@@ -809,16 +806,16 @@ id:
     order_information: Informasi Pemesanan
     order_mailer:
       cancel_email:
-        dear_customer: Halo Pelanggan Planetmedika,
-        instructions: Pemesanan anda telah DIBATALKAN
+        dear_customer: Untuk pelanggan,\n
+        instructions: Pemesanan anda telah DIBATALKAN.  Silahkan simpan informasi pendaftaran ini untuk catatan anda.
         order_summary_canceled: Rekap pemesanan [DIBATALKAN]
         subject: Pembatalan order
         subtotal:
         total:
       confirm_email:
-        dear_customer: Halo,
-        instructions: Terimakasih sudah belanja di Planetmedika.com
-        order_summary: Berikut Rekap pemesanan anda
+        dear_customer: Untuk pelanggan,\n
+        instructions: Silahkan melihat dan menyimpan urutan informasi sebagai berikut untuk catatan anda.
+        order_summary: Rekap pemesanan
         subject: Konfirmasi pemesanan
         subtotal:
         thanks: Terima kasih.
@@ -992,8 +989,8 @@ id:
     refund_reasons: Alasan Pengembalian Uang
     refunded_amount:
     refunds:
-    register: Mendaftar sebagai Pengguna Baru
-    registration: Pendaftaran
+    register: Daftar akun baru sekarang
+    registration: Silakan login ke akun kamu
     reimburse:
     reimbursed:
     reimbursement:
