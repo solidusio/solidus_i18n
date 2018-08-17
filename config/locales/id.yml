@@ -41,7 +41,7 @@ id:
         presentation: Presentasi
       spree/order:
         checkout_complete: Checkout Selesai
-        completed_at: Selesai pada waktu
+        completed_at: Selesai pada
         considered_risky: Dianggap berisiko
         coupon_code: Kode Kupon
         created_at: Tanggal Pemesanan
@@ -219,14 +219,14 @@ id:
       spree/option_value:
       spree/order:
         one: Pemesanan
-        other: Pemesanan lainnya
+        other: Pemesanan
       spree/payment:
         one: Pembayaran
-        other: Pembayaran lainnya
+        other: Pembayaran
       spree/payment_method:
       spree/product:
         one: Produk
-        other: Produk lainnya
+        other: Produk lain
       spree/promotion:
       spree/promotion_category:
       spree/property:
@@ -246,8 +246,8 @@ id:
         one: Peran
         other: Peran lainnya
       spree/shipment:
-        one: Pengiriman
-        other: Pengiriman lainnya
+        one: Pengiriman 1
+        other: Pengiriman
       spree/shipping_category:
         one: Kategori Pengiriman
         other: Kategori Pengiriman lainnya
@@ -867,15 +867,15 @@ id:
     payment_processor_choose_link: halaman pembayaran kami
     payment_state: Status pembayaran
     payment_states:
-      balance_due: Saldo
+      balance_due: Belum Lunas
       checkout: checkout
       completed: Selesai
       credit_owed: Kredit yang dimiliki
-      failed: gagal
-      paid: Terbayar
-      pending: tertunda
-      processing: pemprosesan
-      void: membatalkan
+      failed: Gagal
+      paid: Lunas
+      pending: Pending
+      processing: Diproses
+      void: Membatalkan
     payment_updated: Pembayaran diperbaharui
     payments: Pembayaran
     pending:
@@ -1083,20 +1083,20 @@ id:
         shipment_summary: Rekap Pengiriman
         subject: Pemberitahuan Pengiriman
         thanks: Terima kasih untuk bisnis anda
-        track_information: 'Informasi Pelacakan: %{tracking}'
+        track_information: 'Info Pelacakan: %{tracking}'
         track_link:
     shipment_state: Status Pengiriman
     shipment_states:
-      backorder: backorder
-      canceled:
-      partial: Sebagian
-      pending: tunda
-      ready: siap
-      shipped: dikirim
+      backorder: Backorder
+      canceled: DIBATALKAN
+      partial: Partial
+      pending: Pending
+      ready: Siap
+      shipped: Sudah dikirim
     shipment_transfer_error:
     shipment_transfer_success:
     shipments: Pengiriman
-    shipped: Dikirim
+    shipped: Sudah dikirim
     shipping: Mengirimkan
     shipping_address: Alamat Pengiriman
     shipping_categories: Kategori Pengiriman
@@ -1233,7 +1233,7 @@ id:
     total_price: Total Harga
     total_sales:
     track_inventory:
-    tracking: Pelacakan
+    tracking: Pelacakan order
     tracking_number: Nomor Pelacakan
     tracking_url:
     tracking_url_placeholder: 'contoh: e.g. http://quickship.com/package?num=:tracking'
