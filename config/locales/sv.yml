@@ -362,19 +362,27 @@ sv:
     adjustments: "Ändringar"
     admin:
       tab:
+        checkout: Kassa
         configuration: Konfiguration
         option_types: Tillvalstyper
         orders: Beställningar
         overview: "Översikt"
+        payments: Betalningar
         products: Produkter
-        promotions: Kampanjer
         promotion_categories: Kampanjkategorier
+        promotions: Kampanjer
         properties: Egenskaper
         prototypes: Prototyper
         reports: Rapporter
+        settings: Inställningar
+        shipping: Leverans
+        stock: Lager
+        stores: Butiker
+        taxes: Momssatser
         taxonomies: Taxonomier
         taxons: Klasser
         users: Användare
+        zones: Zoner
       user:
         account: Konto
         addresses: Adresser
@@ -516,6 +524,7 @@ sv:
     create: Skapa
     create_a_new_account: Skapa nytt konto
     create_new_order: Skapa ny beställning
+    create_one: Skapa en
     create_reimbursement: Skapa ersättning
     created_at: Skapad
     credit: Kredit
@@ -807,6 +816,8 @@ sv:
     no_shipping_method_selected: Ingen leveransmetod vald.
     no_state_changes: Inga status förändringar ännu.
     no_tracking_present: Inga spårningsdetaljer tillgodosedda
+    no_variants_found_try_again: Inga varianter hittades
+    no_resource: Inga %{resource} finns
     none: Ingen
     none_selected: Ingen vald
     normal_amount: Normalt belopp
@@ -1309,6 +1320,7 @@ sv:
     value: Värde
     variant: Variant
     variant_placeholder: Välj en variant
+    variant_search_placeholder: Sök variant
     variants: Varianter
     version: Version
     void: Tom
