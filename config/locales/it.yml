@@ -550,8 +550,8 @@ it:
         one: Percentuale per elemento
         other: Percentuali per elemento
       spree/calculator/price_sack:
-        one:
-        other:
+        one: Costo imballaggio
+        other: Costi imballaggio
       spree/calculator/returns/default_refund_amount:
         one: Importo predefinito rimborso
         other: Importo predefinito rimborso
@@ -568,8 +568,8 @@ it:
         one: Tasso fisso per elemento
         other: Tassi fissi per elemento
       spree/calculator/shipping/price_sack:
-        one:
-        other:
+        one: Costo imballaggio
+        other: Costi imballaggio
       spree/calculator/tiered_flat_rate:
         one: Tasso fisso a scaglioni
         other: Tassi fissi a scaglioni
@@ -621,10 +621,11 @@ it:
       spree/payment_method:
         one: Metodo di Pagamento
         other: Metodi di Pagamento
-      spree/payment_method/bogus_credit_card:
-      spree/payment_method/check:
-      spree/payment_method/simple_bogus_credit_card:
-      spree/payment_method/store_credit:
+      spree/payment_method/bogus_credit_card: Pagamento Carta di credito fittizia
+      spree/payment_method/check: Pagamento con assegno
+      spree/payment_method/simple_bogus_credit_card: Pagamento semplice con carta
+        di credito fittizia
+      spree/payment_method/store_credit: Pagamento con credito negozio
       spree/price:
         one: Prezzo
         other: Prezzi
@@ -637,22 +638,24 @@ it:
       spree/promotion:
         one: Promozione
         other: Promozioni
-      spree/promotion/actions/create_adjustment:
-      spree/promotion/actions/create_item_adjustments:
-      spree/promotion/actions/create_quantity_adjustments:
-      spree/promotion/actions/free_shipping:
-      spree/promotion/rules/first_order:
-      spree/promotion/rules/first_repeat_purchase_since:
-      spree/promotion/rules/item_total:
-      spree/promotion/rules/landing_page:
-      spree/promotion/rules/nth_order:
-      spree/promotion/rules/one_use_per_user:
-      spree/promotion/rules/option_value:
-      spree/promotion/rules/product:
-      spree/promotion/rules/taxon:
-      spree/promotion/rules/user:
-      spree/promotion/rules/user_logged_in:
-      spree/promotion/rules/user_role:
+      spree/promotion/actions/create_adjustment: Crea variazione per ordine completo
+      spree/promotion/actions/create_item_adjustments: Crea variazione per articolo
+        carrello
+      spree/promotion/actions/create_quantity_adjustments: Crea una variazione per
+        quantità
+      spree/promotion/actions/free_shipping: Spedizione gratuita
+      spree/promotion/rules/first_order: Primo ordine
+      spree/promotion/rules/first_repeat_purchase_since: Primo acquisto ripetuto da
+      spree/promotion/rules/item_total: Totale articolo
+      spree/promotion/rules/landing_page: Landing Page
+      spree/promotion/rules/nth_order: Ordine N
+      spree/promotion/rules/one_use_per_user: Un uso per utente
+      spree/promotion/rules/option_value: Valore(i) opzione
+      spree/promotion/rules/product: Prodotto(i)
+      spree/promotion/rules/taxon: Categoria(e)
+      spree/promotion/rules/user: Utente
+      spree/promotion/rules/user_logged_in: Utente autenticato
+      spree/promotion/rules/user_role: Ruolo(i) utente
       spree/promotion_category:
         one: Categoria Promozione
         other: Categorie Promozione
@@ -707,7 +710,7 @@ it:
       spree/state_change:
         one: Cambio di Stato
         other: Cambi di Stato
-      spree/stock:
+      spree/stock: Scorte
       spree/stock_item:
         one: Articolo magazzino
         other: Articoli magazzino
@@ -916,7 +919,7 @@ it:
         select_amount_update_reason: Seleziona un motivo per l'aggiornamento dell'importo
         select_reason: Motivo
         total_unused: Totale non usato
-        type_html_header:
+        type_html_header: Tipo di credito
         unable_to_create: Impossibile creare
         unable_to_delete: Impossibile eliminare
         unable_to_invalidate: Impossibile invalidare
@@ -930,7 +933,7 @@ it:
         areas: Zone
         checkout: Checkout
         configuration: Impostazioni
-        display_order:
+        display_order: Mostra ordine
         general: Generale
         option_types: Opzioni
         orders: Ordini
@@ -1691,7 +1694,8 @@ it:
       completare questo trasferimento.
     not_found: "%{resource} non trovato"
     note: Nota
-    note_already_received_a_refund:
+    note_already_received_a_refund: 'Nota: Questo ordine ha già ricevuto un rimborso.
+      Controllare che l''importo del rimborso sopra indicato sia corretto.'
     notice_messages:
       product_cloned: Il prodotto è stato clonato
       product_deleted: Il prodotto è stato eliminato
@@ -1949,8 +1953,8 @@ it:
     received: Ricevuto
     received_items: Articoli ricevuti
     received_successfully: Ricevuto con successo
-    receiving: In ricezione
-    receiving_match:
+    receiving: Ricevendo
+    receiving_match: Ricevendo una corrispondenza
     reception_states:
       awaiting: in attesa
       cancelled: annullato
