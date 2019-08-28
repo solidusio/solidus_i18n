@@ -924,7 +924,7 @@ cs:
         stock: Sklad
         stock_items: Položky skladu
         stores: Obchody
-        taxes: Daňě
+        taxes: Daně
         taxonomies: Taxonomie
         taxons: Taxony
         users: Uživatelé
