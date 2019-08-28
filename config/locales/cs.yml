@@ -510,9 +510,6 @@ cs:
       spree/adjustment_reason:
         one: Důvod úpravy
         other: Důvody úpravy
-      spree/calculator:
-        one: Kalkulátor
-        other: Kalkulátory
       spree/calculator/default_tax:
         one: Výchozí daň
         other: Výchozí daně
@@ -1055,12 +1052,12 @@ cs:
     billing_address: Fakturační adresa
     both: Obě
     calculated_reimbursements: Vypočtené náhrady
-    calculator: Kalkulátor
-    calculator_settings_warning: Pokud měníte typ kalkulátoru, musíte před změnou uložit nastavení
+    calculator: Výpočet
+    calculator_settings_warning: Pokud měníte typ výpočtu, musíte před změnou uložit nastavení
     cancel: zrušit
     cancel_inventory: Cancel Items
-    canceled: Canceled
-    canceled_at: zrušeno
+    canceled: Zrušeno
+    canceled_at: Zrušeno
     canceler: zrušil
     cancellation: Cancellation
     cannot_create_customer_returns: Nelze vytvořit vratku. Tato objednávka nemá žádné zásilky.
