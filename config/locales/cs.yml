@@ -31,7 +31,7 @@ cs:
         state: Země
         zipcode: PSČ
       spree/adjustment:
-        adjustable: Neastavitelné
+        adjustable: Upravené
         adjustment_reason_id: Důvod
         amount: Množství
         label: Označení
@@ -100,7 +100,7 @@ cs:
         details: Zpráva
       spree/option_type:
         name: Název
-        presentation: Balení
+        presentation: Zobrazovat jako
       spree/option_value:
         name: Jméno
         presentation: Zobrazení
@@ -340,7 +340,7 @@ cs:
         zipcode: PSČ
       spree/stock_movement:
         originated_by: Původ
-        quantity: Mnořství
+        quantity: Množství
         variant: Varianta
       spree/store:
         available_locales: Jazyky dostupné v obchodě
@@ -569,7 +569,7 @@ cs:
       spree/order:
         few: Objednávky
         one: Objednávka
-        other: Objednávek
+        other: Objednávky
       spree/payment:
         few: Platby
         one: Platba
@@ -597,7 +597,7 @@ cs:
       spree/promotion/actions/create_adjustment: Create whole-order adjustment
       spree/promotion/actions/create_item_adjustments: Create per-line-item adjustment
       spree/promotion/actions/create_quantity_adjustments: Create per-quantity adjustment
-      spree/promotion/actions/free_shipping: Free Shipping
+      spree/promotion/actions/free_shipping: Doprava zdarma
       spree/promotion/rules/first_order: First Order
       spree/promotion/rules/first_repeat_purchase_since: First Repeat Purchase Since
       spree/promotion/rules/item_total: Item Total
@@ -661,7 +661,7 @@ cs:
         other: Kategorií dodání
       spree/shipping_method:
         one: Druh dopravy
-        other: Drugy dopravy
+        other: Druhy dopravy
       spree/state:
         few: Státy
         one: Stát
@@ -675,12 +675,12 @@ cs:
         one: Umístění skladu
         other: Umístění skladů
       spree/stock_movement:
-        one: Převod mezi sklady
-        other: Převody mezi sklady
+        one: Pohyb skladu
+        other: Pohyby skladu
       spree/stock_transfer: 
       spree/store:
-        one: Sklad
-        other: Sklady
+        one: Obchod
+        other: Obchody
       spree/store_credit:
         one: Kredit obchodu
         other: Kredity obchodu
@@ -1055,7 +1055,7 @@ cs:
     calculator: Výpočet
     calculator_settings_warning: Pokud měníte typ výpočtu, musíte před změnou uložit nastavení
     cancel: zrušit
-    cancel_inventory: Cancel Items
+    cancel_inventory: Odebrat položky
     canceled: Zrušeno
     canceled_at: Zrušeno
     canceler: zrušil
@@ -1124,7 +1124,7 @@ cs:
     could_not_connect_to_jirafe: Nelze se připojit k Jirafe k synchronizaci dat. Akce bude automaticky opakována později.
     could_not_create_customer_return: Nemohu vytvořit vrácení zboží zákazníka
     could_not_create_stock_movement: Došlo k problému při ukládání tohoto pohybu skladových zásob. Zkuste to prosím znovu.
-    count_on_hand: Počet zboží k dispozici
+    count_on_hand: Zboží k dispozici
     countries: Země
     country: Země
     country_based: Založeno na zemi
@@ -1293,8 +1293,7 @@ cs:
           signup: Registrace uživatele
     exceptions:
       count_on_hand_setter: >-
-        Nelze nastavit count_on_hand manuálně, protože je automaticky nastaven callback recalculate_count_on_hand. Prosím, použijte raději `update_column(:count_on_hand,
-        value)`.
+        Nelze nastavit count_on_hand manuálně, protože je automaticky nastaven callback recalculate_count_on_hand. Prosím, použijte raději `update_column(:count_on_hand, value)`.
     exchange_for: Vyměnit za
     excl: vynech.
     existing_shipments: Existující zásilky
@@ -1547,7 +1546,7 @@ cs:
     new_stock_location: Nový sklad
     new_stock_movement: Přidat nový pohyb skladových zásob
     new_stock_transfer: Nový převod skladových zásob
-    new_store: New Store
+    new_store: Nový obchod
     new_store_credit: New Store Credit
     new_store_credit_reason: New Store Credit Reason
     new_tax_category: Nová daňová kategorie
@@ -2239,6 +2238,7 @@ cs:
     version: Verze
     view_product: Zobrazit produkt v obchodě
     view_promotion_codes_list: Zobrazit seznam kódů
+    void: Zneplatnit
     weight: Váha
     what_is_a_cvv: Co to je (CVV) kód kreditní karty?
     what_is_this: Co je to?
