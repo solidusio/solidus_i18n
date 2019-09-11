@@ -380,7 +380,7 @@ cs:
         expires_at: Platná do
         included_in_price: Zahrnuto v ceně
         name: Jméno
-        show_rate_in_label: Zobrazit cenu na známce
+        show_rate_in_label: Zobrazit sazbu v popisu
         starts_at: Platná od
       spree/taxon:
         description: Popis
