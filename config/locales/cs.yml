@@ -578,8 +578,8 @@ cs:
         one: Platební metoda
         other: Platební metody
       spree/payment_method/bogus_credit_card: Falešné platby kreditní kartou
-      spree/payment_method/check: Zkontrolovat platby
-      spree/payment_method/simple_bogus_credit_card: Jednoduché platby falešnou kreditní kartou
+      spree/payment_method/check: Převodem
+      spree/payment_method/simple_bogus_credit_card: Zjednodušené platby falešnou kreditní kartou
       spree/payment_method/store_credit: Platby kredity obchodu
       spree/price:
         one: Cena
@@ -650,7 +650,7 @@ cs:
       spree/role:
         few: Role
         one: Role
-        other: Rolí
+        other: Role
       spree/shipment:
         few: Dodání
         one: Dodání
@@ -988,6 +988,8 @@ cs:
     analytics_desc_list_4: Je kompletně zdarma!
     analytics_trackers: Google Analytics
     and: a
+    api:
+      must_specify_api_key: Musíte zadat API klíč
     apply_code: Uplatnit kód
     approve: schválit
     approved_at: schváleno
@@ -1086,7 +1088,7 @@ cs:
     category: Kategorie
     character_limit: Limit of 255 characters
     charged: Účtováno
-    check: Check
+    check: Zkontrolovat
     check_for_spree_alerts: Zkontrolovat Spree upozornění
     check_stock_on_transfer: Zkontrolovat sklad pri přesunu
     checkout: K pokladně
@@ -1203,7 +1205,7 @@ cs:
     delete: Smazat
     deleted_successfully: Úspěšně smazáno.
     deleted_variants_present: Některé položky objednávky obsahují produkty, které již nejsou dostupné.
-    delivery: Dodávka
+    delivery: Doprava
     depth: Hloubka
     description: Popis
     destination: Cíl
