@@ -694,7 +694,7 @@ pl:
     lock: Zablokuj
     log_entries:
     logged_in_as: Zalogowano jako
-    logged_in_succesfully: Zalogowano
+    logged_in_successfully: Zalogowano
     logged_out: Wylogowano.
     login: Logowanie
     login_as_existing: Zaloguj jako istniejący użytkownik

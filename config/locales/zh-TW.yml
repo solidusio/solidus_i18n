@@ -649,7 +649,7 @@ zh-TW:
     lock: "鎖定"
     log_entries:
     logged_in_as: "目前帳號"
-    logged_in_succesfully: "登入成功"
+    logged_in_successfully: "登入成功"
     logged_out: "你已經完成登出"
     login: "登入"
     login_as_existing: "用戶登入"

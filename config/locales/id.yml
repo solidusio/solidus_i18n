@@ -689,7 +689,7 @@ id:
     lock: Kunci
     log_entries:
     logged_in_as: Login sebagai
-    logged_in_succesfully: Login berhasil
+    logged_in_successfully: Login berhasil
     logged_out: Anda telah keluar.
     login: Login
     login_as_existing: Login sebagai Pelanggan yang Terdaftar
