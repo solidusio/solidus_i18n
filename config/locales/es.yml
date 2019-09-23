@@ -1383,7 +1383,7 @@ es:
     log_entries: "Log Entries"
     logs: "Logs"
     logged_in_as: Conectado como
-    logged_in_succesfully: Conectado satisfactoriamente
+    logged_in_successfully: Conectado satisfactoriamente
     logged_out: Ha desconectado su sesión.
     login: Iniciar sesión
     login_as_existing: Iniciar sesión como Cliente existente

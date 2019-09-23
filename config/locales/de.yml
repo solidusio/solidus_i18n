@@ -1020,7 +1020,7 @@ de:
     lock: Sperren
     log_entries: Logeinträge
     logged_in_as: Angemeldet als
-    logged_in_succesfully: Anmeldung erfolgreich
+    logged_in_successfully: Anmeldung erfolgreich
     logged_out: Sie haben sich ausgeloggt.
     login: Login
     login_as_existing: Anmeldung für registrierte Benutzer

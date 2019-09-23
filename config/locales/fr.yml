@@ -1377,7 +1377,7 @@ fr:
     lock: Verrouiller
     log_entries: Entrées dans le journal
     logged_in_as: Identifié en tant que
-    logged_in_succesfully: Connexion réussie
+    logged_in_successfully: Connexion réussie
     logged_out: Vous avez été déconnecté
     login: Connexion
     login_as_existing: Commander en tant que client existant
