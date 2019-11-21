@@ -2,15 +2,15 @@ my:
   activerecord:
     attributes:
       spree/address:
-        address1: Alamat
-        address2: Alamat (lanjutan)
-        city: Bandar
-        country: Negara
-        firstname: Nama Depan
-        lastname: Nama Belakang
-        phone: telefon
-        state: Negeri
-        zipcode: Poskod
+        address1: ALAMAT
+        address2: ALAMAT
+        city: BANDAR
+        country: NEGARA
+        firstname: NAMA DEPAN
+        lastname: NAMA BELAKANG
+        phone: TELEFON
+        state: NEGERI
+        zipcode: POSKOD
       spree/calculator/tiered_flat_rate:
         preferred_base_amount:
         preferred_tiers:
@@ -20,27 +20,27 @@ my:
       spree/country:
         iso: ISO
         iso3: ISO3
-        iso_name: Nama ISO
-        name: Nama
-        numcode: Kod ISO
+        iso_name: NAMA ISO
+        name: NAMA
+        numcode: KOD ISO
       spree/credit_card:
-        base: Basis
-        cc_type: Jenis
-        month: Bulan
-        name: Nama
-        number: Nombor
-        verification_value: Kod Verifikasi
-        year: Tahun
+        base: BASIS
+        cc_type: JENIS
+        month: BULAN
+        name: NAMA
+        number: NOMBOR
+        verification_value: KOD PENGESAHAN
+        year: TAHUN
       spree/inventory_unit:
-        state: Status
+        state: STATUS
       spree/line_item:
-        price: Harga
+        price: HARGA
         quantity: Kuantiti
       spree/option_type:
         name: Nama
-        presentation: Presentasi
+        presentation: PEMBENTANGAN
       spree/order:
-        checkout_complete: Checkout Selesai
+        checkout_complete: SELESAI
         completed_at: Terpenuhi Saat
         considered_risky: Dianggap berisiko
         coupon_code: Kod Kupon
@@ -1145,7 +1145,7 @@ my:
       closed:
       complete:
       completed:
-      confirm:
+      confirm: 
       delivery:
       errored:
       failed:
@@ -1211,82 +1211,82 @@ my:
     taxonomy:
     taxonomy_edit: Edit taksonomy
     taxonomy_tree_error: Permintaan perubahan belum diterima dan susunan kembali kepada pengaturan awal, tolong cuba semula.
-    taxonomy_tree_instruction: "* Klik kanan untuk mengakses child di dalam tree untuk menambah, menghapus atau mengurutkan"
-    taxons: Takson
-    test: Tes
+    taxonomy_tree_instruction: "*  Klik kanan untuk mengakses child di dalam tree untuk menambah, menghapus atau mengurutkan"
+    taxons: 
+    test: PERCUBAAN
     test_mailer:
-      test_email:
-        greeting: Selamat!
-        message: Jika anda telah menerima email ini, maka pengaturan email anda benar.
-        subject: Testmail
-    test_mode: Mode Tes
-    thank_you_for_your_order: Terima kasih atas pesanan anda. Sila cetak salinan dari halaman konfirmasi ini untuk simpanan anda.
-    there_are_no_items_for_this_order: Tidak ada barang dalam pesanan ini
-    there_were_problems_with_the_following_fields: Terdapat beberapa masalah dengan
-    this_order_has_already_received_a_refund:
-    thumbnail: Thumbnail
-    tiered_flat_rate:
-    tiered_percent:
-    tiers:
-    time: Waktu
-    to_add_variants_you_must_first_define: Untuk menambah varian, pertama kali anda harus mendefinisikan
-    total: Total
-    total_per_item: Total per barang
-    total_pre_tax_refund:
-    total_price: Total Harga
-    total_sales:
-    track_inventory:
-    tracking: Tracking
-    tracking_number: Nombor Tracking
-    tracking_url:
+      test_email: 
+        greeting: 
+        message: 
+        subject: 
+    test_mode: MOD PERCUBAAN
+    thank_you_for_your_order: TERIMA KASIH ATAS PESANAN ANDA. SILA CETAK HALAMAN INI UNTUK SIMPANAN ANDA.
+    there_are_no_items_for_this_order: TIADA PESANAN TELAH DIBUAT
+    there_were_problems_with_the_following_fields: TERDAPAT MASALAH DENGAN BIDANG TERSEBUT
+    this_order_has_already_received_a_refund: PESANAN INI TELAH MENERIMA BAYARAN BALIK
+    thumbnail: IMEJ
+    tiered_flat_rate: KADAR RATA PERINGKAT
+    tiered_percent: %PERINGKAT
+    tiers: PERINGKAT
+    time: WAKTU
+    to_add_variants_you_must_first_define: BAGI MENAMBAH VARIAN ANDA HARUS MEMBERI DEFINISI TERLEBIH DAHULU
+    total: JUMLAH
+    total_per_item: JUMLAH PER BARANG
+    total_pre_tax_refund: JUMLAH PRACUKAI BAYARAN BALIK 
+    total_price: JUMLAH HARGA
+    total_sales: JUMLAH KESELURUHAN JUALAN
+    track_inventory: CARIAN PENGHANTARAN INVENTORI
+    tracking: CARIAN
+    tracking_number: NOMBOR PENGHANTARAN
+    tracking_url: URL CARIAN PENGHANTARAN
     tracking_url_placeholder: 'contoh: e.g. http://quickship.com/package?num=:tracking'
-    transaction_id:
-    transfer_from_location:
-    transfer_stock:
-    transfer_to_location:
-    tree: Susunan
-    type: Jenis
-    type_to_search: Ketik untuk Mencari
-    unable_to_connect_to_gateway: Tidak dapat berkoneksi dengan gateway.
-    unable_to_create_reimbursements:
-    under_price: Dibawah %{price}
-    unlock:
-    unrecognized_card_type: Jenis Kad tidak dikenal
-    unshippable_items: Barang-barang yang tidak boleh Dikirim
-    update: Kemaskini
-    updating: Memberbarui
-    usage_limit: Batas Penggunaan
-    use_app_default:
-    use_billing_address: Alamat Bil
-    use_new_cc: Gunakan Kad baru
-    use_s3: Pakai Amazon S3 untuk gambar
-    user: Pengguna
-    user_rule:
-      choose_users: Pilih Pengguna
-    users: Pengguna
-    validation:
-      cannot_be_less_than_shipped_units: tidak boleh kurang dari jumlah barang yang dikirimkan.
-      cannot_destroy_line_item_as_inventory_units_have_shipped:
-      exceeds_available_stock: melebihi stok yang tersedia. Sila pastikan barang-barang Anda mempunyai jumlah yang benar.
-      is_too_large: terlalu besar -- stok tidak dapat memenuhi kuantiti yang telah dipesan!
-      must_be_int: Harus berupa integer
-      must_be_non_negative: Harus merupakan nilai positif
-      unpaid_amount_not_zero:
-    value: Nilai
-    variant: Varian
-    variant_placeholder: Varian placeholder
-    variants: Varian
-    version: Versi
-    void: Batalkan
-    weight: Berat
-    what_is_a_cvv: Apa itu (CVV) Credit Card Code?
-    what_is_this: Apa ini?
-    width: Lebar
-    year: Tahun
-    you_have_no_orders_yet: Anda belum mempunyai pesanan.
-    your_cart_is_empty: Bakul anda kosong
-    your_order_is_empty_add_product: Pesanan Anda kosong, Sila cari dan tambahkan barang di atas
-    zip: Poskod
-    zipcode: Poskod
-    zone: Wilayah
-    zones: Wilayah
+    transaction_id: ID PENGHANTARAN
+    transfer_from_location: PENGHANTARAN DARI LOKASI
+    transfer_stock: STOK PENGHANTARAN
+    transfer_to_location: LOKASI PENGHANTARAN
+    tree: SUSUNAN
+    type: JENIS
+    type_to_search: BUAT CARIAN
+    unable_to_connect_to_gateway: TIDAK DAPAT MENYAMBUNG KE GERBANG
+    unable_to_create_reimbursements: TIDAK DAPAT MEMBUAT PENUKARAN
+    under_price: DIBAWAH %{price}
+    unlock: BUKA AKAUN
+    unrecognized_card_type: JENIS KAD YANG TIDAK DAPAT DIKENALPASTI
+    unshippable_items: PESANAN YANG TIDAK BERJAYA DIKIRIM
+    update: KEMASKINI
+    updating: MEMPERBAHARUI
+    usage_limit: BATAS PENGGUNAAN
+    use_app_default: ALAMAT TERKINI
+    use_billing_address: ALAMAT SURAT MENYURAT
+    use_new_cc: GUNAKAN KAD BARU
+    use_s3: SILA GUNA AMAZON S3 BAGI GAMBAR.
+    user: PENGGUNA
+    user_rule: UNDANG-UNDANG PENGGUNA
+      choose_users: PILIH PENGGUNA
+    users: PENGGUNA
+    validation: PENGESAHAN
+      cannot_be_less_than_shipped_units: TIDAK BOLEH KURANG DARI JUMLAH PESANAN YANG TELAH DIBUAT.
+      cannot_destroy_line_item_as_inventory_units_have_shipped: TIDAK BOLEH MENGURANGKAN JUMLAH PESANAN YANG TELAH DIBUAT.
+      exceeds_available_stock: PESANAN MELEBILIHI STOK BARANG YANG TERSEDIA. SILA PASTIKAN ANDA MEMBUAT PESANAN DALAM LINGKUNGAN JUMLAH STOK BARANG YANG TERSEDIA.
+      is_too_large: PESANAN MELEBILIHI STOK BARANG YANG TERSEDIA
+      must_be_int: HARUS BERNILAI INTEGER
+      must_be_non_negative: HARUS BERNILAI POSITIF
+      unpaid_amount_not_zero: JUMLAH TIDAK DIBAYAR LEBIH DARI SIFAR
+    value: NILAI
+    variant: VARIAN
+    variant_placeholder: PEMEGANG TEMPAT VARIAN
+    variants: VARIAN
+    version: VERSI
+    void: TIDAK SAH
+    weight: BERAT
+    what_is_a_cvv: APAKAH (CVV) CREDIT CARD CODE?
+    what_is_this: APAKAH INI?
+    width: LEBAR
+    year: TAHUN
+    you_have_no_orders_yet: TIADA PESANAN DIBUAT
+    your_cart_is_empty: BAKUL ANDA KOSONG
+    your_order_is_empty_add_product: TIADA PESANAN DIBUAT, SILA TAMBAHKAN BARANG PESANAN TERLEBIH DAHULU
+    zip: POSKOD
+    zipcode: POSKOD
+    zone: WILAYAH
+    zones: WILAYAH
