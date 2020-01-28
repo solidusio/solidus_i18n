@@ -1081,6 +1081,7 @@ cs:
     cart: Košík
     cart_subtotal:
       one: Celkem
+      few: Celkem
       other: Celkem
     carton_external_number: Externí objednávka
     carton_orders: Objednávky s Carton
