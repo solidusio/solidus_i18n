@@ -1082,6 +1082,7 @@ cs:
     cart_subtotal:
       one: Celkem
       other: Celkem
+      few: Celkem
     carton_external_number: Externí objednávka
     carton_orders: Objednávky s Carton
     categories: Kategorie
@@ -2119,8 +2120,8 @@ cs:
       default: Výchozí
     store_rule:
       choose_stores: Vybrat obchod
-    street_address: Ulice
-    street_address_2: Číslo ulice
+    street_address: Adresa
+    street_address_2: Adresa (pokrač.)
     subtotal: Mezisoučet
     subtract: Odečet
     success: Úspěch
