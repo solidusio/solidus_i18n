@@ -85,7 +85,7 @@ cs:
       spree/inventory_unit:
         state: Země
       spree/legacy_user:
-        email: Email
+        email: E-mail
         password: Heslo
         password_confirmation: Porvrdit heslo
         spree_roles: Role
@@ -115,7 +115,7 @@ cs:
         considered_risky: Rizikovost
         coupon_code: Kód kupónu
         created_at: Datum objednávky
-        email: Email zákazníka
+        email: E-mail zákazníka
         included_tax_total: DPH (obsažena)
         ip_address: IP Adresa
         item_total: Položky celkem
@@ -397,7 +397,7 @@ cs:
         active: Aktivní
         analytics_id: Analytics ID
       spree/user:
-        email: Email
+        email: E-mail
         lifetime_value: Celkem utraceno
         password: Heslo
         password_confirmation: Potvrzení hesla
@@ -732,6 +732,7 @@ cs:
       not_saved:
         one: nebyl uložen
         other: nebyly uloženy
+      email_is_invalid: E-mail nemá správný formát
   spree:
     abbreviation: Zkratka
     accept: Přijmout
@@ -748,7 +749,7 @@ cs:
       create: Vytvořit
       delete: Smazat
       destroy: Smazat
-      edit: Upravit
+      edit: Změnit
       list: Vypsat
       listing: Výpis
       new: Nový
@@ -1071,7 +1072,7 @@ cs:
     cannot_rebuild_shipments_order_completed: Cannot rebuild shipments for a completed order.
     cannot_rebuild_shipments_shipments_not_pending: Cannot rebuild shipments for an order with non-pending shipments.
     cannot_set_shipping_method_without_address: Nelze nastavit způsob dodání dokud nejsou poskytnuty zákaznické údaje.
-    cannot_update_email: You do not have access to update this user's email address. <br />Please contact a superuser if you need to perform this action.
+    cannot_update_email: Nemáte oprávnění k aktualizaci e-mailu tohoto uživatele. <br>Pro provedení této aktualizace prosím kontaktujte administrátora.
     capture: Strhnout
     capture_events: Zachytit události
     card_code: Bezpečnostní číslo karty
@@ -1259,13 +1260,13 @@ cs:
         missing_taxon: Pro použití kupónu vám chybí některé povinné kategorie.
         no_applicable_products: Pro použití tohoto kupónu vám chybí konkrétní vyžadovaný produkt.
         no_matching_taxons: Pro použití tohoto kupónu vám chyba produkt z konkrétní vyžadované kategorie.
-        no_user_or_email_specified: Musíte poskytnout svůj email pro použití tohoto kupónu.
+        no_user_or_email_specified: Musíte poskytnout svůj e-mail pro použití tohoto kupónu.
         no_user_specified: Musíte se zaregistrovat nebo přihlásit pro použití tohoto kupónu.
         not_first_order: Tento kupón může být použit pouze pro první objednávku.
-    email: Email
+    email: E-mail
     empty: Prázdné
     empty_cart: Vyprázdnit košík
-    enable_mail_delivery: Povolit doručování emailů
+    enable_mail_delivery: Povolit doručování e-mailů
     end: Konec
     ending_in: Končí na
     environment: Prostředí
@@ -1339,7 +1340,7 @@ cs:
     google_analytics_id: Google Analytics ID
     group_size: Group size
     guest_checkout: Objednávka bez registrace
-    guest_user_account: Nakoupit jako host (bez registrace)
+    guest_user_account: Nakoupit bez přihlášení
     has_no_shipped_units: nemá žádné dodané položky
     height: Výška
     helpers:
@@ -1417,12 +1418,12 @@ cs:
     incomplete: Neúplné
     info_number_of_skus_not_shown: a další
     info_product_has_multiple_skus: Tento produkt má %{count} variant
-    instructions_to_reset_password: Zadejte prosím svůj email do formuláře níže
+    instructions_to_reset_password: Zadejte prosím svůj e-mail do formuláře níže
     insufficient_stock: Nedostatečné skladové zásoby, zbývá pouze %{on_hand}
     insufficient_stock_for_order: Není dost zboží skladem pro objednávku
     insufficient_stock_lines_present: Některé položky nejsou na skladě v dostatečném množství.
-    intercept_email_address: Odchytávání emailů
-    intercept_email_instructions: Anulovat email příjemce a nahradit s touto adresou
+    intercept_email_address: Odchytávání e-mailů
+    intercept_email_instructions: Anulovat e-mail příjemce a nahradit s touto adresou
     internal_name: Interní jméno
     invalid_credit_card: Neplatná platební karta
     invalid_exchange_variant: Neplatná varianta pro výměnu
@@ -1484,7 +1485,7 @@ cs:
     logged_in_succesfully: Přihlášení proběhlo úspěšně
     logged_out: Byli jste odhlášeni
     login: Přihlášení
-    login_as_existing: Přihlásit se jako existující zákazník
+    login_as_existing: Přihlašte se do svého účtu
     login_failed: Přihlášení se nezdařilo
     login_name: Přihlásit se
     logout: Odhlásit se
@@ -1665,7 +1666,7 @@ cs:
       complete: Dokončení
       confirm: Potvrzení
       considered_risky: Riziková
-      delivery: Možnosti dodání
+      delivery: Způsob dodání
       payment: Platba
       resumed: Obnovená
       returned: Vracená
@@ -1862,7 +1863,7 @@ cs:
     refunded_amount: Hodnota refundace
     refunds: Refundace
     register: Zaregistrovat se jako nový uživatel
-    registration: Registrace
+    registration: Přihlášení
     reimburse: Nahradit
     reimbursed: Nahrazeno
     reimbursement: Náhrada
@@ -1935,7 +1936,7 @@ cs:
     sales_total: Prodej celkem
     sales_total_description: Slevy na všechny objednávky
     sales_totals: Celkové prodeje
-    save_and_continue: Uložit a pokračovat
+    save_and_continue: Pokračovat
     save_my_address: Uložit mojí adresu
     say_no: Ne
     say_yes: Ano
@@ -1952,9 +1953,9 @@ cs:
     select_from_prototype: Výběr ze šablon
     select_stock: Vyberte zásoby ze skladu
     selected_quantity_not_available: vybrané množství %{item} není k dispozici.
-    send_copy_of_all_mails_to: Zasílat kopie všech emailů na emailovou adresu
-    send_mailer: Odesílatel emailů
-    send_mails_as: Posílat emaily jako
+    send_copy_of_all_mails_to: Zasílat kopie všech e-mailů na e-mailovou adresu
+    send_mailer: Odesílatel e-mailů
+    send_mails_as: Posílat e-maily jako
     server: Server
     server_error: Server nahlásil chybu
     settings: Nastavení
@@ -1965,7 +1966,7 @@ cs:
     shipment: Doprava
     shipment_adjustments: Úprava dopravy
     shipment_date: Datum odeslání
-    shipment_details: Informace k dopravě
+    shipment_details: '%{shipping_method}'
     shipment_mailer:
       shipped_email:
         dear_customer: Vážený zákazníku,\n
@@ -2121,7 +2122,7 @@ cs:
     store_rule:
       choose_stores: Vybrat obchod
     street_address: Ulice
-    street_address_2: Číslo ulice
+    street_address_2: Číslo popisné/orientační
     subtotal: Mezisoučet
     subtract: Odečet
     success: Úspěch
@@ -2157,8 +2158,8 @@ cs:
     test_mailer:
       test_email:
         greeting: Gratulujeme!
-        message: Pokud jste obdrželi tento email, Vaše nastavení emailu je správné.
-        subject: Testovací email
+        message: Pokud jste obdrželi tento e-mail, Vaše nastavení e-mailu je správné.
+        subject: Testovací e-mail
     test_mode: Testovací režim
     thank_you_for_your_order: Děkujeme za Váš nákup. Doporučujeme Vám vytisknout si kopii této stránky.
     there_are_no_items_for_this_order: Objednávka neobsahuje žádné položky.
@@ -2205,7 +2206,7 @@ cs:
     updating: Ukládám změny
     usage_limit: Limit pro použití
     use_app_default: Použít výchozí
-    use_billing_address: Použít fakturační adresu
+    use_billing_address: Stejná jako fakturační adresa
     use_existing_cc: Použijte existující kartu
     use_new_cc: Použít novou kartu
     use_new_cc_or_payment_method: Použít novou kartu / způsob platby
