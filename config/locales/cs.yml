@@ -348,7 +348,7 @@ cs:
         code: Slug
         default: Výchozí
         default_currency: Výchozí měna
-        mail_from_address: Adresa odesílatele
+        mail_from_address: Email obchodu
         meta_description: Meta popis
         meta_keywords: Meta klíčová slova
         name: Název
@@ -571,9 +571,9 @@ cs:
         one: Objednávka
         other: Objednávky
       spree/payment:
-        few: Platby
         one: Platba
-        other: Plateb
+        few: Platby
+        other: Platby
       spree/payment_method:
         one: Platební metoda
         other: Platební metody
@@ -643,7 +643,7 @@ cs:
         few: Návraty oprávnění
         one: Návrat oprávnění
         other: Návratů oprávnění
-      spree/return_authorization_reason: 
+      spree/return_authorization_reason:
       spree/return_reason:
         one: Důvod vrácení
         other: Důvody vrácení
@@ -666,7 +666,7 @@ cs:
         few: Státy
         one: Stát
         other: Států
-      spree/state_change: 
+      spree/state_change:
       spree/stock: sklad
       spree/stock_item:
         one: Položka skladu
@@ -677,7 +677,7 @@ cs:
       spree/stock_movement:
         one: Pohyb skladu
         other: Pohyby skladu
-      spree/stock_transfer: 
+      spree/stock_transfer:
       spree/store:
         one: Obchod
         other: Obchody
@@ -1082,7 +1082,6 @@ cs:
     cart: Košík
     cart_subtotal:
       one: Celkem
-      few: Celkem
       other: Celkem
       few: Celkem
     carton_external_number: Externí objednávka
@@ -1437,8 +1436,7 @@ cs:
     inventory_adjustment: Přizpůsobení skladu
     inventory_canceled: Inventory canceled
     inventory_error_flash_for_insufficient_quantity: Jedna z položek ve Vašem košíku byla vyprodána.
-    inventory_error_flash_for_insufficient_shipment_quantity: Quantity selected of %{unavailable_items} is not available. Still, items may be
-      available from another stock location, please try again.
+    inventory_error_flash_for_insufficient_shipment_quantity: Vybrané množství %{unavailable_items} není dosupné. Položky mohou být dostupné v jiných skladech, zkuste vybrat jiný sklad a zkuste to znovu.
     inventory_not_available: Inventory not available for %{item}.
     inventory_state: Stav skladu
     inventory_states:
@@ -1662,15 +1660,15 @@ cs:
     order_state:
       address: Adresa
       awaiting_return: Čeká na návrat
-      canceled: Zrušeno
+      canceled: Zrušena
       cart: Košik
-      complete: Dokončení
-      confirm: Potvrzení
-      considered_risky: Riziková
-      delivery: Způsob dodání
-      payment: Platba
+      complete: Přijatá
+      confirm: Potvrzená
+      considered_risky: Vyhodnocena jako riziková
+      delivery: Výběr způsobu dodání
+      payment: Výběr platby
       resumed: Obnovená
-      returned: Vracená
+      returned: Vrácená
     order_summary: Shrnutí objednávky
     order_sure_want_to: Jste si jisti, že chcete %{event} tuto objednávku?
     order_total: Objednávka celkem
@@ -1703,9 +1701,9 @@ cs:
     payment_state: Stav platby
     payment_states:
       balance_due: Nedoplatek
-      checkout: Pokladna
+      checkout: Čeká na platbu
       completed: Dokončeno
-      credit_owed: Dluží kredit
+      credit_owed: Přeplatek
       failed: Selhalo
       invalid: Neplatné
       paid: Zaplaceno
@@ -1715,16 +1713,17 @@ cs:
     payment_updated: Platba upravena
     payments: Platby
     payments_failed_count:
-      one: Selhání platby
-      other: Selhání platby
+      one: Selhala platba
+      few: Selhaly %{count} platby
+      other: Selhalo %{count} plateb
     pending: Čekající
     percent: Procenta
     percent_per_item: Procent na položku
     permalink: Stálý odkaz
     phone: Telefon
     place_order: Objednat
-    please_define_payment_methods: Nejprve zadefinujte platební metody.
-    please_enter_reasonable_quantity: Please enter a reasonable quantity.
+    please_define_payment_methods: Nejprve nastavte platební metody.
+    please_enter_reasonable_quantity: Zadejte prosím rozumné množství.
     populate_get_error: Něco je špatně. Zkuste prosím přidat položku znovu.
     powered_by: Pohání
     pre_tax_amount: Hodnota bez daně
@@ -1859,7 +1858,7 @@ cs:
     reception_status: Stav obdržení
     reference: Reference
     refund: Vráceno
-    refund_amount_must_be_greater_than_zero: HOdnota refundace musí být větší než 0.
+    refund_amount_must_be_greater_than_zero: Hodnota refundace musí být větší než 0.
     refund_reasons: Důvody refundace
     refunded_amount: Hodnota refundace
     refunds: Refundace
@@ -1898,7 +1897,7 @@ cs:
     resend: Zaslat znovu
     reset_password: Resetovat mé heslo
     response_code: Kód odpovědi
-    restock_inventory: Restock Inventory
+    restock_inventory: Sklad znovunaskladnění
     resume: pokračovat
     resumed: Obnoveno
     return: vrátit
@@ -1982,11 +1981,11 @@ cs:
     shipment_state: Stav dodávky
     shipment_states:
       backorder: V externím skladu
-      canceled: Zrušena
-      partial: Částečná
-      pending: Čekající na vyřízení
-      ready: Připravit
-      shipped: Dodáno
+      canceled: Zrušená
+      partial: Částečně vyřízená
+      pending: Čeká na dokončení objednávky
+      ready: Připravuje se
+      shipped: Odesláno
     shipment_transfer_error: Chyba převodu variant.
     shipment_transfer_success: Varianty převedeny.
     shipments: Dopravy
