@@ -585,9 +585,9 @@ cs:
         one: Cena
         other: Ceny
       spree/product:
-        few: Výrobky
-        one: Výrobek
-        other: Výrobků
+        few: produkty
+        one: produkt
+        other: produktů
       spree/product_property:
         one: Vlastnost produktu
         other: Vlastnosti produktu
@@ -771,8 +771,8 @@ cs:
     add_new_style: Přidat nový styl
     add_one: Přidat
     add_option_value: Přidat hodnotu volby
-    add_product: Přidat výrobek
-    add_product_properties: Přidat vlastnosti výrobku
+    add_product: Přidat produkt
+    add_product_properties: Přidat vlastnosti produktu
     add_rule_of_type: Přidat typové pravidlo
     add_state: Přidat stát
     add_stock: Přidat zásoby do skladu
@@ -1518,8 +1518,8 @@ cs:
     my_orders: Mé objednávky
     name: Název
     name_on_card: Jméno na kartě
-    name_or_sku: Název nebo SKU (zadejte alespoň první 4 písmena z názvu výrobku)
-    negative_movement_absent_item: Cannot create negative movement for absent stock item.
+    name_or_sku: Název nebo SKU (zadejte alespoň první 4 písmena z názvu produktu)
+    negative_movement_absent_item: Nelze zadat záporný pohyb skladu pro chybějící produkt.
     new: Nový
     new_adjustment: Nová úprava
     new_adjustment_reason: Nový důvod úpravy
@@ -1532,7 +1532,7 @@ cs:
     new_order_completed: Nová objednávka dokončena
     new_payment: Nová platba
     new_payment_method: Nový způsob platby
-    new_product: Nový výrobek
+    new_product: Nový produkt
     new_promotion: Nová propagace
     new_promotion_category: Nová kategorie nabídek
     new_promotion_code_batch: New Promotion Code Batch
@@ -1569,7 +1569,7 @@ cs:
     no_payment_found: Nebyly nalezeny žádné platby
     no_payment_methods_found: Nenalezeny žádné platební metody
     no_pending_payments: Žádné čekající platby
-    no_products_found: Nebyly nalezeny žádné výrobky
+    no_products_found: Nebyly nalezeny žádné produkty
     no_promotions_found: Nenalezeny žádné promo akce
     no_resource: Žádné %{resource} nenalezeny.
     no_resource_found: Nebyly nalezeny žádné zdroje
@@ -1596,10 +1596,10 @@ cs:
     note: Poznámka
     note_already_received_a_refund: 'Note: This order has already received a refund.  Make sure the above reimbursement amount is correct.'
     notice_messages:
-      product_cloned: Výrobek byl naklonován
-      product_deleted: Výrobek byl smazán
-      product_not_cloned: Výrobek nelze opakovat
-      product_not_deleted: Výrobek nelze odstranit
+      product_cloned: Produkt byl zkopírován
+      product_deleted: Produkt byl smazán
+      product_not_cloned: Produkt nelze opakovat
+      product_not_deleted: Produkt nelze odstranit
       variant_deleted: Variantu lze odstranit
       variant_not_deleted: Variantu nelze odstranit
     num_orders: Počet objednávek
@@ -1739,23 +1739,23 @@ cs:
     price_range: Cenové rozpětí
     price_sack: Ceny balíku
     process: Zpracovat
-    product: Výrobek
-    product_details: Detaily výrobku
-    product_has_no_description: Výrobek nemá žádný popis
-    product_not_available_in_this_currency: Tento výrobek není dostupný pro vybranou měnu.
-    product_properties: Vlastnosti výrobku
+    product: Produkt
+    product_details: Detaily produktu
+    product_has_no_description: Produkt nemá žádný popis
+    product_not_available_in_this_currency: Tento produkt není dostupný pro vybranou měnu.
+    product_properties: Vlastnosti produktu
     product_rule:
-      choose_products: Vyberte výrobky
+      choose_products: Vyberte produkty
       label: Štítek
       match_all: Vše
       match_any: Alespoň jeden
       match_none: Žádný
       product_source:
-        group: Ze skupiny výrobků
+        group: Ze skupiny produktů
         manual: Vybrat manuálně
     product_without_default_price_cta: Please, create a Master Price!
     product_without_default_price_info: This Product has no price in the default currency (%{default_currency}).
-    products: Výrobky
+    products: Produkty
     promotion: Speciální nabídka
     promotion_action: Akce speciálních nabídek
     promotion_action_types:
@@ -1805,10 +1805,10 @@ cs:
         description: Objednávka obsahuje produkty s konkrétní hodnotou volby.
         name: Hodnoty volby
       product:
-        description: Objednávka obsahuje zadaný výrobek(y)
-        name: Výrobky
+        description: Objednávka obsahuje zadaný/é produkt/y
+        name: Produkty
       taxon:
-        description: Objednávka výrobek ze zadaného taxonu
+        description: Objednávka obsahuje produkt ze zadané kategorie
         name: Taxony
       user:
         description: Dostupné pouze pro uvedené uživatele
@@ -2251,7 +2251,7 @@ cs:
     you_cannot_undo_action: Tuto akci nebudete moci vrátit zpět
     you_have_no_orders_yet: Zatím nemate žádnou objednávku
     your_cart_is_empty: Váš nákupní košík je prázdný
-    your_order_is_empty_add_product: Vaše objednávka je prázdná. Vyberte prosím výrobek, který chcete zakoupit a vložte jej do košíku.
+    your_order_is_empty_add_product: Vaše objednávka je prázdná. Vyberte prosím produkt, který chcete zakoupit a vložte jej do košíku.
     zip: PSČ
     zipcode: PSČ
     zone: Zóna
