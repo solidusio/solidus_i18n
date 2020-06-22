@@ -2161,7 +2161,7 @@ cs:
         message: Pokud jste obdrželi tento e-mail, Vaše nastavení e-mailu je správné.
         subject: Testovací e-mail
     test_mode: Testovací režim
-    thank_you_for_your_order: Děkujeme za Váš nákup. Doporučujeme Vám vytisknout si kopii této stránky.
+    thank_you_for_your_order: Děkujeme za Váš nákup.
     there_are_no_items_for_this_order: Objednávka neobsahuje žádné položky.
     there_were_problems_with_the_following_fields: Opravte prosím následující chyby
     this_order_has_already_received_a_refund: Tato objednávka již byla refundována.
