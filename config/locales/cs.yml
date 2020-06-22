@@ -1663,10 +1663,10 @@ cs:
       canceled: Zrušena
       cart: Košik
       complete: Přijatá
-      confirm: Potvrzená
+      confirm: Potvrzení
       considered_risky: Vyhodnocena jako riziková
-      delivery: Výběr způsobu dodání
-      payment: Výběr platby
+      delivery: Druh dodání
+      payment: Způsob platby
       resumed: Obnovená
       returned: Vrácená
     order_summary: Shrnutí objednávky
