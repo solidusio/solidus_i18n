@@ -1702,7 +1702,7 @@ cs:
     payment_states:
       balance_due: Nedoplatek
       checkout: Čeká na platbu
-      completed: Dokončeno
+      completed: Zaplaceno
       credit_owed: Přeplatek
       failed: Selhalo
       invalid: Neplatné
