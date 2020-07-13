@@ -943,11 +943,11 @@ cs:
         edit:
           api_access: Přistup k API
           clear_key: Smazat klíč
-          confirm_clear_key: Opravdu chcete smazat klíč k API tohoto uživatele? Toto zneplatní existující klíč.
-          confirm_regenerate_key: Are you sure you want to regenerate this user's API key? It will invalidate the existing key.
-          generate_key: Generate API key
+          confirm_clear_key: Opravdu chcete smazat klíč k API tohoto uživatele? Klíč již nebude monžné použít.
+          confirm_regenerate_key: Opravdu chcete přegenerovat API klíč toto uživatele? Původní klíč bude zneplatněn.
+          generate_key: Vygenerovat API klíč
           key: Key
-          no_key: Žándý klíč
+          no_key: Ještě nebyl vygenerován žádný klíč
           regenerate_key: Znovu vygenerovat klíč
         user_page_actions:
           create_order: Vytvořit objednávku pro tohoto uživatele
