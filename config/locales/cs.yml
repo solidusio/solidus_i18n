@@ -1700,7 +1700,7 @@ cs:
     payment_processor_choose_link: Platební metody
     payment_state: Stav platby
     payment_states:
-      balance_due: Nedoplatek
+      balance_due: Čeká na platbu
       checkout: Čeká na platbu
       completed: Zaplaceno
       credit_owed: Přeplatek
@@ -1983,7 +1983,7 @@ cs:
       backorder: V externím skladu
       canceled: Zrušená
       partial: Částečně vyřízená
-      pending: Čeká na dokončení objednávky
+      pending: Čeká na zaplacení
       ready: Připravuje se
       shipped: Odesláno
     shipment_transfer_error: Chyba převodu variant.
