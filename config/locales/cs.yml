@@ -1653,7 +1653,7 @@ cs:
     order_not_found: Nemůžeme nalézt Vaši objednávku. Zkuste prosím akci provést později.
     order_number: Objednávka %{number}
     order_please_refresh: Order is not ready to be completed. Please refresh totals.
-    order_processed_successfully: Vaše objednávka byla úspěšně zpracována
+    order_processed_successfully: Vaše objednávka byla úspěšně přijata
     order_ready_for_confirm: Order ready for confirmation
     order_refresh_totals: Refresh Totals
     order_resumed: Objednávka obnovena
