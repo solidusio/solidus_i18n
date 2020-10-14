@@ -1984,7 +1984,7 @@ cs:
       canceled: Zrušená
       partial: Částečně vyřízená
       pending: Čeká na zaplacení
-      ready: Připravuje se
+      ready: Připraveno
       shipped: Odesláno
     shipment_transfer_error: Chyba převodu variant.
     shipment_transfer_success: Varianty převedeny.
