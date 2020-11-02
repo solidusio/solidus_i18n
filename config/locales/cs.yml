@@ -1895,7 +1895,7 @@ cs:
     report: Report
     reports: Reporty
     resend: Zaslat znovu
-    reset_password: Resetovat mé heslo
+    reset_password: Poslat instrukce pro změnu hesla
     response_code: Kód odpovědi
     restock_inventory: Sklad znovunaskladnění
     resume: pokračovat
@@ -1984,7 +1984,7 @@ cs:
       canceled: Zrušená
       partial: Částečně vyřízená
       pending: Čeká na zaplacení
-      preparing: Připravuje se 
+      preparing: Připravuje se
       ready: Připraveno
       shipped: Odesláno
     shipment_transfer_error: Chyba převodu variant.
