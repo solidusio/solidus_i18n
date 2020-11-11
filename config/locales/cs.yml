@@ -1484,7 +1484,7 @@ cs:
     logged_in_succesfully: Přihlášení proběhlo úspěšně
     logged_out: Byli jste odhlášeni
     login: Přihlášení
-    login_as_existing: Přihlašte se do svého účtu
+    login_as_existing: Přihlaste se do svého účtu
     login_failed: Přihlášení se nezdařilo
     login_name: Přihlásit se
     logout: Odhlásit se
