@@ -1151,7 +1151,7 @@ cs:
     coupon_code_removed: Kupón byl úspěšně z objednávky odebrán.
     coupon_code_unknown_error: Tento kupón nemůže být použit.
     create: Vytvořit
-    create_a_new_account: Vytvořit nový účet
+    create_a_new_account: Založit nový účet
     create_new_order: Vytvořit novou objednávku
     create_one: Vytvořit.
     create_promotion_code: Vytvořit promo kód
