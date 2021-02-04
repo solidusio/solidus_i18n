@@ -1435,8 +1435,8 @@ cs:
     inventory: Inventář
     inventory_adjustment: Přizpůsobení skladu
     inventory_canceled: Inventory canceled
-    inventory_error_flash_for_insufficient_quantity: Jedna z položek ve Vašem košíku byla vyprodána.
-    inventory_error_flash_for_insufficient_shipment_quantity: Vybrané množství %{unavailable_items} není dosupné. Položky mohou být dostupné v jiných skladech, zkuste vybrat jiný sklad a zkuste to znovu.
+    inventory_error_flash_for_insufficient_quantity: Jedna z položek ve Vašem košíku byla již bohužel vyprodána.
+    inventory_error_flash_for_insufficient_shipment_quantity: Vybrané množství položky "%{unavailable_items}" již není pro vybraný způsob dopravy dostupné.
     inventory_not_available: Inventory not available for %{item}.
     inventory_state: Stav skladu
     inventory_states:
