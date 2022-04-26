@@ -1,6 +1,6 @@
 # Solidus Internationalization
 
-[![Build Status](https://travis-ci.org/solidusio/solidus_i18n.svg?branch=master)](https://travis-ci.org/solidusio/solidus_i18n)
+[![CircleCI](https://circleci.com/gh/solidusio/solidus_i18n.svg?style=svg)](https://circleci.com/gh/solidusio/solidus_i18n)
 [![Code Climate](https://codeclimate.com/github/solidusio/solidus_i18n/badges/gpa.svg)](https://codeclimate.com/github/solidusio/solidus_i18n)
 [![Gem Version](https://badge.fury.io/rb/solidus_i18n.svg)](https://badge.fury.io/rb/solidus_i18n)
 
@@ -84,6 +84,22 @@ Please update your `Gemfile` if you still need the model translations.
 # Gemfile
 gem 'solidus_globalize', github: 'solidusio-contrib/solidus_globalize', branch: 'master'
 ```
+
+## Localizing country names
+
+You can translate country names by defining `spree.country_names` in your own locale files. For example, to have countries in Spanish do:
+
+```yml
+es:
+  spree:
+    country_names:
+      US: Estados Unidos de América
+      UK: Reino Unido
+      CA: Canadá
+      # ...
+```
+
+Some supported languages already define localized country names. Take a look at this repo's `.yml` files for your locale to confirm if we already provide translations.
 
 Contributing
 ------------
