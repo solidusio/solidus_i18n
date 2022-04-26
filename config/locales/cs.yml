@@ -85,7 +85,7 @@ cs:
       spree/inventory_unit:
         state: Země
       spree/legacy_user:
-        email: Email
+        email: E-mail
         password: Heslo
         password_confirmation: Porvrdit heslo
         spree_roles: Role
@@ -115,7 +115,7 @@ cs:
         considered_risky: Rizikovost
         coupon_code: Kód kupónu
         created_at: Datum objednávky
-        email: Email zákazníka
+        email: E-mail zákazníka
         included_tax_total: DPH (obsažena)
         ip_address: IP Adresa
         item_total: Položky celkem
@@ -348,7 +348,7 @@ cs:
         code: Slug
         default: Výchozí
         default_currency: Výchozí měna
-        mail_from_address: Adresa odesílatele
+        mail_from_address: Email obchodu
         meta_description: Meta popis
         meta_keywords: Meta klíčová slova
         name: Název
@@ -397,7 +397,7 @@ cs:
         active: Aktivní
         analytics_id: Analytics ID
       spree/user:
-        email: Email
+        email: E-mail
         lifetime_value: Celkem utraceno
         password: Heslo
         password_confirmation: Potvrzení hesla
@@ -571,9 +571,9 @@ cs:
         one: Objednávka
         other: Objednávky
       spree/payment:
-        few: Platby
         one: Platba
-        other: Plateb
+        few: Platby
+        other: Platby
       spree/payment_method:
         one: Platební metoda
         other: Platební metody
@@ -585,9 +585,9 @@ cs:
         one: Cena
         other: Ceny
       spree/product:
-        few: Výrobky
-        one: Výrobek
-        other: Výrobků
+        few: produkty
+        one: produkt
+        other: produktů
       spree/product_property:
         one: Vlastnost produktu
         other: Vlastnosti produktu
@@ -643,7 +643,7 @@ cs:
         few: Návraty oprávnění
         one: Návrat oprávnění
         other: Návratů oprávnění
-      spree/return_authorization_reason: 
+      spree/return_authorization_reason:
       spree/return_reason:
         one: Důvod vrácení
         other: Důvody vrácení
@@ -666,7 +666,7 @@ cs:
         few: Státy
         one: Stát
         other: Států
-      spree/state_change: 
+      spree/state_change:
       spree/stock: sklad
       spree/stock_item:
         one: Položka skladu
@@ -677,7 +677,7 @@ cs:
       spree/stock_movement:
         one: Pohyb skladu
         other: Pohyby skladu
-      spree/stock_transfer: 
+      spree/stock_transfer:
       spree/store:
         one: Obchod
         other: Obchody
@@ -732,6 +732,7 @@ cs:
       not_saved:
         one: nebyl uložen
         other: nebyly uloženy
+      email_is_invalid: E-mail nemá správný formát
   spree:
     abbreviation: Zkratka
     accept: Přijmout
@@ -748,7 +749,7 @@ cs:
       create: Vytvořit
       delete: Smazat
       destroy: Smazat
-      edit: Upravit
+      edit: Změnit
       list: Vypsat
       listing: Výpis
       new: Nový
@@ -770,8 +771,8 @@ cs:
     add_new_style: Přidat nový styl
     add_one: Přidat
     add_option_value: Přidat hodnotu volby
-    add_product: Přidat výrobek
-    add_product_properties: Přidat vlastnosti výrobku
+    add_product: Přidat produkt
+    add_product_properties: Přidat vlastnosti produktu
     add_rule_of_type: Přidat typové pravidlo
     add_state: Přidat stát
     add_stock: Přidat zásoby do skladu
@@ -942,11 +943,11 @@ cs:
         edit:
           api_access: Přistup k API
           clear_key: Smazat klíč
-          confirm_clear_key: Opravdu chcete smazat klíč k API tohoto uživatele? Toto zneplatní existující klíč.
-          confirm_regenerate_key: Are you sure you want to regenerate this user's API key? It will invalidate the existing key.
-          generate_key: Generate API key
+          confirm_clear_key: Opravdu chcete smazat klíč k API tohoto uživatele? Klíč již nebude monžné použít.
+          confirm_regenerate_key: Opravdu chcete přegenerovat API klíč toto uživatele? Původní klíč bude zneplatněn.
+          generate_key: Vygenerovat API klíč
           key: Key
-          no_key: Žándý klíč
+          no_key: Ještě nebyl vygenerován žádný klíč
           regenerate_key: Znovu vygenerovat klíč
         user_page_actions:
           create_order: Vytvořit objednávku pro tohoto uživatele
@@ -1071,7 +1072,7 @@ cs:
     cannot_rebuild_shipments_order_completed: Cannot rebuild shipments for a completed order.
     cannot_rebuild_shipments_shipments_not_pending: Cannot rebuild shipments for an order with non-pending shipments.
     cannot_set_shipping_method_without_address: Nelze nastavit způsob dodání dokud nejsou poskytnuty zákaznické údaje.
-    cannot_update_email: You do not have access to update this user's email address. <br />Please contact a superuser if you need to perform this action.
+    cannot_update_email: Nemáte oprávnění k aktualizaci e-mailu tohoto uživatele. <br>Pro provedení této aktualizace prosím kontaktujte administrátora.
     capture: Strhnout
     capture_events: Zachytit události
     card_code: Bezpečnostní číslo karty
@@ -1082,6 +1083,7 @@ cs:
     cart_subtotal:
       one: Celkem
       other: Celkem
+      few: Celkem
     carton_external_number: Externí objednávka
     carton_orders: Objednávky s Carton
     categories: Kategorie
@@ -1149,7 +1151,7 @@ cs:
     coupon_code_removed: Kupón byl úspěšně z objednávky odebrán.
     coupon_code_unknown_error: Tento kupón nemůže být použit.
     create: Vytvořit
-    create_a_new_account: Vytvořit nový účet
+    create_a_new_account: Založit nový účet
     create_new_order: Vytvořit novou objednávku
     create_one: Vytvořit.
     create_promotion_code: Vytvořit promo kód
@@ -1258,13 +1260,13 @@ cs:
         missing_taxon: Pro použití kupónu vám chybí některé povinné kategorie.
         no_applicable_products: Pro použití tohoto kupónu vám chybí konkrétní vyžadovaný produkt.
         no_matching_taxons: Pro použití tohoto kupónu vám chyba produkt z konkrétní vyžadované kategorie.
-        no_user_or_email_specified: Musíte poskytnout svůj email pro použití tohoto kupónu.
+        no_user_or_email_specified: Musíte poskytnout svůj e-mail pro použití tohoto kupónu.
         no_user_specified: Musíte se zaregistrovat nebo přihlásit pro použití tohoto kupónu.
         not_first_order: Tento kupón může být použit pouze pro první objednávku.
-    email: Email
+    email: E-mail
     empty: Prázdné
     empty_cart: Vyprázdnit košík
-    enable_mail_delivery: Povolit doručování emailů
+    enable_mail_delivery: Povolit doručování e-mailů
     end: Konec
     ending_in: Končí na
     environment: Prostředí
@@ -1338,7 +1340,7 @@ cs:
     google_analytics_id: Google Analytics ID
     group_size: Group size
     guest_checkout: Objednávka bez registrace
-    guest_user_account: Nakoupit jako host (bez registrace)
+    guest_user_account: Nakoupit bez přihlášení
     has_no_shipped_units: nemá žádné dodané položky
     height: Výška
     helpers:
@@ -1416,12 +1418,12 @@ cs:
     incomplete: Neúplné
     info_number_of_skus_not_shown: a další
     info_product_has_multiple_skus: Tento produkt má %{count} variant
-    instructions_to_reset_password: Zadejte prosím svůj email do formuláře níže
+    instructions_to_reset_password: Zadejte prosím svůj e-mail do formuláře níže
     insufficient_stock: Nedostatečné skladové zásoby, zbývá pouze %{on_hand}
     insufficient_stock_for_order: Není dost zboží skladem pro objednávku
     insufficient_stock_lines_present: Některé položky nejsou na skladě v dostatečném množství.
-    intercept_email_address: Odchytávání emailů
-    intercept_email_instructions: Anulovat email příjemce a nahradit s touto adresou
+    intercept_email_address: Odchytávání e-mailů
+    intercept_email_instructions: Anulovat e-mail příjemce a nahradit s touto adresou
     internal_name: Interní jméno
     invalid_credit_card: Neplatná platební karta
     invalid_exchange_variant: Neplatná varianta pro výměnu
@@ -1433,9 +1435,8 @@ cs:
     inventory: Inventář
     inventory_adjustment: Přizpůsobení skladu
     inventory_canceled: Inventory canceled
-    inventory_error_flash_for_insufficient_quantity: Jedna z položek ve Vašem košíku byla vyprodána.
-    inventory_error_flash_for_insufficient_shipment_quantity: Quantity selected of %{unavailable_items} is not available. Still, items may be
-      available from another stock location, please try again.
+    inventory_error_flash_for_insufficient_quantity: Jedna z položek ve Vašem košíku byla již bohužel vyprodána.
+    inventory_error_flash_for_insufficient_shipment_quantity: Vybrané množství položky "%{unavailable_items}" již není pro vybraný způsob dopravy dostupné.
     inventory_not_available: Inventory not available for %{item}.
     inventory_state: Stav skladu
     inventory_states:
@@ -1483,7 +1484,7 @@ cs:
     logged_in_succesfully: Přihlášení proběhlo úspěšně
     logged_out: Byli jste odhlášeni
     login: Přihlášení
-    login_as_existing: Přihlásit se jako existující zákazník
+    login_as_existing: Přihlaste se do svého účtu
     login_failed: Přihlášení se nezdařilo
     login_name: Přihlásit se
     logout: Odhlásit se
@@ -1517,8 +1518,8 @@ cs:
     my_orders: Mé objednávky
     name: Název
     name_on_card: Jméno na kartě
-    name_or_sku: Název nebo SKU (zadejte alespoň první 4 písmena z názvu výrobku)
-    negative_movement_absent_item: Cannot create negative movement for absent stock item.
+    name_or_sku: Název nebo SKU (zadejte alespoň první 4 písmena z názvu produktu)
+    negative_movement_absent_item: Nelze zadat záporný pohyb skladu pro chybějící produkt.
     new: Nový
     new_adjustment: Nová úprava
     new_adjustment_reason: Nový důvod úpravy
@@ -1531,7 +1532,7 @@ cs:
     new_order_completed: Nová objednávka dokončena
     new_payment: Nová platba
     new_payment_method: Nový způsob platby
-    new_product: Nový výrobek
+    new_product: Nový produkt
     new_promotion: Nová propagace
     new_promotion_category: Nová kategorie nabídek
     new_promotion_code_batch: New Promotion Code Batch
@@ -1568,7 +1569,7 @@ cs:
     no_payment_found: Nebyly nalezeny žádné platby
     no_payment_methods_found: Nenalezeny žádné platební metody
     no_pending_payments: Žádné čekající platby
-    no_products_found: Nebyly nalezeny žádné výrobky
+    no_products_found: Nebyly nalezeny žádné produkty
     no_promotions_found: Nenalezeny žádné promo akce
     no_resource: Žádné %{resource} nenalezeny.
     no_resource_found: Nebyly nalezeny žádné zdroje
@@ -1595,10 +1596,10 @@ cs:
     note: Poznámka
     note_already_received_a_refund: 'Note: This order has already received a refund.  Make sure the above reimbursement amount is correct.'
     notice_messages:
-      product_cloned: Výrobek byl naklonován
-      product_deleted: Výrobek byl smazán
-      product_not_cloned: Výrobek nelze opakovat
-      product_not_deleted: Výrobek nelze odstranit
+      product_cloned: Produkt byl zkopírován
+      product_deleted: Produkt byl smazán
+      product_not_cloned: Produkt nelze opakovat
+      product_not_deleted: Produkt nelze odstranit
       variant_deleted: Variantu lze odstranit
       variant_not_deleted: Variantu nelze odstranit
     num_orders: Počet objednávek
@@ -1652,22 +1653,22 @@ cs:
     order_not_found: Nemůžeme nalézt Vaši objednávku. Zkuste prosím akci provést později.
     order_number: Objednávka %{number}
     order_please_refresh: Order is not ready to be completed. Please refresh totals.
-    order_processed_successfully: Vaše objednávka byla úspěšně zpracována
+    order_processed_successfully: Vaše objednávka byla úspěšně přijata
     order_ready_for_confirm: Order ready for confirmation
     order_refresh_totals: Refresh Totals
     order_resumed: Objednávka obnovena
     order_state:
       address: Adresa
       awaiting_return: Čeká na návrat
-      canceled: Zrušeno
+      canceled: Zrušena
       cart: Košik
-      complete: Dokončení
+      complete: Přijatá
       confirm: Potvrzení
-      considered_risky: Riziková
-      delivery: Možnosti dodání
-      payment: Platba
+      considered_risky: Vyhodnocena jako riziková
+      delivery: Druh dodání
+      payment: Způsob platby
       resumed: Obnovená
-      returned: Vracená
+      returned: Vrácená
     order_summary: Shrnutí objednávky
     order_sure_want_to: Jste si jisti, že chcete %{event} tuto objednávku?
     order_total: Objednávka celkem
@@ -1699,10 +1700,10 @@ cs:
     payment_processor_choose_link: Platební metody
     payment_state: Stav platby
     payment_states:
-      balance_due: Nedoplatek
-      checkout: Pokladna
-      completed: Dokončeno
-      credit_owed: Dluží kredit
+      balance_due: Čeká na platbu
+      checkout: Čeká na platbu
+      completed: Zaplaceno
+      credit_owed: Přeplatek
       failed: Selhalo
       invalid: Neplatné
       paid: Zaplaceno
@@ -1712,16 +1713,17 @@ cs:
     payment_updated: Platba upravena
     payments: Platby
     payments_failed_count:
-      one: Selhání platby
-      other: Selhání platby
+      one: Selhala platba
+      few: Selhaly %{count} platby
+      other: Selhalo %{count} plateb
     pending: Čekající
     percent: Procenta
     percent_per_item: Procent na položku
     permalink: Stálý odkaz
     phone: Telefon
     place_order: Objednat
-    please_define_payment_methods: Nejprve zadefinujte platební metody.
-    please_enter_reasonable_quantity: Please enter a reasonable quantity.
+    please_define_payment_methods: Nejprve nastavte platební metody.
+    please_enter_reasonable_quantity: Zadejte prosím rozumné množství.
     populate_get_error: Něco je špatně. Zkuste prosím přidat položku znovu.
     powered_by: Pohání
     pre_tax_amount: Hodnota bez daně
@@ -1737,23 +1739,23 @@ cs:
     price_range: Cenové rozpětí
     price_sack: Ceny balíku
     process: Zpracovat
-    product: Výrobek
-    product_details: Detaily výrobku
-    product_has_no_description: Výrobek nemá žádný popis
-    product_not_available_in_this_currency: Tento výrobek není dostupný pro vybranou měnu.
-    product_properties: Vlastnosti výrobku
+    product: Produkt
+    product_details: Detaily produktu
+    product_has_no_description: Produkt nemá žádný popis
+    product_not_available_in_this_currency: Tento produkt není dostupný pro vybranou měnu.
+    product_properties: Vlastnosti produktu
     product_rule:
-      choose_products: Vyberte výrobky
+      choose_products: Vyberte produkty
       label: Štítek
       match_all: Vše
       match_any: Alespoň jeden
       match_none: Žádný
       product_source:
-        group: Ze skupiny výrobků
+        group: Ze skupiny produktů
         manual: Vybrat manuálně
     product_without_default_price_cta: Please, create a Master Price!
     product_without_default_price_info: This Product has no price in the default currency (%{default_currency}).
-    products: Výrobky
+    products: Produkty
     promotion: Speciální nabídka
     promotion_action: Akce speciálních nabídek
     promotion_action_types:
@@ -1803,10 +1805,10 @@ cs:
         description: Objednávka obsahuje produkty s konkrétní hodnotou volby.
         name: Hodnoty volby
       product:
-        description: Objednávka obsahuje zadaný výrobek(y)
-        name: Výrobky
+        description: Objednávka obsahuje zadaný/é produkt/y
+        name: Produkty
       taxon:
-        description: Objednávka výrobek ze zadaného taxonu
+        description: Objednávka obsahuje produkt ze zadané kategorie
         name: Taxony
       user:
         description: Dostupné pouze pro uvedené uživatele
@@ -1856,12 +1858,12 @@ cs:
     reception_status: Stav obdržení
     reference: Reference
     refund: Vráceno
-    refund_amount_must_be_greater_than_zero: HOdnota refundace musí být větší než 0.
+    refund_amount_must_be_greater_than_zero: Hodnota refundace musí být větší než 0.
     refund_reasons: Důvody refundace
     refunded_amount: Hodnota refundace
     refunds: Refundace
     register: Zaregistrovat se jako nový uživatel
-    registration: Registrace
+    registration: Přihlášení
     reimburse: Nahradit
     reimbursed: Nahrazeno
     reimbursement: Náhrada
@@ -1893,9 +1895,9 @@ cs:
     report: Report
     reports: Reporty
     resend: Zaslat znovu
-    reset_password: Resetovat mé heslo
+    reset_password: Poslat instrukce pro změnu hesla
     response_code: Kód odpovědi
-    restock_inventory: Restock Inventory
+    restock_inventory: Sklad znovunaskladnění
     resume: pokračovat
     resumed: Obnoveno
     return: vrátit
@@ -1934,8 +1936,8 @@ cs:
     sales_total: Prodej celkem
     sales_total_description: Slevy na všechny objednávky
     sales_totals: Celkové prodeje
-    save_and_continue: Uložit a pokračovat
-    save_my_address: Uložit mojí adresu
+    save_and_continue: Pokračovat
+    save_my_address: Aktualizovat adresu v mém účtu
     say_no: Ne
     say_yes: Ano
     scope: Rozsah
@@ -1951,9 +1953,9 @@ cs:
     select_from_prototype: Výběr ze šablon
     select_stock: Vyberte zásoby ze skladu
     selected_quantity_not_available: vybrané množství %{item} není k dispozici.
-    send_copy_of_all_mails_to: Zasílat kopie všech emailů na emailovou adresu
-    send_mailer: Odesílatel emailů
-    send_mails_as: Posílat emaily jako
+    send_copy_of_all_mails_to: Zasílat kopie všech e-mailů na e-mailovou adresu
+    send_mailer: Odesílatel e-mailů
+    send_mails_as: Posílat e-maily jako
     server: Server
     server_error: Server nahlásil chybu
     settings: Nastavení
@@ -1964,7 +1966,7 @@ cs:
     shipment: Doprava
     shipment_adjustments: Úprava dopravy
     shipment_date: Datum odeslání
-    shipment_details: Informace k dopravě
+    shipment_details: '%{shipping_method}'
     shipment_mailer:
       shipped_email:
         dear_customer: Vážený zákazníku,\n
@@ -1979,11 +1981,12 @@ cs:
     shipment_state: Stav dodávky
     shipment_states:
       backorder: V externím skladu
-      canceled: Zrušena
-      partial: Částečná
-      pending: Čekající na vyřízení
-      ready: Připravit
-      shipped: Dodáno
+      canceled: Zrušená
+      partial: Částečně vyřízená
+      pending: Čeká na zaplacení
+      preparing: Připravuje se
+      ready: Připraveno
+      shipped: Odesláno
     shipment_transfer_error: Chyba převodu variant.
     shipment_transfer_success: Varianty převedeny.
     shipments: Dopravy
@@ -2119,8 +2122,8 @@ cs:
       default: Výchozí
     store_rule:
       choose_stores: Vybrat obchod
-    street_address: Ulice
-    street_address_2: Číslo ulice
+    street_address: Adresa
+    street_address_2: Adresa (pokračování)
     subtotal: Mezisoučet
     subtract: Odečet
     success: Úspěch
@@ -2156,10 +2159,10 @@ cs:
     test_mailer:
       test_email:
         greeting: Gratulujeme!
-        message: Pokud jste obdrželi tento email, Vaše nastavení emailu je správné.
-        subject: Testovací email
+        message: Pokud jste obdrželi tento e-mail, Vaše nastavení e-mailu je správné.
+        subject: Testovací e-mail
     test_mode: Testovací režim
-    thank_you_for_your_order: Děkujeme za Váš nákup. Doporučujeme Vám vytisknout si kopii této stránky.
+    thank_you_for_your_order: Děkujeme za Váš nákup.
     there_are_no_items_for_this_order: Objednávka neobsahuje žádné položky.
     there_were_problems_with_the_following_fields: Opravte prosím následující chyby
     this_order_has_already_received_a_refund: Tato objednávka již byla refundována.
@@ -2204,7 +2207,7 @@ cs:
     updating: Ukládám změny
     usage_limit: Limit pro použití
     use_app_default: Použít výchozí
-    use_billing_address: Použít fakturační adresu
+    use_billing_address: Stejná jako fakturační adresa
     use_existing_cc: Použijte existující kartu
     use_new_cc: Použít novou kartu
     use_new_cc_or_payment_method: Použít novou kartu / způsob platby
@@ -2247,9 +2250,9 @@ cs:
     width: Šířka
     year: Rok
     you_cannot_undo_action: Tuto akci nebudete moci vrátit zpět
-    you_have_no_orders_yet: Zatím nemate žádnou objednávku
+    you_have_no_orders_yet: Zatím nemáte žádnou objednávku
     your_cart_is_empty: Váš nákupní košík je prázdný
-    your_order_is_empty_add_product: Vaše objednávka je prázdná. Vyberte prosím výrobek, který chcete zakoupit a vložte jej do košíku.
+    your_order_is_empty_add_product: Vaše objednávka je prázdná. Vyberte prosím produkt, který chcete zakoupit a vložte jej do košíku.
     zip: PSČ
     zipcode: PSČ
     zone: Zóna
