@@ -734,6 +734,8 @@ fr:
     account: Compte
     account_updated: Compte mis à jour!
     action: Action
+    admin_login: Connexion Administrateur
+    minimize_menu: Réduire le menu
     actions:
       Add: Ajouter
       cancel: Annuler
