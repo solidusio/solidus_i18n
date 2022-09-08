@@ -16,6 +16,10 @@ fr:
             current_shipment:
               has_already_been_shipped: a déjà été envoyé
               can_not_have_backordered_inventory_units: a de l'inventaire en attente
+  devise:
+    sessions:
+      spree_user:
+        signed_out: Déconnecté
   activerecord:
     attributes:
       spree/address:
