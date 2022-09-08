@@ -740,6 +740,7 @@ fr:
     name_containts: Nom
     new_store: Nouvelle boutique
     master_sku: Master SKU
+    no_option_values_on_product_html: Pas de variantes sur le produit 
     actions:
       Add: Ajouter
       cancel: Annuler
