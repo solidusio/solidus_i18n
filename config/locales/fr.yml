@@ -736,6 +736,8 @@ fr:
     action: Action
     admin_login: Connexion Administrateur
     minimize_menu: Réduire le menu
+    shipment_number: Numéro d'expédition
+    name_containts: Nom
     actions:
       Add: Ajouter
       cancel: Annuler
@@ -910,6 +912,7 @@ fr:
         taxons: Taxons
         users: Utilisateurs
         zones: Zones
+        braintree: Braintree
       taxons:
         display_order: Afficher la commande
       user:
