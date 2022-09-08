@@ -749,6 +749,7 @@ fr:
     no_resource: Pas de ressources
     new_adjustment_reason: Nouveau motif d'ajustement
     new_store_credit_reason: Nouveau motif de crédit en magasin
+    character_limit: Limite de caractères
     actions:
       Add: Ajouter
       cancel: Annuler
