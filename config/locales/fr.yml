@@ -738,6 +738,7 @@ fr:
     minimize_menu: Réduire le menu
     shipment_number: Numéro d'expédition
     name_containts: Nom
+    new_store: Nouvelle boutique
     actions:
       Add: Ajouter
       cancel: Annuler
