@@ -739,6 +739,7 @@ fr:
     shipment_number: Numéro d'expédition
     name_containts: Nom
     new_store: Nouvelle boutique
+    master_sku: Master SKU
     actions:
       Add: Ajouter
       cancel: Annuler
