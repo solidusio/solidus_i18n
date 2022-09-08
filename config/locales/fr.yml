@@ -2018,3 +2018,6 @@ fr:
     zipcode: Code postal
     zone: Zone
     zones: Zones
+  solidus_paypal_braintree:
+    configurations:
+      title: Braintree Configuration
