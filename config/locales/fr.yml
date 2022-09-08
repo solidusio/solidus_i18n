@@ -745,12 +745,17 @@ fr:
     variant_search_placeholder: Recherche de variante
     manage_stock: Management du stock
     modify_stock_count: Modifier l'inventaire
+    stock: Stock
+    no_resource: Pas de ressources
+    new_adjustment_reason: Nouveau motif d'ajustement
+    new_store_credit_reason: Nouveau motif de crédit en magasin
     actions:
       Add: Ajouter
       cancel: Annuler
       continue: Continuer
       create: Créer
       destroy: Supprimer
+      delete: Supprimer
       edit: Modifier
       list: Liste
       listing: Lister
