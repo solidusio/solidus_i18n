@@ -604,8 +604,8 @@ fr:
         one: Produit
         other: Produits
       spree/product_property:
-        one: Caractéristique de produit
-        other: Caractéristiques de produit
+        one: Caractéristique du produit
+        other: Caractéristiques du produit
       spree/promotion:
         one: Promotion
         other: Promotions
@@ -740,7 +740,11 @@ fr:
     name_containts: Nom
     new_store: Nouvelle boutique
     master_sku: Master SKU
-    no_option_values_on_product_html: Pas de variantes sur le produit 
+    no_option_values_on_product_html: Pas de variantes sur le produit
+    variant_properties: Propriétés des variantes
+    variant_search_placeholder: Recherche de variante
+    manage_stock: Management du stock
+    modify_stock_count: Modifier l'inventaire
     actions:
       Add: Ajouter
       cancel: Annuler
