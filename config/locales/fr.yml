@@ -755,7 +755,7 @@ fr:
     use_app_default: Utiliser la valeur par default
     shipping_rate:
       display_price:
-        display_price_with_explanations: "#{price}"
+        display_price_with_explanations: "%{price} (inkl. %{explanations})"
     actions:
       Add: Ajouter
       cancel: Annuler
