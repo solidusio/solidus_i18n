@@ -749,7 +749,7 @@ fr:
     no_resource: Pas de ressources
     new_adjustment_reason: Nouveau motif d'ajustement
     new_store_credit_reason: Nouveau motif de crédit en magasin
-    character_limit: Limite de caractères
+    character_limit: Limite de 255 caractères
     payment_method_settings_warning: Si vous modifiez le type de mode de paiement, vous devez d'abord l'enregistrer avant de pouvoir modifier les paramètres du mode de paiement
     view_product: Voir produit
     use_app_default: Utiliser la valeur par default
