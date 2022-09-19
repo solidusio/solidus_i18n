@@ -753,6 +753,7 @@ fr:
     payment_method_settings_warning: Si vous modifiez le type de mode de paiement, vous devez d'abord l'enregistrer avant de pouvoir modifier les paramètres du mode de paiement
     view_product: Voir produit
     use_app_default: Utiliser la valeur par default
+    card_code: Numéro CVC
     shipping_rate:
       display_price:
         display_price_with_explanations: "%{price} (inkl. %{explanations})"
