@@ -473,6 +473,10 @@ fr:
           attributes:
             base:
               cannot_destroy_default_store: Impossible de détruire la boutique par défaut.
+        spree/user:
+          attributes:
+            email:
+              confirmation_period_expired: Période de confirmation expirée
         spree/user_address:
           attributes:
             user_id:
