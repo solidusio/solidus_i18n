@@ -759,6 +759,10 @@ fr:
     use_app_default: Utiliser la valeur par default
     card_code: Numéro CVC
     search: Rechercher
+    item: Objet
+    price: Prix
+    quantity: Quantité
+    subtotal: Sous-total
     shipping_rate:
       display_price:
         display_price_with_explanations: "%{price} (inkl. %{explanations})"
