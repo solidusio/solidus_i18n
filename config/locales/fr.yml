@@ -16,6 +16,10 @@ fr:
             current_shipment:
               has_already_been_shipped: a déjà été envoyé
               can_not_have_backordered_inventory_units: a de l'inventaire en attente
+  devise:
+    sessions:
+      spree_user:
+        signed_out: Déconnecté
   activerecord:
     attributes:
       spree/address:
@@ -469,6 +473,10 @@ fr:
           attributes:
             base:
               cannot_destroy_default_store: Impossible de détruire la boutique par défaut.
+        spree/user:
+          attributes:
+            email:
+              confirmation_period_expired: Période de confirmation expirée
         spree/user_address:
           attributes:
             user_id:
@@ -600,8 +608,8 @@ fr:
         one: Produit
         other: Produits
       spree/product_property:
-        one: Caractéristique de produit
-        other: Caractéristiques de produit
+        one: Caractéristique du produit
+        other: Caractéristiques du produit
       spree/promotion:
         one: Promotion
         other: Promotions
@@ -730,12 +738,37 @@ fr:
     account: Compte
     account_updated: Compte mis à jour!
     action: Action
+    admin_login: Connexion Administrateur
+    minimize_menu: Réduire le menu
+    shipment_number: Numéro d'expédition
+    name_containts: Nom
+    new_store: Nouvelle boutique
+    master_sku: Master SKU
+    no_option_values_on_product_html: Pas de variantes sur le produit
+    variant_properties: Propriétés des variantes
+    variant_search_placeholder: Recherche de variante
+    manage_stock: Management du stock
+    modify_stock_count: Modifier l'inventaire
+    stock: Stock
+    no_resource: Pas de ressources
+    new_adjustment_reason: Nouveau motif d'ajustement
+    new_store_credit_reason: Nouveau motif de crédit en magasin
+    character_limit: Limite de 255 caractères
+    payment_method_settings_warning: Si vous modifiez le type de mode de paiement, vous devez d'abord l'enregistrer avant de pouvoir modifier les paramètres du mode de paiement
+    view_product: Voir produit
+    use_app_default: Utiliser la valeur par default
+    card_code: Numéro CVC
+    search: Rechercher
+    shipping_rate:
+      display_price:
+        display_price_with_explanations: "%{price} (inkl. %{explanations})"
     actions:
       Add: Ajouter
       cancel: Annuler
       continue: Continuer
       create: Créer
       destroy: Supprimer
+      delete: Supprimer
       edit: Modifier
       list: Liste
       listing: Lister
@@ -904,6 +937,7 @@ fr:
         taxons: Taxons
         users: Utilisateurs
         zones: Zones
+        braintree: Braintree
       taxons:
         display_order: Afficher la commande
       user:
@@ -1997,3 +2031,6 @@ fr:
     zipcode: Code postal
     zone: Zone
     zones: Zones
+  solidus_paypal_braintree:
+    configurations:
+      title: Braintree Configuration
