@@ -14,3 +14,8 @@ pkg
 *.swp
 spec/dummy
 spec/examples.txt
+.rvmrc
+.sass-cache
+public/spree
+.ruby-gemset
+.iml
