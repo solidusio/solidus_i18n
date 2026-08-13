@@ -3,10 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/solidus_i18n.svg)](https://badge.fury.io/rb/solidus_i18n)
 
 > [!IMPORTANT]
-> **DEPRECATED**
-> This **has been** the Internationalization project for [Solidus](https://solidus.io).
-> 
-> It now is [**included in the Solidus mono repo**](https://github.com/solidusio/solidus/tree/main/i18n). Please **do not** send new pull requests to this repo. Send them to the main repo instead. 
+> [Solidus](https://solidus.io)'s internationalization support has been moved [into the Solidus monorepo](https://github.com/solidusio/solidus/tree/main/i18n). Please direct new issues and pull requests there instead.
 
 ---
 
