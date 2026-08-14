@@ -2,7 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/solidus_i18n.svg)](https://badge.fury.io/rb/solidus_i18n)
 
-This is the Internationalization project for [Solidus](https://solidus.io)
+> [!IMPORTANT]
+> [Solidus](https://solidus.io)'s internationalization support has been moved [into the Solidus monorepo](https://github.com/solidusio/solidus/tree/main/i18n). Please direct new issues and pull requests there instead.
 
 ---
 
